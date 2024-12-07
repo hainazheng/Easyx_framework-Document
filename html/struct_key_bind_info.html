@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: KeyBindInfo结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_key_bind_info.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_key_bind_info-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">KeyBindInfo结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>按键映射需要的信息.  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_input_component_8h_source.html">InputComponent.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a49971b39e6a51a58acafe5fb2f61454d" id="r_a49971b39e6a51a58acafe5fb2f61454d"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49971b39e6a51a58acafe5fb2f61454d">fun</a></td></tr>
+<tr class="separator:a49971b39e6a51a58acafe5fb2f61454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e883ed6c01a12031e135542815eb749" id="r_a3e883ed6c01a12031e135542815eb749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e883ed6c01a12031e135542815eb749">TYPE</a> = <a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8bad78a68f6a85421ae121c2cb5b73a1040">InputType::Pressed</a></td></tr>
+<tr class="separator:a3e883ed6c01a12031e135542815eb749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b71473c248433c219a6a0f2f0a44b87" id="r_a4b71473c248433c219a6a0f2f0a44b87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b71473c248433c219a6a0f2f0a44b87">isPressed</a> = false</td></tr>
+<tr class="separator:a4b71473c248433c219a6a0f2f0a44b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf666c6446e67d1543cd9d1cdf104f6" id="r_aaaf666c6446e67d1543cd9d1cdf104f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf666c6446e67d1543cd9d1cdf104f6">lastTime</a> = 0</td></tr>
+<tr class="separator:aaaf666c6446e67d1543cd9d1cdf104f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>按键映射需要的信息. </p>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a id="a49971b39e6a51a58acafe5fb2f61454d" name="a49971b39e6a51a58acafe5fb2f61454d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49971b39e6a51a58acafe5fb2f61454d">&#9670;&#160;</a></span>fun</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; KeyBindInfo::fun</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b71473c248433c219a6a0f2f0a44b87" name="a4b71473c248433c219a6a0f2f0a44b87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b71473c248433c219a6a0f2f0a44b87">&#9670;&#160;</a></span>isPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool KeyBindInfo::isPressed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaf666c6446e67d1543cd9d1cdf104f6" name="aaaf666c6446e67d1543cd9d1cdf104f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf666c6446e67d1543cd9d1cdf104f6">&#9670;&#160;</a></span>lastTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float KeyBindInfo::lastTime = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e883ed6c01a12031e135542815eb749" name="a3e883ed6c01a12031e135542815eb749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e883ed6c01a12031e135542815eb749">&#9670;&#160;</a></span>TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a> KeyBindInfo::TYPE = <a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8bad78a68f6a85421ae121c2cb5b73a1040">InputType::Pressed</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_key_bind_info.html">KeyBindInfo</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

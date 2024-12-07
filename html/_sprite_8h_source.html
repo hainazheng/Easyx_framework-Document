@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/Sprite.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_sprite_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/Sprite.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprite_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include&quot;<a class="code" href="_sprite_renderer_8h.html">SpriteRenderer.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include&quot;<a class="code" href="_timer_8h.html">Timer.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include&quot;<a class="code" href="_core_minimal_8h.html">CoreMinimal.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_sprite.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sprite.html">Sprite</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_object.html">Object</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_sprite.html#a2195c3c23f411ad97f056a50048618fa">   19</a></span>    <a class="code hl_class" href="class_sprite_renderer.html">SpriteRenderer</a>* <a class="code hl_variable" href="class_sprite.html#a2195c3c23f411ad97f056a50048618fa">renderer</a>;           </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_sprite.html#a23b1ad173e2179e991554c68a51dd3c7">   21</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_sprite.html#a23b1ad173e2179e991554c68a51dd3c7">deltaTime</a>=0.f;                    </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_sprite.html#a228a0e2525fe96d963e819ca403897e7">   23</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_sprite.html#a228a0e2525fe96d963e819ca403897e7">IsBlinking</a> = <span class="keyword">false</span>;            </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_sprite.html#a17cfbf018550126723b106878531b9e2">   24</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_sprite.html#a17cfbf018550126723b106878531b9e2">blinkFlag</a> = <span class="keyword">false</span>;             </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_sprite.html#acaa816f94d4baa070b425c6248139e42">   25</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_sprite.html#acaa816f94d4baa070b425c6248139e42">transistionLevel</a> = 0.f;           </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_sprite.html#a8dc4377498a280f1f959e5d8b4609243">   26</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_sprite.html#a8dc4377498a280f1f959e5d8b4609243">transistionSpeed</a> = 0.f;           </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_sprite.html#a5a6fc03b332e140602625ec08eae0d22">   27</a></span>    <a class="code hl_struct" href="struct_filter_info.html">FilterInfo</a> <a class="code hl_variable" href="class_sprite.html#a5a6fc03b332e140602625ec08eae0d22">blinkFillter</a>;            </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_sprite.html#a607e1944838b951ea765894111d55682">   28</a></span>    <a class="code hl_class" href="class_timer.html">Timer</a> <a class="code hl_variable" href="class_sprite.html#a607e1944838b951ea765894111d55682">recoverTimerHandle</a>;           </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a8962995e43d0bc4c9fe9a438ff0e1b75">Recover</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="class_sprite.html#a12cba3ac1868418add3c4d95ce87e615">Sprite</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a11843782761805696b921458012ee9b2">BeginPlay</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a5dce25b5ba988d3c5bdb37df5659e6d1">Update</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_sprite.html#a23b1ad173e2179e991554c68a51dd3c7">deltaTime</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#a85562edb2581761300881f1d658e3bc9">LoadSprite</a>(std::string);           <span class="comment">//加载图片资源</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sprite.html#ae92571097af9b0d1920ecdcfb663b51c">Blink</a>(<span class="keywordtype">float</span> duration = 0.2f, COLORREF col = BLACK, <span class="keywordtype">int</span> level=60);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+</div>
+<div class="ttc" id="a_core_minimal_8h_html"><div class="ttname"><a href="_core_minimal_8h.html">CoreMinimal.h</a></div><div class="ttdoc">核心代码文件</div></div>
+<div class="ttc" id="a_sprite_renderer_8h_html"><div class="ttname"><a href="_sprite_renderer_8h.html">SpriteRenderer.h</a></div><div class="ttdoc">2D渲染组件</div></div>
+<div class="ttc" id="a_timer_8h_html"><div class="ttname"><a href="_timer_8h.html">Timer.h</a></div><div class="ttdoc">计时器类</div></div>
+<div class="ttc" id="aclass_object_html"><div class="ttname"><a href="class_object.html">Object</a></div><div class="ttdoc">游戏对象基类.</div><div class="ttdef"><b>定义</b> Object.h:20</div></div>
+<div class="ttc" id="aclass_sprite_html"><div class="ttname"><a href="class_sprite.html">Sprite</a></div><div class="ttdoc">物体派生类(精灵类）</div><div class="ttdef"><b>定义</b> Sprite.h:18</div></div>
+<div class="ttc" id="aclass_sprite_html_a11843782761805696b921458012ee9b2"><div class="ttname"><a href="class_sprite.html#a11843782761805696b921458012ee9b2">Sprite::BeginPlay</a></div><div class="ttdeci">virtual void BeginPlay()</div><div class="ttdoc">设置虚函数，把不能写在构造却需要优先实现的写在这</div><div class="ttdef"><b>定义</b> Sprite.cpp:21</div></div>
+<div class="ttc" id="aclass_sprite_html_a12cba3ac1868418add3c4d95ce87e615"><div class="ttname"><a href="class_sprite.html#a12cba3ac1868418add3c4d95ce87e615">Sprite::Sprite</a></div><div class="ttdeci">Sprite()</div><div class="ttdoc">创建渲染组件，加入世界容器</div><div class="ttdef"><b>定义</b> Sprite.cpp:13</div></div>
+<div class="ttc" id="aclass_sprite_html_a17cfbf018550126723b106878531b9e2"><div class="ttname"><a href="class_sprite.html#a17cfbf018550126723b106878531b9e2">Sprite::blinkFlag</a></div><div class="ttdeci">bool blinkFlag</div><div class="ttdoc">是否开始实现闪烁</div><div class="ttdef"><b>定义</b> Sprite.h:24</div></div>
+<div class="ttc" id="aclass_sprite_html_a2195c3c23f411ad97f056a50048618fa"><div class="ttname"><a href="class_sprite.html#a2195c3c23f411ad97f056a50048618fa">Sprite::renderer</a></div><div class="ttdeci">SpriteRenderer * renderer</div><div class="ttdoc">渲染器组件 一个指针指向我们用物体创建出来的渲染组件</div><div class="ttdef"><b>定义</b> Sprite.h:19</div></div>
+<div class="ttc" id="aclass_sprite_html_a228a0e2525fe96d963e819ca403897e7"><div class="ttname"><a href="class_sprite.html#a228a0e2525fe96d963e819ca403897e7">Sprite::IsBlinking</a></div><div class="ttdeci">bool IsBlinking</div><div class="ttdoc">是否正在闪烁状态</div><div class="ttdef"><b>定义</b> Sprite.h:23</div></div>
+<div class="ttc" id="aclass_sprite_html_a23b1ad173e2179e991554c68a51dd3c7"><div class="ttname"><a href="class_sprite.html#a23b1ad173e2179e991554c68a51dd3c7">Sprite::deltaTime</a></div><div class="ttdeci">float deltaTime</div><div class="ttdoc">帧的时间间隔</div><div class="ttdef"><b>定义</b> Sprite.h:21</div></div>
+<div class="ttc" id="aclass_sprite_html_a5a6fc03b332e140602625ec08eae0d22"><div class="ttname"><a href="class_sprite.html#a5a6fc03b332e140602625ec08eae0d22">Sprite::blinkFillter</a></div><div class="ttdeci">FilterInfo blinkFillter</div><div class="ttdoc">闪烁滤镜信息</div><div class="ttdef"><b>定义</b> Sprite.h:27</div></div>
+<div class="ttc" id="aclass_sprite_html_a5dce25b5ba988d3c5bdb37df5659e6d1"><div class="ttname"><a href="class_sprite.html#a5dce25b5ba988d3c5bdb37df5659e6d1">Sprite::Update</a></div><div class="ttdeci">virtual void Update(float deltaTime)</div><div class="ttdoc">实现闪烁功能</div><div class="ttdef"><b>定义</b> Sprite.cpp:27</div></div>
+<div class="ttc" id="aclass_sprite_html_a607e1944838b951ea765894111d55682"><div class="ttname"><a href="class_sprite.html#a607e1944838b951ea765894111d55682">Sprite::recoverTimerHandle</a></div><div class="ttdeci">Timer recoverTimerHandle</div><div class="ttdoc">恢复闪烁标识计时器</div><div class="ttdef"><b>定义</b> Sprite.h:28</div></div>
+<div class="ttc" id="aclass_sprite_html_a85562edb2581761300881f1d658e3bc9"><div class="ttname"><a href="class_sprite.html#a85562edb2581761300881f1d658e3bc9">Sprite::LoadSprite</a></div><div class="ttdeci">void LoadSprite(std::string)</div><div class="ttdoc">加载图片资源.</div><div class="ttdef"><b>定义</b> Sprite.cpp:50</div></div>
+<div class="ttc" id="aclass_sprite_html_a8962995e43d0bc4c9fe9a438ff0e1b75"><div class="ttname"><a href="class_sprite.html#a8962995e43d0bc4c9fe9a438ff0e1b75">Sprite::Recover</a></div><div class="ttdeci">void Recover()</div><div class="ttdoc">恢复闪烁标识</div><div class="ttdef"><b>定义</b> Sprite.cpp:5</div></div>
+<div class="ttc" id="aclass_sprite_html_a8dc4377498a280f1f959e5d8b4609243"><div class="ttname"><a href="class_sprite.html#a8dc4377498a280f1f959e5d8b4609243">Sprite::transistionSpeed</a></div><div class="ttdeci">float transistionSpeed</div><div class="ttdoc">过渡速度</div><div class="ttdef"><b>定义</b> Sprite.h:26</div></div>
+<div class="ttc" id="aclass_sprite_html_acaa816f94d4baa070b425c6248139e42"><div class="ttname"><a href="class_sprite.html#acaa816f94d4baa070b425c6248139e42">Sprite::transistionLevel</a></div><div class="ttdeci">float transistionLevel</div><div class="ttdoc">过渡层级</div><div class="ttdef"><b>定义</b> Sprite.h:25</div></div>
+<div class="ttc" id="aclass_sprite_html_ae92571097af9b0d1920ecdcfb663b51c"><div class="ttname"><a href="class_sprite.html#ae92571097af9b0d1920ecdcfb663b51c">Sprite::Blink</a></div><div class="ttdeci">void Blink(float duration=0.2f, COLORREF col=BLACK, int level=60)</div><div class="ttdoc">闪烁效果.</div><div class="ttdef"><b>定义</b> Sprite.cpp:62</div></div>
+<div class="ttc" id="aclass_sprite_renderer_html"><div class="ttname"><a href="class_sprite_renderer.html">SpriteRenderer</a></div><div class="ttdoc">渲染组件(2D).</div><div class="ttdef"><b>定义</b> SpriteRenderer.h:16</div></div>
+<div class="ttc" id="aclass_timer_html"><div class="ttname"><a href="class_timer.html">Timer</a></div><div class="ttdoc">计时器类</div><div class="ttdef"><b>定义</b> Timer.h:20</div></div>
+<div class="ttc" id="astruct_filter_info_html"><div class="ttname"><a href="struct_filter_info.html">FilterInfo</a></div><div class="ttdoc">滤镜信息</div><div class="ttdef"><b>定义</b> VisualInterface.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_sprite_8h.html">Sprite.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

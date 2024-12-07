@@ -1,0 +1,892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: AudioManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_audio_manager.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="class_audio_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">AudioManager类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>全局音频管理 单例懒汉模式  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_audio_manager_8h_source.html">AudioManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:af92e3ac93bc9d6d5065b1c4290924616" id="r_af92e3ac93bc9d6d5065b1c4290924616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af92e3ac93bc9d6d5065b1c4290924616">Initialize</a> ()</td></tr>
+<tr class="memdesc:af92e3ac93bc9d6d5065b1c4290924616"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化.  <br /></td></tr>
+<tr class="separator:af92e3ac93bc9d6d5065b1c4290924616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae230c1a15693d201e36892c8b5ce07e7" id="r_ae230c1a15693d201e36892c8b5ce07e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae230c1a15693d201e36892c8b5ce07e7">SetBGVolume</a> (int vol)</td></tr>
+<tr class="memdesc:ae230c1a15693d201e36892c8b5ce07e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置背影音量.  <br /></td></tr>
+<tr class="separator:ae230c1a15693d201e36892c8b5ce07e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d932d3b245db333f09776476f365c46" id="r_a0d932d3b245db333f09776476f365c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d932d3b245db333f09776476f365c46">Play</a> (std::string name, bool <a class="el" href="#ad3e0267aba91a8fe4894f13ece31f942">repeat</a>=false)</td></tr>
+<tr class="memdesc:a0d932d3b245db333f09776476f365c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放音乐.  <br /></td></tr>
+<tr class="separator:a0d932d3b245db333f09776476f365c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36226bb35e04af8290d408d1d4fbaadf" id="r_a36226bb35e04af8290d408d1d4fbaadf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36226bb35e04af8290d408d1d4fbaadf">Stop</a> ()</td></tr>
+<tr class="memdesc:a36226bb35e04af8290d408d1d4fbaadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止播放.  <br /></td></tr>
+<tr class="separator:a36226bb35e04af8290d408d1d4fbaadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530e8a8725982a10a1591e56191974e4" id="r_a530e8a8725982a10a1591e56191974e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a530e8a8725982a10a1591e56191974e4">Remove</a> (std::string name)</td></tr>
+<tr class="memdesc:a530e8a8725982a10a1591e56191974e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除音乐资源.  <br /></td></tr>
+<tr class="separator:a530e8a8725982a10a1591e56191974e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d41e481f2113f7acbe37a948777949" id="r_a08d41e481f2113f7acbe37a948777949"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08d41e481f2113f7acbe37a948777949">SetRandom</a> (bool <a class="el" href="#a4d386ab524ce7ff7ebb28d84b8a7ff1d">random</a>)</td></tr>
+<tr class="memdesc:a08d41e481f2113f7acbe37a948777949"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否随机播放.  <br /></td></tr>
+<tr class="separator:a08d41e481f2113f7acbe37a948777949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accac448050193d2a502d8940461aa7b3" id="r_accac448050193d2a502d8940461aa7b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accac448050193d2a502d8940461aa7b3">NextSound</a> ()</td></tr>
+<tr class="memdesc:accac448050193d2a502d8940461aa7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">只有调用这个函数才会切换到下一首并播放.  <br /></td></tr>
+<tr class="separator:accac448050193d2a502d8940461aa7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b280d7fe49b1ab6495f87921593d5f8" id="r_a3b280d7fe49b1ab6495f87921593d5f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b280d7fe49b1ab6495f87921593d5f8">Pause</a> ()</td></tr>
+<tr class="memdesc:a3b280d7fe49b1ab6495f87921593d5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停音乐  <br /></td></tr>
+<tr class="separator:a3b280d7fe49b1ab6495f87921593d5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2211f8374eba7a641bf081f4a664b036" id="r_a2211f8374eba7a641bf081f4a664b036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2211f8374eba7a641bf081f4a664b036">Resume</a> ()</td></tr>
+<tr class="memdesc:a2211f8374eba7a641bf081f4a664b036"><td class="mdescLeft">&#160;</td><td class="mdescRight">继续音乐  <br /></td></tr>
+<tr class="separator:a2211f8374eba7a641bf081f4a664b036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeceb50240b3b95b57c6e9a6b63942bd8" id="r_aeceb50240b3b95b57c6e9a6b63942bd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeceb50240b3b95b57c6e9a6b63942bd8">Load</a> (std::string name)</td></tr>
+<tr class="memdesc:aeceb50240b3b95b57c6e9a6b63942bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载音频.  <br /></td></tr>
+<tr class="separator:aeceb50240b3b95b57c6e9a6b63942bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a5cbbdbfb1b8cd9aa110896c21366a358" id="r_a5cbbdbfb1b8cd9aa110896c21366a358"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cbbdbfb1b8cd9aa110896c21366a358">instance</a> ()</td></tr>
+<tr class="memdesc:a5cbbdbfb1b8cd9aa110896c21366a358"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取实例.  <br /></td></tr>
+<tr class="separator:a5cbbdbfb1b8cd9aa110896c21366a358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:ae59d8605c1d706e7bab47d4e8f900d09" id="r_ae59d8605c1d706e7bab47d4e8f900d09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a> ()</td></tr>
+<tr class="separator:ae59d8605c1d706e7bab47d4e8f900d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94dc46723c6d7cf8c81fc3772a842aa" id="r_ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a> ()</td></tr>
+<tr class="memdesc:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭所有音频并且从资源池中移除.  <br /></td></tr>
+<tr class="separator:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592adf59f5722ed1ca10fdc61b648812" id="r_a592adf59f5722ed1ca10fdc61b648812"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a592adf59f5722ed1ca10fdc61b648812">UpdateIndex</a> ()</td></tr>
+<tr class="memdesc:a592adf59f5722ed1ca10fdc61b648812"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新次序 返回之后的下一个下标  <br /></td></tr>
+<tr class="separator:a592adf59f5722ed1ca10fdc61b648812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3d4f4a8d539824c68de5544b483bdb" id="r_aab3d4f4a8d539824c68de5544b483bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3d4f4a8d539824c68de5544b483bdb">Play</a> (bool <a class="el" href="#ad3e0267aba91a8fe4894f13ece31f942">repeat</a>=false)</td></tr>
+<tr class="memdesc:aab3d4f4a8d539824c68de5544b483bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">播放音乐.  <br /></td></tr>
+<tr class="separator:aab3d4f4a8d539824c68de5544b483bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e57c8b541aa50737bf8fc81356d5c5" id="r_a87e57c8b541aa50737bf8fc81356d5c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e57c8b541aa50737bf8fc81356d5c5">Close</a> ()</td></tr>
+<tr class="memdesc:a87e57c8b541aa50737bf8fc81356d5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭当前音乐 释放资源 内部管理  <br /></td></tr>
+<tr class="separator:a87e57c8b541aa50737bf8fc81356d5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace57350b3a4b6e120225a45b40fd7d22" id="r_ace57350b3a4b6e120225a45b40fd7d22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace57350b3a4b6e120225a45b40fd7d22">Next</a> ()</td></tr>
+<tr class="memdesc:ace57350b3a4b6e120225a45b40fd7d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换下一首音乐  <br /></td></tr>
+<tr class="separator:ace57350b3a4b6e120225a45b40fd7d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:abcd2b488a3f75ac40acdf04872df656b" id="r_abcd2b488a3f75ac40acdf04872df656b"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcd2b488a3f75ac40acdf04872df656b">paths</a></td></tr>
+<tr class="memdesc:abcd2b488a3f75ac40acdf04872df656b"><td class="mdescLeft">&#160;</td><td class="mdescRight">由名字访问路径  <br /></td></tr>
+<tr class="separator:abcd2b488a3f75ac40acdf04872df656b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0a367aa4bf96f97906f0d1b2384c23" id="r_aac0a367aa4bf96f97906f0d1b2384c23"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac0a367aa4bf96f97906f0d1b2384c23">indexmap</a></td></tr>
+<tr class="memdesc:aac0a367aa4bf96f97906f0d1b2384c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现播放顺序的存储 值代表次序  <br /></td></tr>
+<tr class="separator:aac0a367aa4bf96f97906f0d1b2384c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c882f0a4a44a9e02b87bcaad95556e4" id="r_a4c882f0a4a44a9e02b87bcaad95556e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c882f0a4a44a9e02b87bcaad95556e4">currentpath</a> =&quot;null&quot;</td></tr>
+<tr class="memdesc:a4c882f0a4a44a9e02b87bcaad95556e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前播放音乐路径  <br /></td></tr>
+<tr class="separator:a4c882f0a4a44a9e02b87bcaad95556e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96758019c92f0a1387dd60ab298c31a1" id="r_a96758019c92f0a1387dd60ab298c31a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96758019c92f0a1387dd60ab298c31a1">SettingVol</a> = 1000</td></tr>
+<tr class="memdesc:a96758019c92f0a1387dd60ab298c31a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局音量系数 原始0~1000 映射到0~SettingVol  <br /></td></tr>
+<tr class="separator:a96758019c92f0a1387dd60ab298c31a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639a4001ecbbfbfbe60b5ed17fe9fbae" id="r_a639a4001ecbbfbfbe60b5ed17fe9fbae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a639a4001ecbbfbfbe60b5ed17fe9fbae">BGVol</a> = 0</td></tr>
+<tr class="memdesc:a639a4001ecbbfbfbe60b5ed17fe9fbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音量  <br /></td></tr>
+<tr class="separator:a639a4001ecbbfbfbe60b5ed17fe9fbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3e0267aba91a8fe4894f13ece31f942" id="r_ad3e0267aba91a8fe4894f13ece31f942"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3e0267aba91a8fe4894f13ece31f942">repeat</a> =false</td></tr>
+<tr class="memdesc:ad3e0267aba91a8fe4894f13ece31f942"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否重复播放  <br /></td></tr>
+<tr class="separator:ad3e0267aba91a8fe4894f13ece31f942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d386ab524ce7ff7ebb28d84b8a7ff1d" id="r_a4d386ab524ce7ff7ebb28d84b8a7ff1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d386ab524ce7ff7ebb28d84b8a7ff1d">random</a> = false</td></tr>
+<tr class="memdesc:a4d386ab524ce7ff7ebb28d84b8a7ff1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否随机播放  <br /></td></tr>
+<tr class="separator:a4d386ab524ce7ff7ebb28d84b8a7ff1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f53e653e6209330f3c6795f3036ef3" id="r_a24f53e653e6209330f3c6795f3036ef3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f53e653e6209330f3c6795f3036ef3">next</a> = false</td></tr>
+<tr class="memdesc:a24f53e653e6209330f3c6795f3036ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">外部访问next只是设置符号位  <br /></td></tr>
+<tr class="separator:a24f53e653e6209330f3c6795f3036ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a7ddede3eced0e6a695dec1c95d2999cf" id="r_a7ddede3eced0e6a695dec1c95d2999cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_audio_manager.html">AudioManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ddede3eced0e6a695dec1c95d2999cf">manager</a> = nullptr</td></tr>
+<tr class="separator:a7ddede3eced0e6a695dec1c95d2999cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bce5de0101c3dc2f0ca5268666b7c7" id="r_a09bce5de0101c3dc2f0ca5268666b7c7"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09bce5de0101c3dc2f0ca5268666b7c7">m_Mutex</a></td></tr>
+<tr class="separator:a09bce5de0101c3dc2f0ca5268666b7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>全局音频管理 单例懒汉模式 </p>
+<p>只支持播放背景音乐 一次一首.</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_resource_manager.html" title="资源管理器 单例懒汉模式">ResourceManager</a> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="ae59d8605c1d706e7bab47d4e8f900d09" name="ae59d8605c1d706e7bab47d4e8f900d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59d8605c1d706e7bab47d4e8f900d09">&#9670;&#160;</a></span>AudioManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioManager::AudioManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad94dc46723c6d7cf8c81fc3772a842aa" name="ad94dc46723c6d7cf8c81fc3772a842aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94dc46723c6d7cf8c81fc3772a842aa">&#9670;&#160;</a></span>~AudioManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AudioManager::~AudioManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭所有音频并且从资源池中移除. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a87e57c8b541aa50737bf8fc81356d5c5" name="a87e57c8b541aa50737bf8fc81356d5c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e57c8b541aa50737bf8fc81356d5c5">&#9670;&#160;</a></span>Close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>关闭当前音乐 释放资源 内部管理 </p>
+<p>关闭当前正在播放的音频.</p>
+<p>并且释放当前资源. </p>
+
+</div>
+</div>
+<a id="af92e3ac93bc9d6d5065b1c4290924616" name="af92e3ac93bc9d6d5065b1c4290924616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92e3ac93bc9d6d5065b1c4290924616">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化. </p>
+<p>提前加载音乐 </p>
+
+</div>
+</div>
+<a id="a5cbbdbfb1b8cd9aa110896c21366a358" name="a5cbbdbfb1b8cd9aa110896c21366a358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cbbdbfb1b8cd9aa110896c21366a358">&#9670;&#160;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_manager.html">AudioManager</a> * AudioManager::instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取实例. </p>
+<dl class="section return"><dt>返回</dt><dd>实例指针 </dd></dl>
+
+</div>
+</div>
+<a id="aeceb50240b3b95b57c6e9a6b63942bd8" name="aeceb50240b3b95b57c6e9a6b63942bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeceb50240b3b95b57c6e9a6b63942bd8">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载音频. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">音频名称</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ace57350b3a4b6e120225a45b40fd7d22" name="ace57350b3a4b6e120225a45b40fd7d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace57350b3a4b6e120225a45b40fd7d22">&#9670;&#160;</a></span>Next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Next </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>切换下一首音乐 </p>
+<p>获取下一次播放的次序. </p>
+
+</div>
+</div>
+<a id="accac448050193d2a502d8940461aa7b3" name="accac448050193d2a502d8940461aa7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accac448050193d2a502d8940461aa7b3">&#9670;&#160;</a></span>NextSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::NextSound </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>只有调用这个函数才会切换到下一首并播放. </p>
+
+</div>
+</div>
+<a id="a3b280d7fe49b1ab6495f87921593d5f8" name="a3b280d7fe49b1ab6495f87921593d5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b280d7fe49b1ab6495f87921593d5f8">&#9670;&#160;</a></span>Pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Pause </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>暂停音乐 </p>
+
+</div>
+</div>
+<a id="aab3d4f4a8d539824c68de5544b483bdb" name="aab3d4f4a8d539824c68de5544b483bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3d4f4a8d539824c68de5544b483bdb">&#9670;&#160;</a></span>Play() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Play </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>repeat</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>播放音乐. </p>
+<p>播放下一首 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">是否重复</td><td>默认不重复 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0d932d3b245db333f09776476f365c46" name="a0d932d3b245db333f09776476f365c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d932d3b245db333f09776476f365c46">&#9670;&#160;</a></span>Play() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Play </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>repeat</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>播放音乐. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">音频名称</td><td></td></tr>
+    <tr><td class="paramname">是否重复播放</td><td>默认不重复 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a530e8a8725982a10a1591e56191974e4" name="a530e8a8725982a10a1591e56191974e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530e8a8725982a10a1591e56191974e4">&#9670;&#160;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Remove </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除音乐资源. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">音频名字</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2211f8374eba7a641bf081f4a664b036" name="a2211f8374eba7a641bf081f4a664b036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2211f8374eba7a641bf081f4a664b036">&#9670;&#160;</a></span>Resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Resume </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>继续音乐 </p>
+
+</div>
+</div>
+<a id="ae230c1a15693d201e36892c8b5ce07e7" name="ae230c1a15693d201e36892c8b5ce07e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae230c1a15693d201e36892c8b5ce07e7">&#9670;&#160;</a></span>SetBGVolume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::SetBGVolume </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>vol</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置背影音量. </p>
+<p>受全局音量影响 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">设置音量</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08d41e481f2113f7acbe37a948777949" name="a08d41e481f2113f7acbe37a948777949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d41e481f2113f7acbe37a948777949">&#9670;&#160;</a></span>SetRandom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::SetRandom </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>random</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置是否随机播放. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">是否随机播放</td><td>ture是 false否 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a36226bb35e04af8290d408d1d4fbaadf" name="a36226bb35e04af8290d408d1d4fbaadf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36226bb35e04af8290d408d1d4fbaadf">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioManager::Stop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止播放. </p>
+
+</div>
+</div>
+<a id="a592adf59f5722ed1ca10fdc61b648812" name="a592adf59f5722ed1ca10fdc61b648812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592adf59f5722ed1ca10fdc61b648812">&#9670;&#160;</a></span>UpdateIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioManager::UpdateIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新次序 返回之后的下一个下标 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a639a4001ecbbfbfbe60b5ed17fe9fbae" name="a639a4001ecbbfbfbe60b5ed17fe9fbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639a4001ecbbfbfbe60b5ed17fe9fbae">&#9670;&#160;</a></span>BGVol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioManager::BGVol = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音量 </p>
+
+</div>
+</div>
+<a id="a4c882f0a4a44a9e02b87bcaad95556e4" name="a4c882f0a4a44a9e02b87bcaad95556e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c882f0a4a44a9e02b87bcaad95556e4">&#9670;&#160;</a></span>currentpath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string AudioManager::currentpath =&quot;null&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前播放音乐路径 </p>
+
+</div>
+</div>
+<a id="aac0a367aa4bf96f97906f0d1b2384c23" name="aac0a367aa4bf96f97906f0d1b2384c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0a367aa4bf96f97906f0d1b2384c23">&#9670;&#160;</a></span>indexmap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string,int &gt; AudioManager::indexmap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现播放顺序的存储 值代表次序 </p>
+
+</div>
+</div>
+<a id="a09bce5de0101c3dc2f0ca5268666b7c7" name="a09bce5de0101c3dc2f0ca5268666b7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bce5de0101c3dc2f0ca5268666b7c7">&#9670;&#160;</a></span>m_Mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex AudioManager::m_Mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ddede3eced0e6a695dec1c95d2999cf" name="a7ddede3eced0e6a695dec1c95d2999cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ddede3eced0e6a695dec1c95d2999cf">&#9670;&#160;</a></span>manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_audio_manager.html">AudioManager</a> * AudioManager::manager = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24f53e653e6209330f3c6795f3036ef3" name="a24f53e653e6209330f3c6795f3036ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f53e653e6209330f3c6795f3036ef3">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::next = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>外部访问next只是设置符号位 </p>
+
+</div>
+</div>
+<a id="abcd2b488a3f75ac40acdf04872df656b" name="abcd2b488a3f75ac40acdf04872df656b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd2b488a3f75ac40acdf04872df656b">&#9670;&#160;</a></span>paths</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt; std::string, std::string &gt; AudioManager::paths</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>由名字访问路径 </p>
+
+</div>
+</div>
+<a id="a4d386ab524ce7ff7ebb28d84b8a7ff1d" name="a4d386ab524ce7ff7ebb28d84b8a7ff1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d386ab524ce7ff7ebb28d84b8a7ff1d">&#9670;&#160;</a></span>random</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::random = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否随机播放 </p>
+
+</div>
+</div>
+<a id="ad3e0267aba91a8fe4894f13ece31f942" name="ad3e0267aba91a8fe4894f13ece31f942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3e0267aba91a8fe4894f13ece31f942">&#9670;&#160;</a></span>repeat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioManager::repeat =false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否重复播放 </p>
+
+</div>
+</div>
+<a id="a96758019c92f0a1387dd60ab298c31a1" name="a96758019c92f0a1387dd60ab298c31a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96758019c92f0a1387dd60ab298c31a1">&#9670;&#160;</a></span>SettingVol</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioManager::SettingVol = 1000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全局音量系数 原始0~1000 映射到0~SettingVol </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_audio_manager.html">AudioManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

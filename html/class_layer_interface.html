@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: LayerInterface类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_layer_interface.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_layer_interface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">LayerInterface类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>实现图层顺序接口 <br  />
+  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_visual_interface_8h_source.html">VisualInterface.h</a>&gt;</code></p>
+<div class="dynheader">
+类 LayerInterface 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_layer_interface.png" usemap="#LayerInterface_map" alt=""/>
+  <map id="LayerInterface_map" name="LayerInterface_map">
+<area href="class_particle.html" title="粒子组件" alt="Particle" shape="rect" coords="0,56,101,80"/>
+<area href="class_sprite_renderer.html" title="渲染组件(2D)." alt="SpriteRenderer" shape="rect" coords="111,56,212,80"/>
+<area href="class_widget.html" title="基础小部件" alt="Widget" shape="rect" coords="277,56,378,80"/>
+<area href="class_bar.html" title="滑动条部件" alt="Bar" shape="rect" coords="55,112,156,136"/>
+<area href="class_image.html" title="图像部件." alt="Image" shape="rect" coords="166,112,267,136"/>
+<area href="class_panel.html" title="容器面板基类." alt="Panel" shape="rect" coords="388,112,489,136"/>
+<area href="class_text.html" title="文本部件." alt="Text" shape="rect" coords="499,112,600,136"/>
+<area href="class_button.html" title="按钮委托(多播没有参数)" alt="Button" shape="rect" coords="166,168,267,192"/>
+<area href="class_grid_panel.html" title="网格面板." alt="GridPanel" shape="rect" coords="277,168,378,192"/>
+<area href="class_horizontal_panel.html" title="水平面板." alt="HorizontalPanel" shape="rect" coords="388,168,489,192"/>
+<area href="class_vertical_panel.html" title="垂直面板." alt="VerticalPanel" shape="rect" coords="499,168,600,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a5e9ef4a5b674ff027d411cc002cfb33e" id="r_a5e9ef4a5b674ff027d411cc002cfb33e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e9ef4a5b674ff027d411cc002cfb33e">LayerInterface</a> ()</td></tr>
+<tr class="memdesc:a5e9ef4a5b674ff027d411cc002cfb33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造图层顺序接口  <br /></td></tr>
+<tr class="separator:a5e9ef4a5b674ff027d411cc002cfb33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8361c166d0f8d4b4275fddb2ac91ef" id="r_a6f8361c166d0f8d4b4275fddb2ac91ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8361c166d0f8d4b4275fddb2ac91ef">~LayerInterface</a> ()</td></tr>
+<tr class="memdesc:a6f8361c166d0f8d4b4275fddb2ac91ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构图层顺序接口，从world图层顺序容器中删去这个类  <br /></td></tr>
+<tr class="separator:a6f8361c166d0f8d4b4275fddb2ac91ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992ffa9e1f8946d21ba81c1845fc2b42" id="r_a992ffa9e1f8946d21ba81c1845fc2b42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a992ffa9e1f8946d21ba81c1845fc2b42">SetLayer</a> (int _layer)</td></tr>
+<tr class="memdesc:a992ffa9e1f8946d21ba81c1845fc2b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置图层层级 要实现必须先把排好序的容器中删除已经排好序的对象，重新插入已经改变好的对象  <br /></td></tr>
+<tr class="separator:a992ffa9e1f8946d21ba81c1845fc2b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0bb8c0c75fa5f9b18b7f49370cb5488" id="r_aa0bb8c0c75fa5f9b18b7f49370cb5488"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0bb8c0c75fa5f9b18b7f49370cb5488">GetLayer</a> () const</td></tr>
+<tr class="memdesc:aa0bb8c0c75fa5f9b18b7f49370cb5488"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取图层层级  <br /></td></tr>
+<tr class="separator:aa0bb8c0c75fa5f9b18b7f49370cb5488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90936f07fccd736592d3bd472df7fc7b" id="r_a90936f07fccd736592d3bd472df7fc7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90936f07fccd736592d3bd472df7fc7b">Render</a> ()=0</td></tr>
+<tr class="memdesc:a90936f07fccd736592d3bd472df7fc7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">纯虚函数，继承的类都有它来实现渲染，world默认遍历函数实现渲染  <br /></td></tr>
+<tr class="separator:a90936f07fccd736592d3bd472df7fc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a6373b3745e15c9b2fb1d475d24bd7a41" id="r_a6373b3745e15c9b2fb1d475d24bd7a41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6373b3745e15c9b2fb1d475d24bd7a41">layer</a> = 0</td></tr>
+<tr class="memdesc:a6373b3745e15c9b2fb1d475d24bd7a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">图层层级 默认同一层级  <br /></td></tr>
+<tr class="separator:a6373b3745e15c9b2fb1d475d24bd7a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>实现图层顺序接口 <br  />
+ </p>
+<dl class="section remark"><dt>备注</dt><dd>想要实现图层顺序只要继承这个类 同一层级的顺序看内部实现 实现方法:自定义set容器的排序方法 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a5e9ef4a5b674ff027d411cc002cfb33e" name="a5e9ef4a5b674ff027d411cc002cfb33e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9ef4a5b674ff027d411cc002cfb33e">&#9670;&#160;</a></span>LayerInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LayerInterface::LayerInterface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造图层顺序接口 </p>
+
+</div>
+</div>
+<a id="a6f8361c166d0f8d4b4275fddb2ac91ef" name="a6f8361c166d0f8d4b4275fddb2ac91ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8361c166d0f8d4b4275fddb2ac91ef">&#9670;&#160;</a></span>~LayerInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LayerInterface::~LayerInterface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>析构图层顺序接口，从world图层顺序容器中删去这个类 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aa0bb8c0c75fa5f9b18b7f49370cb5488" name="aa0bb8c0c75fa5f9b18b7f49370cb5488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bb8c0c75fa5f9b18b7f49370cb5488">&#9670;&#160;</a></span>GetLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LayerInterface::GetLayer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取图层层级 </p>
+<dl class="section return"><dt>返回</dt><dd>图层层级 </dd></dl>
+
+</div>
+</div>
+<a id="a90936f07fccd736592d3bd472df7fc7b" name="a90936f07fccd736592d3bd472df7fc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90936f07fccd736592d3bd472df7fc7b">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void LayerInterface::Render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>纯虚函数，继承的类都有它来实现渲染，world默认遍历函数实现渲染 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_sprite_renderer.html#a476019c96e2119d73d16b0db30c0bc7c" title="渲染图片到句柄上.">SpriteRenderer::Render()</a> </dd></dl>
+
+<p>在 <a class="el" href="class_bar.html#a99d072f763db6e3e32d1c547fac39f47">Bar</a>, <a class="el" href="class_image.html#aebfe7492a761107a173777b656a967f9">Image</a>, <a class="el" href="class_particle.html#a571f021ec066d579fab391fd824a240e">Particle</a>, <a class="el" href="class_sprite_renderer.html#a476019c96e2119d73d16b0db30c0bc7c">SpriteRenderer</a>, <a class="el" href="class_text.html#a2864bb0c15d6c1599d4c67778422dcd0">Text</a> , 以及 <a class="el" href="class_widget.html#a3f912a54fc2dac22c71ecbd5fca58273">Widget</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a992ffa9e1f8946d21ba81c1845fc2b42" name="a992ffa9e1f8946d21ba81c1845fc2b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992ffa9e1f8946d21ba81c1845fc2b42">&#9670;&#160;</a></span>SetLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LayerInterface::SetLayer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_layer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置图层层级 要实现必须先把排好序的容器中删除已经排好序的对象，重新插入已经改变好的对象 </p>
+<dl class="section remark"><dt>备注</dt><dd>尽量在构造或BeginPlay函数中使用，禁止绑定到按键映射 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_layer</td><td>图层层级 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a6373b3745e15c9b2fb1d475d24bd7a41" name="a6373b3745e15c9b2fb1d475d24bd7a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6373b3745e15c9b2fb1d475d24bd7a41">&#9670;&#160;</a></span>layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LayerInterface::layer = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图层层级 默认同一层级 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_layer_interface.html">LayerInterface</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

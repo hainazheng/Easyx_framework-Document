@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: UniCastDelegate&lt; R, Args &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_uni_cast_delegate.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_uni_cast_delegate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">UniCastDelegate&lt; R, Args &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>单播委托.  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_delegate_8h_source.html">Delegate.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac626d6c8af4417d09581412101cd0a03" id="r_ac626d6c8af4417d09581412101cd0a03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac626d6c8af4417d09581412101cd0a03">Bind</a> (std::function&lt; R(Args...)&gt; <a class="el" href="#a3ef49e7524b5fb9d200fd78d95eb9173">callback</a>)</td></tr>
+<tr class="memdesc:ac626d6c8af4417d09581412101cd0a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">进行绑定  <br /></td></tr>
+<tr class="separator:ac626d6c8af4417d09581412101cd0a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ab30cbff4810b46428630a54cf8433" id="r_ae6ab30cbff4810b46428630a54cf8433"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae6ab30cbff4810b46428630a54cf8433"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae6ab30cbff4810b46428630a54cf8433">Bind</a> (T *obj, R(T::*func)(Args...))</td></tr>
+<tr class="separator:ae6ab30cbff4810b46428630a54cf8433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad180603dc1335caf346fc99a224fd76d" id="r_ad180603dc1335caf346fc99a224fd76d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad180603dc1335caf346fc99a224fd76d">UnBind</a> ()</td></tr>
+<tr class="memdesc:ad180603dc1335caf346fc99a224fd76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除绑定  <br /></td></tr>
+<tr class="separator:ad180603dc1335caf346fc99a224fd76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd8b8fe56d296d7721b4a1478308ab6" id="r_a1cd8b8fe56d296d7721b4a1478308ab6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cd8b8fe56d296d7721b4a1478308ab6">IsBinded</a> () const</td></tr>
+<tr class="memdesc:a1cd8b8fe56d296d7721b4a1478308ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否有绑定的函数  <br /></td></tr>
+<tr class="separator:a1cd8b8fe56d296d7721b4a1478308ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec05ff14be24c576e0b9786902151b83" id="r_aec05ff14be24c576e0b9786902151b83"><td class="memItemLeft" align="right" valign="top">R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec05ff14be24c576e0b9786902151b83">Execute</a> (Args... args)</td></tr>
+<tr class="memdesc:aec05ff14be24c576e0b9786902151b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">单播执行  <br /></td></tr>
+<tr class="separator:aec05ff14be24c576e0b9786902151b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b28c72db729b90235613cd19f8bbc07" id="r_a6b28c72db729b90235613cd19f8bbc07"><td class="memItemLeft" align="right" valign="top">R&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b28c72db729b90235613cd19f8bbc07">operator()</a> (Args... args)</td></tr>
+<tr class="separator:a6b28c72db729b90235613cd19f8bbc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a3ef49e7524b5fb9d200fd78d95eb9173" id="r_a3ef49e7524b5fb9d200fd78d95eb9173"><td class="memItemLeft" align="right" valign="top">std::function&lt; R(Args...)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef49e7524b5fb9d200fd78d95eb9173">callback</a></td></tr>
+<tr class="memdesc:a3ef49e7524b5fb9d200fd78d95eb9173"><td class="mdescLeft">&#160;</td><td class="mdescRight">这里Args...对类型参数列表进行扩展 定义的时候  <br /></td></tr>
+<tr class="separator:a3ef49e7524b5fb9d200fd78d95eb9173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename R = void, typename... Args&gt;<br />
+class UniCastDelegate&lt; R, Args &gt;</div><p>单播委托. </p>
+<p><a class="el" href="class_uni_cast_delegate.html" title="单播委托.">UniCastDelegate</a>&lt;返回值类型，参数类型...&gt; </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="_delegate_8h.html#a865a884db11201b7bd4cec1280fb19e7">DECLARE_MULTI_PARAM_WITH_RETURN_UNICAST_DELEGATE(name,R,...)</a> </dd>
+<dd>
+<a class="el" href="_delegate_8h.html#a7193ea5522689eeba5ec76b27fb0ed20">DECLARE_NO_PARAM_WITH_RETURN_UNICAST_DELEGATE(name,R)</a> </dd>
+<dd>
+<a class="el" href="_delegate_8h.html#a1a6cbc206a06bff47445f624d09727bc">DECLARE_MULTI_PARAM_UNICAST_DELEGATE(name,...)</a> </dd>
+<dd>
+<a class="el" href="_delegate_8h.html#ad82d6472270613d25c95f960f72f782c">DECLARE_NO_PARAM_UNICAST_DELEGATE</a>(name </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ac626d6c8af4417d09581412101cd0a03" name="ac626d6c8af4417d09581412101cd0a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac626d6c8af4417d09581412101cd0a03">&#9670;&#160;</a></span>Bind() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::Bind </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; R(Args...)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>进行绑定 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>[lambda函数] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6ab30cbff4810b46428630a54cf8433" name="ae6ab30cbff4810b46428630a54cf8433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ab30cbff4810b46428630a54cf8433">&#9670;&#160;</a></span>Bind() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::Bind </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">R(T::*</td>          <td class="paramname"><span class="paramname"><em>func&#160;</em></span>)(Args...)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>函数对象  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec05ff14be24c576e0b9786902151b83" name="aec05ff14be24c576e0b9786902151b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec05ff14be24c576e0b9786902151b83">&#9670;&#160;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R , typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">R <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::Execute </td>
+          <td>(</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单播执行 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>需要的参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1cd8b8fe56d296d7721b4a1478308ab6" name="a1cd8b8fe56d296d7721b4a1478308ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd8b8fe56d296d7721b4a1478308ab6">&#9670;&#160;</a></span>IsBinded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::IsBinded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否有绑定的函数 </p>
+
+</div>
+</div>
+<a id="a6b28c72db729b90235613cd19f8bbc07" name="a6b28c72db729b90235613cd19f8bbc07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b28c72db729b90235613cd19f8bbc07">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">R <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>需要的参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad180603dc1335caf346fc99a224fd76d" name="ad180603dc1335caf346fc99a224fd76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad180603dc1335caf346fc99a224fd76d">&#9670;&#160;</a></span>UnBind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::UnBind </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解除绑定 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a3ef49e7524b5fb9d200fd78d95eb9173" name="a3ef49e7524b5fb9d200fd78d95eb9173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef49e7524b5fb9d200fd78d95eb9173">&#9670;&#160;</a></span>callback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R  = void, typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;R(Args...)&gt; <a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a>&lt; R, Args &gt;::callback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>这里Args...对类型参数列表进行扩展 定义的时候 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_uni_cast_delegate.html">UniCastDelegate</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

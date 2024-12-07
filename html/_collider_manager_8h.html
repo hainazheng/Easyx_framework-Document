@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/ColliderManager.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_collider_manager_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/ColliderManager.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>碰撞管理器  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;unordered_map&quot;</code><br />
+<code>#include &quot;unordered_set&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div>
+<p><a href="_collider_manager_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collider_manager.html">ColliderManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞管理器  <a href="class_collider_manager.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a61f505955faacff3b761fcc71f7d5ee0" id="r_a61f505955faacff3b761fcc71f7d5ee0"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">Default</a>
+, <a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">sunshine</a>
+, <a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d">plateform</a>
+, <a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9">Zomble</a>
+, <br />
+&#160;&#160;<a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c">plant</a>
+, <a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e">Bullet</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a61f505955faacff3b761fcc71f7d5ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞种类 需要用户自己设置种类.  <a href="#a61f505955faacff3b761fcc71f7d5ee0">更多...</a><br /></td></tr>
+<tr class="separator:a61f505955faacff3b761fcc71f7d5ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>碰撞管理器 </p>
+<dl class="section author"><dt>作者</dt><dd>zhn </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a61f505955faacff3b761fcc71f7d5ee0" name="a61f505955faacff3b761fcc71f7d5ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f505955faacff3b761fcc71f7d5ee0">&#9670;&#160;</a></span>CollisionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞种类 需要用户自己设置种类. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67" name="a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67"></a>Default&#160;</td><td class="fielddoc"><p>默认种类 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90" name="a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90"></a>sunshine&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d" name="a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d"></a>plateform&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9" name="a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9"></a>Zomble&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c" name="a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c"></a>plant&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e" name="a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e"></a>Bullet&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_collider_manager_8h.html">ColliderManager.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

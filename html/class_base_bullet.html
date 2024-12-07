@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: BaseBullet类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_base_bullet.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_base_bullet-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">BaseBullet类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_base_bullets_8h_source.html">BaseBullets.h</a>&gt;</code></p>
+<div class="dynheader">
+类 BaseBullet 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_base_bullet.png" usemap="#BaseBullet_map" alt=""/>
+  <map id="BaseBullet_map" name="BaseBullet_map">
+<area href="class_sprite.html" title="物体派生类(精灵类）" alt="Sprite" shape="rect" coords="0,112,71,136"/>
+<area href="class_object.html" title="游戏对象基类." alt="Object" shape="rect" coords="0,56,71,80"/>
+<area href="classbase.html" title="基类." alt="base" shape="rect" coords="0,0,71,24"/>
+<area href="class_pea.html" alt="Pea" shape="rect" coords="0,224,71,248"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a29cb9f6940d7d283f89050cd8bd9857b" id="r_a29cb9f6940d7d283f89050cd8bd9857b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29cb9f6940d7d283f89050cd8bd9857b">BaseBullet</a> ()</td></tr>
+<tr class="separator:a29cb9f6940d7d283f89050cd8bd9857b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea78c03ded45e3b32a29a20aba90396a" id="r_aea78c03ded45e3b32a29a20aba90396a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea78c03ded45e3b32a29a20aba90396a">BeginPlay</a> ()</td></tr>
+<tr class="memdesc:aea78c03ded45e3b32a29a20aba90396a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置虚函数，把不能写在构造却需要优先实现的写在这  <br /></td></tr>
+<tr class="separator:aea78c03ded45e3b32a29a20aba90396a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359b2ce3b5fa68e273dee43e861db01d" id="r_a359b2ce3b5fa68e273dee43e861db01d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a359b2ce3b5fa68e273dee43e861db01d">Update</a> (float <a class="el" href="class_sprite.html#a23b1ad173e2179e991554c68a51dd3c7">deltaTime</a>)</td></tr>
+<tr class="memdesc:a359b2ce3b5fa68e273dee43e861db01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现闪烁功能  <br /></td></tr>
+<tr class="separator:a359b2ce3b5fa68e273dee43e861db01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b7675d556ab2d682f3b10cbc424dc0" id="r_a94b7675d556ab2d682f3b10cbc424dc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b7675d556ab2d682f3b10cbc424dc0">OnOverlap</a> (<a class="el" href="class_collider.html">Collider</a> *overlapcomponentself, <a class="el" href="class_collider.html">Collider</a> *othercomponent, <a class="el" href="class_object.html">Object</a> *otherobject)</td></tr>
+<tr class="separator:a94b7675d556ab2d682f3b10cbc424dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_sprite"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_sprite')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_sprite.html">Sprite</a></td></tr>
+<tr class="memitem:a12cba3ac1868418add3c4d95ce87e615 inherit pub_methods_class_sprite" id="r_a12cba3ac1868418add3c4d95ce87e615"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a12cba3ac1868418add3c4d95ce87e615">Sprite</a> ()</td></tr>
+<tr class="memdesc:a12cba3ac1868418add3c4d95ce87e615 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建渲染组件，加入世界容器  <br /></td></tr>
+<tr class="separator:a12cba3ac1868418add3c4d95ce87e615 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85562edb2581761300881f1d658e3bc9 inherit pub_methods_class_sprite" id="r_a85562edb2581761300881f1d658e3bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#a85562edb2581761300881f1d658e3bc9">LoadSprite</a> (std::string)</td></tr>
+<tr class="memdesc:a85562edb2581761300881f1d658e3bc9 inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载图片资源.  <br /></td></tr>
+<tr class="separator:a85562edb2581761300881f1d658e3bc9 inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92571097af9b0d1920ecdcfb663b51c inherit pub_methods_class_sprite" id="r_ae92571097af9b0d1920ecdcfb663b51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sprite.html#ae92571097af9b0d1920ecdcfb663b51c">Blink</a> (float duration=0.2f, COLORREF col=BLACK, int level=60)</td></tr>
+<tr class="memdesc:ae92571097af9b0d1920ecdcfb663b51c inherit pub_methods_class_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">闪烁效果.  <br /></td></tr>
+<tr class="separator:ae92571097af9b0d1920ecdcfb663b51c inherit pub_methods_class_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_object')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object" id="r_a40860402e64d8008fb42329df7097cdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a40860402e64d8008fb42329df7097cdb">Object</a> ()</td></tr>
+<tr class="memdesc:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">只是一个场景根组件(带有场景属性)，不需要遍历，所以不需要加入容器  <br /></td></tr>
+<tr class="separator:a40860402e64d8008fb42329df7097cdb inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object" id="r_ae8f5483f459e46687bd01e6f9977afd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ae8f5483f459e46687bd01e6f9977afd3">~Object</a> ()</td></tr>
+<tr class="memdesc:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">组件删除的控制权在对象中  <br /></td></tr>
+<tr class="separator:ae8f5483f459e46687bd01e6f9977afd3 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec13a62ca13d2b7deb28452fa5008f8 inherit pub_methods_class_object" id="r_afec13a62ca13d2b7deb28452fa5008f8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#afec13a62ca13d2b7deb28452fa5008f8">EndPlay</a> ()</td></tr>
+<tr class="memdesc:afec13a62ca13d2b7deb28452fa5008f8 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置虚函数，把不能写在析构却需要优先实现的写在这 例如delete this  <br /></td></tr>
+<tr class="separator:afec13a62ca13d2b7deb28452fa5008f8 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad123f67a6152e8bc3fecff9875d0076b inherit pub_methods_class_object" id="r_ad123f67a6152e8bc3fecff9875d0076b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ad123f67a6152e8bc3fecff9875d0076b">RegisterComponent</a> (<a class="el" href="class_component.html">Component</a> *pCom)</td></tr>
+<tr class="memdesc:ad123f67a6152e8bc3fecff9875d0076b inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">在物体容器中注册组件.  <br /></td></tr>
+<tr class="separator:ad123f67a6152e8bc3fecff9875d0076b inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd6a9980d07d16cc3a97898b4b87b6d inherit pub_methods_class_object" id="r_a7dd6a9980d07d16cc3a97898b4b87b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a7dd6a9980d07d16cc3a97898b4b87b6d">UnregisterComponent</a> (<a class="el" href="class_component.html">Component</a> *pCom)</td></tr>
+<tr class="memdesc:a7dd6a9980d07d16cc3a97898b4b87b6d inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">从物体组件容器中删除相应组件.  <br /></td></tr>
+<tr class="separator:a7dd6a9980d07d16cc3a97898b4b87b6d inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90eb4903e90c87b59f07e0e438100482 inherit pub_methods_class_object" id="r_a90eb4903e90c87b59f07e0e438100482"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a90eb4903e90c87b59f07e0e438100482 inherit pub_methods_class_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_object.html#a90eb4903e90c87b59f07e0e438100482">GetComponentByClass</a> ()</td></tr>
+<tr class="memdesc:a90eb4903e90c87b59f07e0e438100482 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">访问物体对象的跟他匹配的组件.  <br /></td></tr>
+<tr class="separator:a90eb4903e90c87b59f07e0e438100482 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b213e6df86315f227a6bd664a87b206 inherit pub_methods_class_object" id="r_a3b213e6df86315f227a6bd664a87b206"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a3b213e6df86315f227a6bd664a87b206 inherit pub_methods_class_object"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_object.html#a3b213e6df86315f227a6bd664a87b206">ConstructComponent</a> ()</td></tr>
+<tr class="memdesc:a3b213e6df86315f227a6bd664a87b206 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建组件，绑定到对象，并注册到对象容器.  <br /></td></tr>
+<tr class="separator:a3b213e6df86315f227a6bd664a87b206 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2a142c1355eb1cd43560d3f2db2d5e inherit pub_methods_class_object" id="r_a2d2a142c1355eb1cd43560d3f2db2d5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a2d2a142c1355eb1cd43560d3f2db2d5e">AttachTo</a> (<a class="el" href="class_object.html">Object</a> *par)</td></tr>
+<tr class="memdesc:a2d2a142c1355eb1cd43560d3f2db2d5e inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置所属物体 实现物体绑定.  <br /></td></tr>
+<tr class="separator:a2d2a142c1355eb1cd43560d3f2db2d5e inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e4d512b76c00d932e2a445106c20ed inherit pub_methods_class_object" id="r_ac2e4d512b76c00d932e2a445106c20ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ac2e4d512b76c00d932e2a445106c20ed">DetachForm</a> (<a class="el" href="class_object.html">Object</a> *par)</td></tr>
+<tr class="memdesc:ac2e4d512b76c00d932e2a445106c20ed inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除所属物体 解除物体绑定.  <br /></td></tr>
+<tr class="separator:ac2e4d512b76c00d932e2a445106c20ed inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaafb1faa29aeead516d8e57e48deedf inherit pub_methods_class_object" id="r_adaafb1faa29aeead516d8e57e48deedf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#adaafb1faa29aeead516d8e57e48deedf">SetRootComponent</a> (<a class="el" href="class_scene_component.html">SceneComponent</a> *newroot)</td></tr>
+<tr class="memdesc:adaafb1faa29aeead516d8e57e48deedf inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置场景根组件，物体以哪个组件场景属性作为自己的场景属性.  <br /></td></tr>
+<tr class="separator:adaafb1faa29aeead516d8e57e48deedf inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc113651aab71178e254d7d7f3b1e53b inherit pub_methods_class_object" id="r_adc113651aab71178e254d7d7f3b1e53b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#adc113651aab71178e254d7d7f3b1e53b">Destroy</a> ()</td></tr>
+<tr class="memdesc:adc113651aab71178e254d7d7f3b1e53b inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">用深度优先遍历进行遍历，借助栈来实现，实现物体及其所有绑定的物体类销毁  <br /></td></tr>
+<tr class="separator:adc113651aab71178e254d7d7f3b1e53b inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c02d5fd9a6bfd060be78862b61f9074 inherit pub_methods_class_object" id="r_a4c02d5fd9a6bfd060be78862b61f9074"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a4c02d5fd9a6bfd060be78862b61f9074">GetLocalPosition</a> () const</td></tr>
+<tr class="memdesc:a4c02d5fd9a6bfd060be78862b61f9074 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取物体相对坐标  <br /></td></tr>
+<tr class="separator:a4c02d5fd9a6bfd060be78862b61f9074 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd391b98c0996c70ed89d57cfc146c3 inherit pub_methods_class_object" id="r_a8bd391b98c0996c70ed89d57cfc146c3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a8bd391b98c0996c70ed89d57cfc146c3">GetLocalRotation</a> () const</td></tr>
+<tr class="memdesc:a8bd391b98c0996c70ed89d57cfc146c3 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取物体相对角度  <br /></td></tr>
+<tr class="separator:a8bd391b98c0996c70ed89d57cfc146c3 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6f3efd0942e17971cb260c973a16e8 inherit pub_methods_class_object" id="r_a6f6f3efd0942e17971cb260c973a16e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a6f6f3efd0942e17971cb260c973a16e8">GetLocalScale</a> () const</td></tr>
+<tr class="memdesc:a6f6f3efd0942e17971cb260c973a16e8 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取物体相对缩放大小  <br /></td></tr>
+<tr class="separator:a6f6f3efd0942e17971cb260c973a16e8 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b47d58f71305f3443a414a5998d493 inherit pub_methods_class_object" id="r_a52b47d58f71305f3443a414a5998d493"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a52b47d58f71305f3443a414a5998d493">GetWorldPosition</a> () const</td></tr>
+<tr class="memdesc:a52b47d58f71305f3443a414a5998d493 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归获取物体类的世界坐标  <br /></td></tr>
+<tr class="separator:a52b47d58f71305f3443a414a5998d493 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf6f6d33aadb904fee596ab139fa96d inherit pub_methods_class_object" id="r_abaf6f6d33aadb904fee596ab139fa96d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#abaf6f6d33aadb904fee596ab139fa96d">GetWorldRotation</a> () const</td></tr>
+<tr class="memdesc:abaf6f6d33aadb904fee596ab139fa96d inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归获取物体类的世界旋转角度  <br /></td></tr>
+<tr class="separator:abaf6f6d33aadb904fee596ab139fa96d inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b701cd0fd52b69f46c4c749b9e81bf inherit pub_methods_class_object" id="r_ae1b701cd0fd52b69f46c4c749b9e81bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ae1b701cd0fd52b69f46c4c749b9e81bf">GetWorldScale</a> () const</td></tr>
+<tr class="memdesc:ae1b701cd0fd52b69f46c4c749b9e81bf inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归获取物体类的世界缩放大小  <br /></td></tr>
+<tr class="separator:ae1b701cd0fd52b69f46c4c749b9e81bf inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049f6ef4b1e6c15eb78470e124081b26 inherit pub_methods_class_object" id="r_a049f6ef4b1e6c15eb78470e124081b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a049f6ef4b1e6c15eb78470e124081b26">SetLocalPosition</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;pos)</td></tr>
+<tr class="memdesc:a049f6ef4b1e6c15eb78470e124081b26 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置物体相对坐标  <br /></td></tr>
+<tr class="separator:a049f6ef4b1e6c15eb78470e124081b26 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dc1d5b50aac3e8956a05238adb6e33 inherit pub_methods_class_object" id="r_a51dc1d5b50aac3e8956a05238adb6e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a51dc1d5b50aac3e8956a05238adb6e33">SetLocalRotation</a> (float rot)</td></tr>
+<tr class="memdesc:a51dc1d5b50aac3e8956a05238adb6e33 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置物体相对角度  <br /></td></tr>
+<tr class="separator:a51dc1d5b50aac3e8956a05238adb6e33 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940f769ee61509aa7334d098af55df5e inherit pub_methods_class_object" id="r_a940f769ee61509aa7334d098af55df5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a940f769ee61509aa7334d098af55df5e">SetLocalScale</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;scale)</td></tr>
+<tr class="memdesc:a940f769ee61509aa7334d098af55df5e inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置物体相对缩放大小  <br /></td></tr>
+<tr class="separator:a940f769ee61509aa7334d098af55df5e inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59a029360c1b9eb5c02091cc5059d26 inherit pub_methods_class_object" id="r_ac59a029360c1b9eb5c02091cc5059d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#ac59a029360c1b9eb5c02091cc5059d26">AddPosition</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;pos)</td></tr>
+<tr class="memdesc:ac59a029360c1b9eb5c02091cc5059d26 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">加上一个坐标  <br /></td></tr>
+<tr class="separator:ac59a029360c1b9eb5c02091cc5059d26 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9d2b32eb88124d1da96ab22f16d3c0 inherit pub_methods_class_object" id="r_aae9d2b32eb88124d1da96ab22f16d3c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#aae9d2b32eb88124d1da96ab22f16d3c0">AddRotation</a> (float rot)</td></tr>
+<tr class="memdesc:aae9d2b32eb88124d1da96ab22f16d3c0 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">加上一个角度  <br /></td></tr>
+<tr class="separator:aae9d2b32eb88124d1da96ab22f16d3c0 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a59757b72f209551c321bf3d0c35d8 inherit pub_methods_class_object" id="r_a71a59757b72f209551c321bf3d0c35d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a71a59757b72f209551c321bf3d0c35d8">DrawDebugPosition</a> () const</td></tr>
+<tr class="memdesc:a71a59757b72f209551c321bf3d0c35d8 inherit pub_methods_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">调试 在画布上显示物体的坐标  <br /></td></tr>
+<tr class="separator:a71a59757b72f209551c321bf3d0c35d8 inherit pub_methods_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classbase')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classbase.html">base</a></td></tr>
+<tr class="memitem:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase" id="r_a3b0362be8b58605e4975b969dd8131a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a3b0362be8b58605e4975b969dd8131a4">base</a> ()</td></tr>
+<tr class="separator:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase" id="r_a28380c406d2ac063fe11950bff012c06"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a28380c406d2ac063fe11950bff012c06">~base</a> ()</td></tr>
+<tr class="separator:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase" id="r_acaf71fb0984c325434465393af6994c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#acaf71fb0984c325434465393af6994c7">GetName</a> () const</td></tr>
+<tr class="separator:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase" id="r_a8e45fd097ee216399bb2216d9f843420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a8e45fd097ee216399bb2216d9f843420">SetName</a> (const std::string &amp;<a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="separator:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a05cff58ed90f7a4924898f6c9e2b6604" id="r_a05cff58ed90f7a4924898f6c9e2b6604"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_renderer.html">SpriteRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05cff58ed90f7a4924898f6c9e2b6604">renderer</a></td></tr>
+<tr class="separator:a05cff58ed90f7a4924898f6c9e2b6604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea0ebca92b3d0c14c1804db881fba96" id="r_a2ea0ebca92b3d0c14c1804db881fba96"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_circle_collider.html">CircleCollider</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ea0ebca92b3d0c14c1804db881fba96">circle</a></td></tr>
+<tr class="separator:a2ea0ebca92b3d0c14c1804db881fba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a234aced84d798cea6154770f2c3792" id="r_a5a234aced84d798cea6154770f2c3792"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a234aced84d798cea6154770f2c3792">damage</a> = 1</td></tr>
+<tr class="separator:a5a234aced84d798cea6154770f2c3792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_object')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_object.html">Object</a></td></tr>
+<tr class="memitem:a9510d8e5ebb92c6be0e53d80ed9c8f94 inherit pro_attribs_class_object" id="r_a9510d8e5ebb92c6be0e53d80ed9c8f94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_component.html">SceneComponent</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_object.html#a9510d8e5ebb92c6be0e53d80ed9c8f94">root</a> = new <a class="el" href="class_scene_component.html">SceneComponent</a></td></tr>
+<tr class="memdesc:a9510d8e5ebb92c6be0e53d80ed9c8f94 inherit pro_attribs_class_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">场景根组件，赋予场景属性 刚创建物体一定同时创建了它的场景组件,不允许改变指向  <br /></td></tr>
+<tr class="separator:a9510d8e5ebb92c6be0e53d80ed9c8f94 inherit pro_attribs_class_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a29cb9f6940d7d283f89050cd8bd9857b" name="a29cb9f6940d7d283f89050cd8bd9857b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cb9f6940d7d283f89050cd8bd9857b">&#9670;&#160;</a></span>BaseBullet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BaseBullet::BaseBullet </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="aea78c03ded45e3b32a29a20aba90396a" name="aea78c03ded45e3b32a29a20aba90396a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea78c03ded45e3b32a29a20aba90396a">&#9670;&#160;</a></span>BeginPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseBullet::BeginPlay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置虚函数，把不能写在构造却需要优先实现的写在这 </p>
+
+<p>重载 <a class="el" href="class_sprite.html#a11843782761805696b921458012ee9b2">Sprite</a> .</p>
+
+</div>
+</div>
+<a id="a94b7675d556ab2d682f3b10cbc424dc0" name="a94b7675d556ab2d682f3b10cbc424dc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b7675d556ab2d682f3b10cbc424dc0">&#9670;&#160;</a></span>OnOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BaseBullet::OnOverlap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>overlapcomponentself</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>othercomponent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>otherobject</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a359b2ce3b5fa68e273dee43e861db01d" name="a359b2ce3b5fa68e273dee43e861db01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a359b2ce3b5fa68e273dee43e861db01d">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void BaseBullet::Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现闪烁功能 </p>
+
+<p>重载 <a class="el" href="class_sprite.html#a5dce25b5ba988d3c5bdb37df5659e6d1">Sprite</a> .</p>
+
+<p>被 <a class="el" href="class_pea.html#a8ecb949c64279517b0cf54150b11f3e8">Pea</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a2ea0ebca92b3d0c14c1804db881fba96" name="a2ea0ebca92b3d0c14c1804db881fba96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea0ebca92b3d0c14c1804db881fba96">&#9670;&#160;</a></span>circle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">class <a class="el" href="class_circle_collider.html">CircleCollider</a>* BaseBullet::circle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a234aced84d798cea6154770f2c3792" name="a5a234aced84d798cea6154770f2c3792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a234aced84d798cea6154770f2c3792">&#9670;&#160;</a></span>damage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BaseBullet::damage = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05cff58ed90f7a4924898f6c9e2b6604" name="a05cff58ed90f7a4924898f6c9e2b6604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05cff58ed90f7a4924898f6c9e2b6604">&#9670;&#160;</a></span>renderer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_sprite_renderer.html">SpriteRenderer</a>* BaseBullet::renderer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_base_bullet.html">BaseBullet</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,828 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: Animation类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_animation.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_animation-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Animation类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>动画委托(无参单播委托)  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_animator_8h_source.html">Animator.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a83f0a16cef7117f187ad596de38dd9d6" id="r_a83f0a16cef7117f187ad596de38dd9d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83f0a16cef7117f187ad596de38dd9d6">Animation</a> ()</td></tr>
+<tr class="memdesc:a83f0a16cef7117f187ad596de38dd9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定时钟  <br /></td></tr>
+<tr class="separator:a83f0a16cef7117f187ad596de38dd9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65514b17f8003f72c2ee99b463bed077" id="r_a65514b17f8003f72c2ee99b463bed077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65514b17f8003f72c2ee99b463bed077">Load</a> (std::string name, <a class="el" href="struct_vector2_d.html">Vector2D</a> delta={ 0, 0 })</td></tr>
+<tr class="memdesc:a65514b17f8003f72c2ee99b463bed077"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载动画资源.  <br /></td></tr>
+<tr class="separator:a65514b17f8003f72c2ee99b463bed077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef47e6edb4914befa1616bc9e363a4ec" id="r_aef47e6edb4914befa1616bc9e363a4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef47e6edb4914befa1616bc9e363a4ec">SetInterval</a> (double interval)</td></tr>
+<tr class="memdesc:aef47e6edb4914befa1616bc9e363a4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置时钟更新索引频率.  <br /></td></tr>
+<tr class="separator:aef47e6edb4914befa1616bc9e363a4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4300449d4b2b402de00f747c20822e7d" id="r_a4300449d4b2b402de00f747c20822e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4300449d4b2b402de00f747c20822e7d">SetIndex</a> (int i)</td></tr>
+<tr class="memdesc:a4300449d4b2b402de00f747c20822e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置动画帧下标.  <br /></td></tr>
+<tr class="separator:a4300449d4b2b402de00f747c20822e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff49efb7cbfad12ccf41ea22493554f" id="r_aeff49efb7cbfad12ccf41ea22493554f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff49efb7cbfad12ccf41ea22493554f">Tick_</a> ()</td></tr>
+<tr class="memdesc:aeff49efb7cbfad12ccf41ea22493554f"><td class="mdescLeft">&#160;</td><td class="mdescRight">时钟执行的函数.  <br /></td></tr>
+<tr class="separator:aeff49efb7cbfad12ccf41ea22493554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad246985efa848b94ecb04831b9e1d237" id="r_ad246985efa848b94ecb04831b9e1d237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad246985efa848b94ecb04831b9e1d237">SetLooping</a> (bool loop)</td></tr>
+<tr class="memdesc:ad246985efa848b94ecb04831b9e1d237"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否循环播放.  <br /></td></tr>
+<tr class="separator:ad246985efa848b94ecb04831b9e1d237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d68bf3d3888b52116d3d87e917941d" id="r_ae4d68bf3d3888b52116d3d87e917941d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d68bf3d3888b52116d3d87e917941d">AddNotification</a> (int <a class="el" href="#a97733e1356071b5d44bd8f107b7a26de">index</a>, AnimationDelegate &amp;event)</td></tr>
+<tr class="memdesc:ae4d68bf3d3888b52116d3d87e917941d"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加动画委托.  <br /></td></tr>
+<tr class="separator:ae4d68bf3d3888b52116d3d87e917941d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ae1e418bc0af971076786db4b5161660d" id="r_ae1e418bc0af971076786db4b5161660d"><td class="memItemLeft" align="right" valign="top">AnimationDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e418bc0af971076786db4b5161660d">OnAnimEnter</a></td></tr>
+<tr class="memdesc:ae1e418bc0af971076786db4b5161660d"><td class="mdescLeft">&#160;</td><td class="mdescRight">进入动画事件  <br /></td></tr>
+<tr class="separator:ae1e418bc0af971076786db4b5161660d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86a4fefa7dc8f00c4c3216858f6272a" id="r_ac86a4fefa7dc8f00c4c3216858f6272a"><td class="memItemLeft" align="right" valign="top">AnimationDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac86a4fefa7dc8f00c4c3216858f6272a">OnAnimExit</a></td></tr>
+<tr class="memdesc:ac86a4fefa7dc8f00c4c3216858f6272a"><td class="mdescLeft">&#160;</td><td class="mdescRight">离开动画事件  <br /></td></tr>
+<tr class="separator:ac86a4fefa7dc8f00c4c3216858f6272a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a22d1203a14aa080d405eef2899687158" id="r_a22d1203a14aa080d405eef2899687158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d1203a14aa080d405eef2899687158">UpdateIndex</a> ()</td></tr>
+<tr class="separator:a22d1203a14aa080d405eef2899687158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aab4cec9b39ea113b7e509d0f4ce0c05a" id="r_aab4cec9b39ea113b7e509d0f4ce0c05a"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab4cec9b39ea113b7e509d0f4ce0c05a">AnimEdge</a></td></tr>
+<tr class="separator:aab4cec9b39ea113b7e509d0f4ce0c05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a312c9595aa7feb40f6dd6d7dd6aaef86" id="r_a312c9595aa7feb40f6dd6d7dd6aaef86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_animator.html">Animator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a312c9595aa7feb40f6dd6d7dd6aaef86">animController</a> = nullptr</td></tr>
+<tr class="memdesc:a312c9595aa7feb40f6dd6d7dd6aaef86"><td class="mdescLeft">&#160;</td><td class="mdescRight">由哪个动画播放器播放  <br /></td></tr>
+<tr class="separator:a312c9595aa7feb40f6dd6d7dd6aaef86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb22a8e3fed81ebe1c11bc0386ff0c42" id="r_acb22a8e3fed81ebe1c11bc0386ff0c42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb22a8e3fed81ebe1c11bc0386ff0c42">offset</a> = { 0,0 }</td></tr>
+<tr class="memdesc:acb22a8e3fed81ebe1c11bc0386ff0c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">像素偏移量  <br /></td></tr>
+<tr class="separator:acb22a8e3fed81ebe1c11bc0386ff0c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20038bc540a55ba9c0ca4929700dea48" id="r_a20038bc540a55ba9c0ca4929700dea48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20038bc540a55ba9c0ca4929700dea48">num</a> = 0</td></tr>
+<tr class="memdesc:a20038bc540a55ba9c0ca4929700dea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画帧数  <br /></td></tr>
+<tr class="separator:a20038bc540a55ba9c0ca4929700dea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97733e1356071b5d44bd8f107b7a26de" id="r_a97733e1356071b5d44bd8f107b7a26de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97733e1356071b5d44bd8f107b7a26de">index</a> = 0</td></tr>
+<tr class="memdesc:a97733e1356071b5d44bd8f107b7a26de"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前帧索引  <br /></td></tr>
+<tr class="separator:a97733e1356071b5d44bd8f107b7a26de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90bb3448679c685d91460405201ffce" id="r_ab90bb3448679c685d91460405201ffce"><td class="memItemLeft" align="right" valign="top">IMAGE **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90bb3448679c685d91460405201ffce">images</a> = nullptr</td></tr>
+<tr class="memdesc:ab90bb3448679c685d91460405201ffce"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画帧数组  <br /></td></tr>
+<tr class="separator:ab90bb3448679c685d91460405201ffce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb76373dceadbb9ec90addf499c36ab" id="r_aabb76373dceadbb9ec90addf499c36ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb76373dceadbb9ec90addf499c36ab">bLooping</a> = true</td></tr>
+<tr class="memdesc:aabb76373dceadbb9ec90addf499c36ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否可循环播放  <br /></td></tr>
+<tr class="separator:aabb76373dceadbb9ec90addf499c36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5af0b450e51bd672955cbcf07a7255" id="r_aea5af0b450e51bd672955cbcf07a7255"><td class="memItemLeft" align="right" valign="top">AnimationDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5af0b450e51bd672955cbcf07a7255">OnMontageExit</a></td></tr>
+<tr class="memdesc:aea5af0b450e51bd672955cbcf07a7255"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束播放蒙太奇的动画事件  <br /></td></tr>
+<tr class="separator:aea5af0b450e51bd672955cbcf07a7255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c60e3f48408db945d44a8038012d6f0" id="r_a9c60e3f48408db945d44a8038012d6f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c60e3f48408db945d44a8038012d6f0">bMontage</a> = false</td></tr>
+<tr class="memdesc:a9c60e3f48408db945d44a8038012d6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否处于蒙太奇播放  <br /></td></tr>
+<tr class="separator:a9c60e3f48408db945d44a8038012d6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df300a498ddd148e8a61bf0c462eb12" id="r_a3df300a498ddd148e8a61bf0c462eb12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_timer.html">Timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3df300a498ddd148e8a61bf0c462eb12">clock</a></td></tr>
+<tr class="memdesc:a3df300a498ddd148e8a61bf0c462eb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">计时器按照固定频率实现Tick_()  <br /></td></tr>
+<tr class="separator:a3df300a498ddd148e8a61bf0c462eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81dc5b40be78a3f0b80d28f9d952b9f" id="r_af81dc5b40be78a3f0b80d28f9d952b9f"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; int, AnimationDelegate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81dc5b40be78a3f0b80d28f9d952b9f">notification</a></td></tr>
+<tr class="memdesc:af81dc5b40be78a3f0b80d28f9d952b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新索引  <br /></td></tr>
+<tr class="separator:af81dc5b40be78a3f0b80d28f9d952b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfe54c5b471c9e690539237d32bdad1" id="r_afcfe54c5b471c9e690539237d32bdad1"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_anim_edge.html">AnimEdge</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcfe54c5b471c9e690539237d32bdad1">nexts</a></td></tr>
+<tr class="memdesc:afcfe54c5b471c9e690539237d32bdad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画桥  <br /></td></tr>
+<tr class="separator:afcfe54c5b471c9e690539237d32bdad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:abbbfe7b916ef7239a2e95fdb21d0211f" id="r_abbbfe7b916ef7239a2e95fdb21d0211f"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbbfe7b916ef7239a2e95fdb21d0211f">Animator</a></td></tr>
+<tr class="separator:abbbfe7b916ef7239a2e95fdb21d0211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4e8e8b335ab9014d41e36e1b10107a" id="r_a7d4e8e8b335ab9014d41e36e1b10107a"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d4e8e8b335ab9014d41e36e1b10107a">FsmAnimator</a></td></tr>
+<tr class="separator:a7d4e8e8b335ab9014d41e36e1b10107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>动画委托(无参单播委托) </p>
+<p>类似:class AnimationDelegate:public UniCastDelegate&lt;void&gt;{}; 动画接口.</p>
+<p>支持实现蒙太奇动画，需要设置</p>
+<p>蒙太奇动画即相当于一个动作，比如一个技能，释放的结束之前不支持之前的其他操作 </p><dl class="section remark"><dt>备注</dt><dd>本身有状态转换判定 更加复杂的AI设计请参考状态机 </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_f_s_m.html" title="状态机组件.">FSM</a> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a83f0a16cef7117f187ad596de38dd9d6" name="a83f0a16cef7117f187ad596de38dd9d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f0a16cef7117f187ad596de38dd9d6">&#9670;&#160;</a></span>Animation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Animation::Animation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定时钟 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae4d68bf3d3888b52116d3d87e917941d" name="ae4d68bf3d3888b52116d3d87e917941d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d68bf3d3888b52116d3d87e917941d">&#9670;&#160;</a></span>AddNotification()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::AddNotification </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AnimationDelegate &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加动画委托. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>下标 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event</td><td>事件 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65514b17f8003f72c2ee99b463bed077" name="a65514b17f8003f72c2ee99b463bed077"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65514b17f8003f72c2ee99b463bed077">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_vector2_d.html">Vector2D</a></td>          <td class="paramname"><span class="paramname"><em>delta</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{&#160;0,0&#160;}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>加载动画资源. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>动画名字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delta</td><td>偏移量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4300449d4b2b402de00f747c20822e7d" name="a4300449d4b2b402de00f747c20822e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4300449d4b2b402de00f747c20822e7d">&#9670;&#160;</a></span>SetIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::SetIndex </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置动画帧下标. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>新下标 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef47e6edb4914befa1616bc9e363a4ec" name="aef47e6edb4914befa1616bc9e363a4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef47e6edb4914befa1616bc9e363a4ec">&#9670;&#160;</a></span>SetInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::SetInterval </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>interval</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置时钟更新索引频率. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>动画帧时间间隔 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad246985efa848b94ecb04831b9e1d237" name="ad246985efa848b94ecb04831b9e1d237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad246985efa848b94ecb04831b9e1d237">&#9670;&#160;</a></span>SetLooping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::SetLooping </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否循环播放. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">loop</td><td>是否循环播放 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeff49efb7cbfad12ccf41ea22493554f" name="aeff49efb7cbfad12ccf41ea22493554f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff49efb7cbfad12ccf41ea22493554f">&#9670;&#160;</a></span>Tick_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::Tick_ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>时钟执行的函数. </p>
+<dl class="section remark"><dt>备注</dt><dd>实现核心功能 </dd></dl>
+
+</div>
+</div>
+<a id="a22d1203a14aa080d405eef2899687158" name="a22d1203a14aa080d405eef2899687158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d1203a14aa080d405eef2899687158">&#9670;&#160;</a></span>UpdateIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Animation::UpdateIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="abbbfe7b916ef7239a2e95fdb21d0211f" name="abbbfe7b916ef7239a2e95fdb21d0211f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbbfe7b916ef7239a2e95fdb21d0211f">&#9670;&#160;</a></span>Animator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_animator.html">Animator</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d4e8e8b335ab9014d41e36e1b10107a" name="a7d4e8e8b335ab9014d41e36e1b10107a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4e8e8b335ab9014d41e36e1b10107a">&#9670;&#160;</a></span>FsmAnimator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class FsmAnimator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a312c9595aa7feb40f6dd6d7dd6aaef86" name="a312c9595aa7feb40f6dd6d7dd6aaef86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a312c9595aa7feb40f6dd6d7dd6aaef86">&#9670;&#160;</a></span>animController</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_animator.html">Animator</a>* Animation::animController = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>由哪个动画播放器播放 </p>
+
+</div>
+</div>
+<a id="aab4cec9b39ea113b7e509d0f4ce0c05a" name="aab4cec9b39ea113b7e509d0f4ce0c05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab4cec9b39ea113b7e509d0f4ce0c05a">&#9670;&#160;</a></span>AnimEdge</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend Animation::AnimEdge</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabb76373dceadbb9ec90addf499c36ab" name="aabb76373dceadbb9ec90addf499c36ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb76373dceadbb9ec90addf499c36ab">&#9670;&#160;</a></span>bLooping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Animation::bLooping = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否可循环播放 </p>
+
+</div>
+</div>
+<a id="a9c60e3f48408db945d44a8038012d6f0" name="a9c60e3f48408db945d44a8038012d6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c60e3f48408db945d44a8038012d6f0">&#9670;&#160;</a></span>bMontage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Animation::bMontage = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否处于蒙太奇播放 </p>
+
+</div>
+</div>
+<a id="a3df300a498ddd148e8a61bf0c462eb12" name="a3df300a498ddd148e8a61bf0c462eb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df300a498ddd148e8a61bf0c462eb12">&#9670;&#160;</a></span>clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_timer.html">Timer</a> Animation::clock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计时器按照固定频率实现Tick_() </p>
+
+</div>
+</div>
+<a id="ab90bb3448679c685d91460405201ffce" name="ab90bb3448679c685d91460405201ffce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90bb3448679c685d91460405201ffce">&#9670;&#160;</a></span>images</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMAGE** Animation::images = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画帧数组 </p>
+
+</div>
+</div>
+<a id="a97733e1356071b5d44bd8f107b7a26de" name="a97733e1356071b5d44bd8f107b7a26de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97733e1356071b5d44bd8f107b7a26de">&#9670;&#160;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animation::index = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当前帧索引 </p>
+
+</div>
+</div>
+<a id="afcfe54c5b471c9e690539237d32bdad1" name="afcfe54c5b471c9e690539237d32bdad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfe54c5b471c9e690539237d32bdad1">&#9670;&#160;</a></span>nexts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt;<a class="el" href="class_anim_edge.html">AnimEdge</a>*&gt; Animation::nexts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画桥 </p>
+
+</div>
+</div>
+<a id="af81dc5b40be78a3f0b80d28f9d952b9f" name="af81dc5b40be78a3f0b80d28f9d952b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81dc5b40be78a3f0b80d28f9d952b9f">&#9670;&#160;</a></span>notification</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;int, AnimationDelegate&gt; Animation::notification</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新索引 </p>
+<p>自定义动画委托 在某一帧实现委托 </p>
+
+</div>
+</div>
+<a id="a20038bc540a55ba9c0ca4929700dea48" name="a20038bc540a55ba9c0ca4929700dea48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20038bc540a55ba9c0ca4929700dea48">&#9670;&#160;</a></span>num</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Animation::num = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画帧数 </p>
+
+</div>
+</div>
+<a id="acb22a8e3fed81ebe1c11bc0386ff0c42" name="acb22a8e3fed81ebe1c11bc0386ff0c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb22a8e3fed81ebe1c11bc0386ff0c42">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2_d.html">Vector2D</a> Animation::offset = { 0,0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>像素偏移量 </p>
+
+</div>
+</div>
+<a id="ae1e418bc0af971076786db4b5161660d" name="ae1e418bc0af971076786db4b5161660d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e418bc0af971076786db4b5161660d">&#9670;&#160;</a></span>OnAnimEnter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationDelegate Animation::OnAnimEnter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>进入动画事件 </p>
+
+</div>
+</div>
+<a id="ac86a4fefa7dc8f00c4c3216858f6272a" name="ac86a4fefa7dc8f00c4c3216858f6272a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac86a4fefa7dc8f00c4c3216858f6272a">&#9670;&#160;</a></span>OnAnimExit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationDelegate Animation::OnAnimExit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>离开动画事件 </p>
+
+</div>
+</div>
+<a id="aea5af0b450e51bd672955cbcf07a7255" name="aea5af0b450e51bd672955cbcf07a7255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5af0b450e51bd672955cbcf07a7255">&#9670;&#160;</a></span>OnMontageExit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationDelegate Animation::OnMontageExit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>结束播放蒙太奇的动画事件 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_animation.html">Animation</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

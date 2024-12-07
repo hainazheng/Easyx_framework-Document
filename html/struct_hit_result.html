@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: HitResult结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('struct_hit_result.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="struct_hit_result-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">HitResult结构体 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>碰撞结果类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collider_8h_source.html">Collider.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa8f6a1505b738c0ad4937bf52b3fa4a2" id="r_aa8f6a1505b738c0ad4937bf52b3fa4a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8f6a1505b738c0ad4937bf52b3fa4a2">HitResult</a> ()</td></tr>
+<tr class="separator:aa8f6a1505b738c0ad4937bf52b3fa4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f4cb7dc0b062b37c0b48529a45861f" id="r_af0f4cb7dc0b062b37c0b48529a45861f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0f4cb7dc0b062b37c0b48529a45861f">HitResult</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;point, const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;tangnormal, <a class="el" href="class_object.html">Object</a> *object, <a class="el" href="class_component.html">Component</a> *component)</td></tr>
+<tr class="separator:af0f4cb7dc0b062b37c0b48529a45861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa48e9de48b84fd5e20bca29c28b830ae" id="r_aa48e9de48b84fd5e20bca29c28b830ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48e9de48b84fd5e20bca29c28b830ae">impactpoint</a></td></tr>
+<tr class="memdesc:aa48e9de48b84fd5e20bca29c28b830ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">切点  <br /></td></tr>
+<tr class="separator:aa48e9de48b84fd5e20bca29c28b830ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5bbc135a88b19e70d17678a5aace91" id="r_a2d5bbc135a88b19e70d17678a5aace91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d5bbc135a88b19e70d17678a5aace91">impactnormalunit</a></td></tr>
+<tr class="memdesc:a2d5bbc135a88b19e70d17678a5aace91"><td class="mdescLeft">&#160;</td><td class="mdescRight">力法线向量单位向量 对碰撞到的物体  <br /></td></tr>
+<tr class="separator:a2d5bbc135a88b19e70d17678a5aace91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97409f8726cd467654c333135518254f" id="r_a97409f8726cd467654c333135518254f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97409f8726cd467654c333135518254f">hitobject</a></td></tr>
+<tr class="memdesc:a97409f8726cd467654c333135518254f"><td class="mdescLeft">&#160;</td><td class="mdescRight">击中的物体  <br /></td></tr>
+<tr class="separator:a97409f8726cd467654c333135518254f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5996b63562442cea2c68ad06fd7329d" id="r_ab5996b63562442cea2c68ad06fd7329d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_component.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5996b63562442cea2c68ad06fd7329d">hitcomponent</a></td></tr>
+<tr class="memdesc:ab5996b63562442cea2c68ad06fd7329d"><td class="mdescLeft">&#160;</td><td class="mdescRight">击中的组件  <br /></td></tr>
+<tr class="separator:ab5996b63562442cea2c68ad06fd7329d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>碰撞结果类 </p>
+<dl class="section remark"><dt>备注</dt><dd>返回物理需要的信息. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa8f6a1505b738c0ad4937bf52b3fa4a2" name="aa8f6a1505b738c0ad4937bf52b3fa4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8f6a1505b738c0ad4937bf52b3fa4a2">&#9670;&#160;</a></span>HitResult() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HitResult::HitResult </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0f4cb7dc0b062b37c0b48529a45861f" name="af0f4cb7dc0b062b37c0b48529a45861f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f4cb7dc0b062b37c0b48529a45861f">&#9670;&#160;</a></span>HitResult() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HitResult::HitResult </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>point</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>tangnormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_object.html">Object</a> *</td>          <td class="paramname"><span class="paramname"><em>object</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_component.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ab5996b63562442cea2c68ad06fd7329d" name="ab5996b63562442cea2c68ad06fd7329d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5996b63562442cea2c68ad06fd7329d">&#9670;&#160;</a></span>hitcomponent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_component.html">Component</a>* HitResult::hitcomponent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>击中的组件 </p>
+
+</div>
+</div>
+<a id="a97409f8726cd467654c333135518254f" name="a97409f8726cd467654c333135518254f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97409f8726cd467654c333135518254f">&#9670;&#160;</a></span>hitobject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_object.html">Object</a>* HitResult::hitobject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>击中的物体 </p>
+
+</div>
+</div>
+<a id="a2d5bbc135a88b19e70d17678a5aace91" name="a2d5bbc135a88b19e70d17678a5aace91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5bbc135a88b19e70d17678a5aace91">&#9670;&#160;</a></span>impactnormalunit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2_d.html">Vector2D</a> HitResult::impactnormalunit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>力法线向量单位向量 对碰撞到的物体 </p>
+
+</div>
+</div>
+<a id="aa48e9de48b84fd5e20bca29c28b830ae" name="aa48e9de48b84fd5e20bca29c28b830ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48e9de48b84fd5e20bca29c28b830ae">&#9670;&#160;</a></span>impactpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2_d.html">Vector2D</a> HitResult::impactpoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>切点 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_hit_result.html">HitResult</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

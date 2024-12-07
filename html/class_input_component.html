@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: InputComponent类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_input_component.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="class_input_component-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">InputComponent类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>输入交互组件  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_input_component_8h_source.html">InputComponent.h</a>&gt;</code></p>
+<div class="dynheader">
+类 InputComponent 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_input_component.png" usemap="#InputComponent_map" alt=""/>
+  <map id="InputComponent_map" name="InputComponent_map">
+<area href="class_component.html" title="组件基类." alt="Component" shape="rect" coords="0,56,102,80"/>
+<area href="classbase.html" title="基类." alt="base" shape="rect" coords="0,0,102,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afa81c5c87280cb113525c01c329d3f31" id="r_afa81c5c87280cb113525c01c329d3f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa81c5c87280cb113525c01c329d3f31">SetMapping</a> (std::string mappingName, int value)</td></tr>
+<tr class="memdesc:afa81c5c87280cb113525c01c329d3f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置键值和名字的映射.  <br /></td></tr>
+<tr class="separator:afa81c5c87280cb113525c01c329d3f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c49a0dc61d7bb11653365a865ac1a89" id="r_a2c49a0dc61d7bb11653365a865ac1a89"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c49a0dc61d7bb11653365a865ac1a89">BeginPlay</a> ()</td></tr>
+<tr class="memdesc:a2c49a0dc61d7bb11653365a865ac1a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置纯虚函数，把不能写在构造却需要优先实现的写在这.  <br /></td></tr>
+<tr class="separator:a2c49a0dc61d7bb11653365a865ac1a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1292c290551c5cd8aab5ab75ce01b2" id="r_a9d1292c290551c5cd8aab5ab75ce01b2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9d1292c290551c5cd8aab5ab75ce01b2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9d1292c290551c5cd8aab5ab75ce01b2">BindAction</a> (std::string ActionName, <a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a> type, T *obj, void(T::*func)())</td></tr>
+<tr class="memdesc:a9d1292c290551c5cd8aab5ab75ce01b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定函数和键值.  <br /></td></tr>
+<tr class="separator:a9d1292c290551c5cd8aab5ab75ce01b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d66b0b9f0d9776cb08e39706ff325f5" id="r_a8d66b0b9f0d9776cb08e39706ff325f5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8d66b0b9f0d9776cb08e39706ff325f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8d66b0b9f0d9776cb08e39706ff325f5">BindAction</a> (std::string ActionName, int value, <a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a> type, T *obj, void(T::*func)())</td></tr>
+<tr class="memdesc:a8d66b0b9f0d9776cb08e39706ff325f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定函数和键值,  <br /></td></tr>
+<tr class="separator:a8d66b0b9f0d9776cb08e39706ff325f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7723bdc8f363201eb643b15e3498ce" id="r_a7a7723bdc8f363201eb643b15e3498ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7723bdc8f363201eb643b15e3498ce">BindAction</a> (std::string ActionName, <a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a> type, std::function&lt; void()&gt;func)</td></tr>
+<tr class="memdesc:a7a7723bdc8f363201eb643b15e3498ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">绑定按键事件映射.  <br /></td></tr>
+<tr class="separator:a7a7723bdc8f363201eb643b15e3498ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed28bd62411d6213d438d648dba22f30" id="r_aed28bd62411d6213d438d648dba22f30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed28bd62411d6213d438d648dba22f30">PeekInfo</a> ()</td></tr>
+<tr class="memdesc:aed28bd62411d6213d438d648dba22f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">action.  <br /></td></tr>
+<tr class="separator:aed28bd62411d6213d438d648dba22f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac472f2a217f3c983d5c567b0f8cb748f" id="r_ac472f2a217f3c983d5c567b0f8cb748f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac472f2a217f3c983d5c567b0f8cb748f">PeekInfo_</a> ()</td></tr>
+<tr class="memdesc:ac472f2a217f3c983d5c567b0f8cb748f"><td class="mdescLeft">&#160;</td><td class="mdescRight">轴处理.  <br /></td></tr>
+<tr class="separator:ac472f2a217f3c983d5c567b0f8cb748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a9a4ebb29880ee80ff1b06645dc004" id="r_a21a9a4ebb29880ee80ff1b06645dc004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21a9a4ebb29880ee80ff1b06645dc004">MouseTick</a> ()</td></tr>
+<tr class="memdesc:a21a9a4ebb29880ee80ff1b06645dc004"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标在绘图窗口坐标.  <br /></td></tr>
+<tr class="separator:a21a9a4ebb29880ee80ff1b06645dc004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb5de2a0a5b9304868136fbf9290661e" id="r_acb5de2a0a5b9304868136fbf9290661e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb5de2a0a5b9304868136fbf9290661e">Update</a> (float deltaTime) override</td></tr>
+<tr class="separator:acb5de2a0a5b9304868136fbf9290661e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_component')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component" id="r_a4b612e95c5124b7e9fb109ce92ba062f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a4b612e95c5124b7e9fb109ce92ba062f">EndPlay</a> ()</td></tr>
+<tr class="memdesc:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">把一些不能写在析构函数的一些操作写在这里  <br /></td></tr>
+<tr class="separator:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component" id="r_ad18c38d69d7d77ec399a64175aa998ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#ad18c38d69d7d77ec399a64175aa998ad">SetOwner</a> (class <a class="el" href="class_object.html">Object</a> *owner)</td></tr>
+<tr class="memdesc:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绑定对象.  <br /></td></tr>
+<tr class="separator:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796d5cd46061d3426d098f0d74c38596 inherit pub_methods_class_component" id="r_a796d5cd46061d3426d098f0d74c38596"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a796d5cd46061d3426d098f0d74c38596">Destruct</a> ()</td></tr>
+<tr class="memdesc:a796d5cd46061d3426d098f0d74c38596 inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除物体绑定组件，并销毁组件  <br /></td></tr>
+<tr class="separator:a796d5cd46061d3426d098f0d74c38596 inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component" id="r_a66fa458a9bf940a8357688085ddc251c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a66fa458a9bf940a8357688085ddc251c">Activate</a> ()</td></tr>
+<tr class="memdesc:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活组件  <br /></td></tr>
+<tr class="separator:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component" id="r_a68acbf339604cf393cfc178135e48a5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a68acbf339604cf393cfc178135e48a5f">Deactivate</a> ()</td></tr>
+<tr class="memdesc:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">停用组件  <br /></td></tr>
+<tr class="separator:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component" id="r_a0deb5ee1c90da8fdb1de7113a981e96c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">GetOwner</a> () const</td></tr>
+<tr class="memdesc:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取绑定对象指针  <br /></td></tr>
+<tr class="separator:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classbase')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classbase.html">base</a></td></tr>
+<tr class="memitem:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase" id="r_a3b0362be8b58605e4975b969dd8131a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a3b0362be8b58605e4975b969dd8131a4">base</a> ()</td></tr>
+<tr class="separator:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase" id="r_a28380c406d2ac063fe11950bff012c06"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a28380c406d2ac063fe11950bff012c06">~base</a> ()</td></tr>
+<tr class="separator:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase" id="r_acaf71fb0984c325434465393af6994c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#acaf71fb0984c325434465393af6994c7">GetName</a> () const</td></tr>
+<tr class="separator:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase" id="r_a8e45fd097ee216399bb2216d9f843420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a8e45fd097ee216399bb2216d9f843420">SetName</a> (const std::string &amp;<a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="separator:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a7aea3cc95e6882d822bf11b9433c8e4b" id="r_a7aea3cc95e6882d822bf11b9433c8e4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aea3cc95e6882d822bf11b9433c8e4b">GetMousePosition</a> ()</td></tr>
+<tr class="memdesc:a7aea3cc95e6882d822bf11b9433c8e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取鼠标屏幕坐标 相对于画布位置.  <br /></td></tr>
+<tr class="separator:a7aea3cc95e6882d822bf11b9433c8e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733baa9b438f0a7dda82fdddd4284578" id="r_a733baa9b438f0a7dda82fdddd4284578"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a733baa9b438f0a7dda82fdddd4284578">IsMouseButtonClick</a> ()</td></tr>
+<tr class="memdesc:a733baa9b438f0a7dda82fdddd4284578"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标左键是否按下.  <br /></td></tr>
+<tr class="separator:a733baa9b438f0a7dda82fdddd4284578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d6f47f36a791303c6f9f476fdb38fd" id="r_a41d6f47f36a791303c6f9f476fdb38fd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41d6f47f36a791303c6f9f476fdb38fd">EnableInput</a> (bool enable)</td></tr>
+<tr class="memdesc:a41d6f47f36a791303c6f9f476fdb38fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活输入输出.  <br /></td></tr>
+<tr class="separator:a41d6f47f36a791303c6f9f476fdb38fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a6da60e312757f7d767bf6c8b54de5f6c" id="r_a6da60e312757f7d767bf6c8b54de5f6c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6da60e312757f7d767bf6c8b54de5f6c">mappings</a></td></tr>
+<tr class="memdesc:a6da60e312757f7d767bf6c8b54de5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现键值和名字的映射 [名字,虚拟值]  <br /></td></tr>
+<tr class="separator:a6da60e312757f7d767bf6c8b54de5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace39de18e6d2517ec80d30a8d0dd7f94" id="r_ace39de18e6d2517ec80d30a8d0dd7f94"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="struct_key_bind_info.html">KeyBindInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace39de18e6d2517ec80d30a8d0dd7f94">actionCallbacks</a></td></tr>
+<tr class="memdesc:ace39de18e6d2517ec80d30a8d0dd7f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现名字和函数功能绑定 [名字，按键需要的信息]  <br /></td></tr>
+<tr class="separator:ace39de18e6d2517ec80d30a8d0dd7f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb77d755aeb3618ad1fe53f75258fa7" id="r_afbb77d755aeb3618ad1fe53f75258fa7"><td class="memItemLeft" align="right" valign="top">ExMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbb77d755aeb3618ad1fe53f75258fa7">msg</a></td></tr>
+<tr class="memdesc:afbb77d755aeb3618ad1fe53f75258fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用交互  <br /></td></tr>
+<tr class="separator:afbb77d755aeb3618ad1fe53f75258fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a41333198e612067fc999f391f7d3ee0f" id="r_a41333198e612067fc999f391f7d3ee0f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41333198e612067fc999f391f7d3ee0f">mousePos</a> = {}</td></tr>
+<tr class="memdesc:a41333198e612067fc999f391f7d3ee0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标在绘图窗口坐标  <br /></td></tr>
+<tr class="separator:a41333198e612067fc999f391f7d3ee0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3c2ca251dea5aedb4304632d515922" id="r_aab3c2ca251dea5aedb4304632d515922"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab3c2ca251dea5aedb4304632d515922">bActive</a> = true</td></tr>
+<tr class="separator:aab3c2ca251dea5aedb4304632d515922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_component')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component" id="r_a0d14459b1874626134163b11d1dbfcf0"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0d14459b1874626134163b11d1dbfcf0">pOwner</a> = nullptr</td></tr>
+<tr class="memdesc:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理控制逻辑 有对象物体的指针才能进行控制  <br /></td></tr>
+<tr class="separator:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component" id="r_a950b1a2299221cbe0e3fd0a79b9b487c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a950b1a2299221cbe0e3fd0a79b9b487c">bIsEnabled</a> = true</td></tr>
+<tr class="memdesc:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否激活  <br /></td></tr>
+<tr class="separator:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>输入交互组件 </p>
+<p>输入输出键值控制映射. </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a2c49a0dc61d7bb11653365a865ac1a89" name="a2c49a0dc61d7bb11653365a865ac1a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c49a0dc61d7bb11653365a865ac1a89">&#9670;&#160;</a></span>BeginPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void InputComponent::BeginPlay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置纯虚函数，把不能写在构造却需要优先实现的写在这. </p>
+
+<p>重载 <a class="el" href="class_component.html#a3d9800f7fdc728bd95b4668ff1a06af9">Component</a> .</p>
+
+</div>
+</div>
+<a id="a7a7723bdc8f363201eb643b15e3498ce" name="a7a7723bdc8f363201eb643b15e3498ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7723bdc8f363201eb643b15e3498ce">&#9670;&#160;</a></span>BindAction() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::BindAction </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>ActionName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;</td>          <td class="paramname"><span class="paramname"><em>func</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>绑定按键事件映射. </p>
+<dl class="section remark"><dt>备注</dt><dd>可以不需要类对象 直接函数映射 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ActionName</td><td>键名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>按键信号类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>lambda函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d1292c290551c5cd8aab5ab75ce01b2" name="a9d1292c290551c5cd8aab5ab75ce01b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1292c290551c5cd8aab5ab75ce01b2">&#9670;&#160;</a></span>BindAction() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::BindAction </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>ActionName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>func&#160;</em></span>)()&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定函数和键值. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ActionName</td><td>键名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>按键信号类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>类对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>成员函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d66b0b9f0d9776cb08e39706ff325f5" name="a8d66b0b9f0d9776cb08e39706ff325f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d66b0b9f0d9776cb08e39706ff325f5">&#9670;&#160;</a></span>BindAction() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::BindAction </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>ActionName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_input_component_8h.html#a5965d192e334909f0030b78735325e8b">InputType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>func&#160;</em></span>)()&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绑定函数和键值, </p>
+<dl class="section remark"><dt>备注</dt><dd>没有映射mapping就直接进行键位映射. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ActionName</td><td>键名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>虚拟键值 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>按键信号类型 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>类对象 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>成员函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a41d6f47f36a791303c6f9f476fdb38fd" name="a41d6f47f36a791303c6f9f476fdb38fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d6f47f36a791303c6f9f476fdb38fd">&#9670;&#160;</a></span>EnableInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::EnableInput </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>激活输入输出. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>是否激活输入输出 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7aea3cc95e6882d822bf11b9433c8e4b" name="a7aea3cc95e6882d822bf11b9433c8e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aea3cc95e6882d822bf11b9433c8e4b">&#9670;&#160;</a></span>GetMousePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2_d.html">Vector2D</a> InputComponent::GetMousePosition </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取鼠标屏幕坐标 相对于画布位置. </p>
+<dl class="section return"><dt>返回</dt><dd>相对于(0,0)点 </dd></dl>
+
+</div>
+</div>
+<a id="a733baa9b438f0a7dda82fdddd4284578" name="a733baa9b438f0a7dda82fdddd4284578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733baa9b438f0a7dda82fdddd4284578">&#9670;&#160;</a></span>IsMouseButtonClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InputComponent::IsMouseButtonClick </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标左键是否按下. </p>
+<dl class="section return"><dt>返回</dt><dd>是否按下鼠标 </dd></dl>
+
+</div>
+</div>
+<a id="a21a9a4ebb29880ee80ff1b06645dc004" name="a21a9a4ebb29880ee80ff1b06645dc004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a9a4ebb29880ee80ff1b06645dc004">&#9670;&#160;</a></span>MouseTick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::MouseTick </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取鼠标在绘图窗口坐标. </p>
+
+</div>
+</div>
+<a id="aed28bd62411d6213d438d648dba22f30" name="aed28bd62411d6213d438d648dba22f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed28bd62411d6213d438d648dba22f30">&#9670;&#160;</a></span>PeekInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::PeekInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>action. </p>
+<dl class="section remark"><dt>备注</dt><dd>（瞬时触发，触发频率受帧率影响） </dd></dl>
+
+</div>
+</div>
+<a id="ac472f2a217f3c983d5c567b0f8cb748f" name="ac472f2a217f3c983d5c567b0f8cb748f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac472f2a217f3c983d5c567b0f8cb748f">&#9670;&#160;</a></span>PeekInfo_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::PeekInfo_ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>轴处理. </p>
+<p>固定频率执行 </p>
+
+</div>
+</div>
+<a id="afa81c5c87280cb113525c01c329d3f31" name="afa81c5c87280cb113525c01c329d3f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa81c5c87280cb113525c01c329d3f31">&#9670;&#160;</a></span>SetMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::SetMapping </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>mappingName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置键值和名字的映射. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mappingName</td><td>键名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>虚拟值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acb5de2a0a5b9304868136fbf9290661e" name="acb5de2a0a5b9304868136fbf9290661e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb5de2a0a5b9304868136fbf9290661e">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputComponent::Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重载 <a class="el" href="class_component.html#a93437569d1894195f587ba1c21e4412e">Component</a> .</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="ace39de18e6d2517ec80d30a8d0dd7f94" name="ace39de18e6d2517ec80d30a8d0dd7f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace39de18e6d2517ec80d30a8d0dd7f94">&#9670;&#160;</a></span>actionCallbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, <a class="el" href="struct_key_bind_info.html">KeyBindInfo</a>&gt; InputComponent::actionCallbacks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现名字和函数功能绑定 [名字，按键需要的信息] </p>
+
+</div>
+</div>
+<a id="aab3c2ca251dea5aedb4304632d515922" name="aab3c2ca251dea5aedb4304632d515922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3c2ca251dea5aedb4304632d515922">&#9670;&#160;</a></span>bActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InputComponent::bActive = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6da60e312757f7d767bf6c8b54de5f6c" name="a6da60e312757f7d767bf6c8b54de5f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da60e312757f7d767bf6c8b54de5f6c">&#9670;&#160;</a></span>mappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, int&gt; InputComponent::mappings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现键值和名字的映射 [名字,虚拟值] </p>
+
+</div>
+</div>
+<a id="a41333198e612067fc999f391f7d3ee0f" name="a41333198e612067fc999f391f7d3ee0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41333198e612067fc999f391f7d3ee0f">&#9670;&#160;</a></span>mousePos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vector2_d.html">Vector2D</a> InputComponent::mousePos = {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>鼠标在绘图窗口坐标 </p>
+
+</div>
+</div>
+<a id="afbb77d755aeb3618ad1fe53f75258fa7" name="afbb77d755aeb3618ad1fe53f75258fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb77d755aeb3618ad1fe53f75258fa7">&#9670;&#160;</a></span>msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ExMessage InputComponent::msg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否启用交互 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_input_component.html">InputComponent</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

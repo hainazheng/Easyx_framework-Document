@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: MultiCastDelegate&lt; Args &gt; 模板类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_multi_cast_delegate.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_multi_cast_delegate-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">MultiCastDelegate&lt; Args &gt; 模板类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>多播委托.  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_delegate_8h_source.html">Delegate.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a571186d2b3f9834fd09f13521dc4e749" id="r_a571186d2b3f9834fd09f13521dc4e749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a571186d2b3f9834fd09f13521dc4e749">Push</a> (std::function&lt; void(Args...) &gt; callback)</td></tr>
+<tr class="memdesc:a571186d2b3f9834fd09f13521dc4e749"><td class="mdescLeft">&#160;</td><td class="mdescRight">推入容器  <br /></td></tr>
+<tr class="separator:a571186d2b3f9834fd09f13521dc4e749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b9a9b35eaff4db4a68df38fa41c8c7" id="r_a63b9a9b35eaff4db4a68df38fa41c8c7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a63b9a9b35eaff4db4a68df38fa41c8c7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a63b9a9b35eaff4db4a68df38fa41c8c7">Push</a> (T *obj, void(T::*func)(Args...))</td></tr>
+<tr class="separator:a63b9a9b35eaff4db4a68df38fa41c8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4c0b487725a7785301ca0e67d867df" id="r_a1f4c0b487725a7785301ca0e67d867df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f4c0b487725a7785301ca0e67d867df">Remove</a> (std::function&lt; void(Args...)&gt; callback)</td></tr>
+<tr class="memdesc:a1f4c0b487725a7785301ca0e67d867df"><td class="mdescLeft">&#160;</td><td class="mdescRight">从容器中移除所有相同的函数  <br /></td></tr>
+<tr class="separator:a1f4c0b487725a7785301ca0e67d867df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011edeecf287417bb825546ccadea553" id="r_a011edeecf287417bb825546ccadea553"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a011edeecf287417bb825546ccadea553"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a011edeecf287417bb825546ccadea553">Remove</a> (T *obj, void(T::*func)(Args...))</td></tr>
+<tr class="memdesc:a011edeecf287417bb825546ccadea553"><td class="mdescLeft">&#160;</td><td class="mdescRight">从容器中移除所有相同的函数  <br /></td></tr>
+<tr class="separator:a011edeecf287417bb825546ccadea553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1297a81ecdf37c1ce815f3da0db6a208" id="r_a1297a81ecdf37c1ce815f3da0db6a208"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1297a81ecdf37c1ce815f3da0db6a208">BroadCast</a> (Args ...args)</td></tr>
+<tr class="memdesc:a1297a81ecdf37c1ce815f3da0db6a208"><td class="mdescLeft">&#160;</td><td class="mdescRight">全部执行  <br /></td></tr>
+<tr class="separator:a1297a81ecdf37c1ce815f3da0db6a208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c3399dafa026bc03a7002826737d26b" id="r_a1c3399dafa026bc03a7002826737d26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c3399dafa026bc03a7002826737d26b">operator()</a> (Args... args)</td></tr>
+<tr class="separator:a1c3399dafa026bc03a7002826737d26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74747c545bfed869a8eabb9c94c28e54" id="r_a74747c545bfed869a8eabb9c94c28e54"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a74747c545bfed869a8eabb9c94c28e54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a74747c545bfed869a8eabb9c94c28e54">Push</a> (std::function&lt; void(Args...)&gt; callback)</td></tr>
+<tr class="memdesc:a74747c545bfed869a8eabb9c94c28e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">允许插入同样类型的事件  <br /></td></tr>
+<tr class="separator:a74747c545bfed869a8eabb9c94c28e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a090887a1fa2e709f518275884988c8e1" id="r_a090887a1fa2e709f518275884988c8e1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; void(Args...)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a090887a1fa2e709f518275884988c8e1">callbacks</a></td></tr>
+<tr class="memdesc:a090887a1fa2e709f518275884988c8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储所有相同类型参数的函数  <br /></td></tr>
+<tr class="separator:a090887a1fa2e709f518275884988c8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
+class MultiCastDelegate&lt; Args &gt;</div><p>多播委托. </p>
+<p><a class="el" href="class_multi_cast_delegate.html" title="多播委托.">MultiCastDelegate</a>&lt;返回值类型，参数类型...&gt; </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="_delegate_8h.html#a819b7308edeb08c9ec7e0d0d98b392be">DECLARE_MULTI_PARAM_MULTI_DELEGATE_CLASS(name, ...)</a> </dd>
+<dd>
+<a class="el" href="_delegate_8h.html#a235e10146249ecf8bf1d7e8942410a6d">DECLARE_NO_PARAM_MULTI_DELEGATE_CLASS(name)</a> </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a1297a81ecdf37c1ce815f3da0db6a208" name="a1297a81ecdf37c1ce815f3da0db6a208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1297a81ecdf37c1ce815f3da0db6a208">&#9670;&#160;</a></span>BroadCast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::BroadCast </td>
+          <td>(</td>
+          <td class="paramtype">Args ...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>全部执行 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>函数执行需要的实参 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c3399dafa026bc03a7002826737d26b" name="a1c3399dafa026bc03a7002826737d26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3399dafa026bc03a7002826737d26b">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Args...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a571186d2b3f9834fd09f13521dc4e749" name="a571186d2b3f9834fd09f13521dc4e749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571186d2b3f9834fd09f13521dc4e749">&#9670;&#160;</a></span>Push() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::Push </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(Args...) &gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>推入容器 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>[lambda函数] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74747c545bfed869a8eabb9c94c28e54" name="a74747c545bfed869a8eabb9c94c28e54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74747c545bfed869a8eabb9c94c28e54">&#9670;&#160;</a></span>Push() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::Push </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(Args...)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>允许插入同样类型的事件 </p>
+
+</div>
+</div>
+<a id="a63b9a9b35eaff4db4a68df38fa41c8c7" name="a63b9a9b35eaff4db4a68df38fa41c8c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b9a9b35eaff4db4a68df38fa41c8c7">&#9670;&#160;</a></span>Push() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::Push </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>func&#160;</em></span>)(Args...)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>函数对象  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f4c0b487725a7785301ca0e67d867df" name="a1f4c0b487725a7785301ca0e67d867df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f4c0b487725a7785301ca0e67d867df">&#9670;&#160;</a></span>Remove() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::Remove </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(Args...)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从容器中移除所有相同的函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>[lambda函数] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a011edeecf287417bb825546ccadea553" name="a011edeecf287417bb825546ccadea553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011edeecf287417bb825546ccadea553">&#9670;&#160;</a></span>Remove() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::Remove </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>obj</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(T::*</td>          <td class="paramname"><span class="paramname"><em>func&#160;</em></span>)(Args...)&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>从容器中移除所有相同的函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">obj</td><td>函数对象  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>函数指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a090887a1fa2e709f518275884988c8e1" name="a090887a1fa2e709f518275884988c8e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090887a1fa2e709f518275884988c8e1">&#9670;&#160;</a></span>callbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::function&lt;void(Args...)&gt; &gt; <a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a>&lt; Args &gt;::callbacks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>存储所有相同类型参数的函数 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_multi_cast_delegate.html">MultiCastDelegate</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

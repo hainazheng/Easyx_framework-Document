@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/CoreMinimal.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_core_minimal_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/CoreMinimal.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>核心代码文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;unordered_set&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &quot;<a class="el" href="_macro_8h_source.html">Macro.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_struct_8h_source.html">Struct.h</a>&quot;</code><br />
+</div>
+<p><a href="_core_minimal_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html">base</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">基类.  <a href="classbase.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_instance.html">GameInstance</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局游戏实例  <a href="class_game_instance.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level.html">Level</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">全局游戏关卡类  <a href="class_level.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a2dec9ee21b96392ba5df71475fc93749" id="r_a2dec9ee21b96392ba5df71475fc93749"><td class="memTemplParams" colspan="2">template&lt;class T , class F &gt; </td></tr>
+<tr class="memitem:a2dec9ee21b96392ba5df71475fc93749"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2dec9ee21b96392ba5df71475fc93749">Cast</a> (F *pBase)</td></tr>
+<tr class="memdesc:a2dec9ee21b96392ba5df71475fc93749"><td class="mdescLeft">&#160;</td><td class="mdescRight">类型转化  <br /></td></tr>
+<tr class="separator:a2dec9ee21b96392ba5df71475fc93749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02aee9dda47a3db76347da0590c642f" id="r_ac02aee9dda47a3db76347da0590c642f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac02aee9dda47a3db76347da0590c642f">GetRealTime</a> (int pre=3)</td></tr>
+<tr class="memdesc:ac02aee9dda47a3db76347da0590c642f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取年月日时分秒字符串.  <br /></td></tr>
+<tr class="separator:ac02aee9dda47a3db76347da0590c642f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ad6b9d204e8c0a358e1374daa043220b0" id="r_ad6b9d204e8c0a358e1374daa043220b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b9d204e8c0a358e1374daa043220b0">bFrameLimitOn</a></td></tr>
+<tr class="memdesc:ad6b9d204e8c0a358e1374daa043220b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否开启帧率限制  <br /></td></tr>
+<tr class="separator:ad6b9d204e8c0a358e1374daa043220b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9768bcc40b4baed8522447a8d15abc63" id="r_a9768bcc40b4baed8522447a8d15abc63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9768bcc40b4baed8522447a8d15abc63">MaxFrame</a></td></tr>
+<tr class="memdesc:a9768bcc40b4baed8522447a8d15abc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大帧率(每秒执行多少次)  <br /></td></tr>
+<tr class="separator:a9768bcc40b4baed8522447a8d15abc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>核心代码文件 </p>
+<dl class="section remark"><dt>备注</dt><dd>包含框架基本头文件以及基础类、全局函数 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd>zhn </dd></dl>
+</div><h2 class="groupheader">函数说明</h2>
+<a id="a2dec9ee21b96392ba5df71475fc93749" name="a2dec9ee21b96392ba5df71475fc93749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dec9ee21b96392ba5df71475fc93749">&#9670;&#160;</a></span>Cast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * Cast </td>
+          <td>(</td>
+          <td class="paramtype">F *</td>          <td class="paramname"><span class="paramname"><em>pBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>类型转化 </p>
+<dl class="section remark"><dt>备注</dt><dd>只要是本实参类型的基类及其派生类类型，就进行转化成想要转化成的它能转化的类型 </dd></dl>
+
+</div>
+</div>
+<a id="ac02aee9dda47a3db76347da0590c642f" name="ac02aee9dda47a3db76347da0590c642f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02aee9dda47a3db76347da0590c642f">&#9670;&#160;</a></span>GetRealTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string GetRealTime </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pre</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取年月日时分秒字符串. </p>
+<ul>
+<li>1 - 年</li>
+<li>2 - 月</li>
+<li>3 - 日</li>
+<li>4 - 时</li>
+<li>5 - 分</li>
+<li>6 - 秒</li>
+</ul>
+<p>default 错误 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pre</td><td>代表获取的最低精度 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="ad6b9d204e8c0a358e1374daa043220b0" name="ad6b9d204e8c0a358e1374daa043220b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b9d204e8c0a358e1374daa043220b0">&#9670;&#160;</a></span>bFrameLimitOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool bFrameLimitOn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否开启帧率限制 </p>
+<dl class="section remark"><dt>备注</dt><dd>!!! 一般用户都要进行开启 否则不稳定 </dd></dl>
+
+</div>
+</div>
+<a id="a9768bcc40b4baed8522447a8d15abc63" name="a9768bcc40b4baed8522447a8d15abc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9768bcc40b4baed8522447a8d15abc63">&#9670;&#160;</a></span>MaxFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MaxFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最大帧率(每秒执行多少次) </p>
+<dl class="section remark"><dt>备注</dt><dd>!!! 一般用户都要进行设置 但是太大每一帧时间太短会极大影响框架 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_core_minimal_8h.html">CoreMinimal.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: Perlin类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_perlin.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_perlin-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Perlin类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Perlin类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_perlin_8h_source.html">Perlin.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a56b20e7ff535c53b1a7c9eb9ef211cc5" id="r_a56b20e7ff535c53b1a7c9eb9ef211cc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b20e7ff535c53b1a7c9eb9ef211cc5">Perlin</a> (int <a class="el" href="#a6b22b2bae9dd8f7d41adfd57135a580a">repeat</a>=-1)</td></tr>
+<tr class="memdesc:a56b20e7ff535c53b1a7c9eb9ef211cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数来生成排列数  <br /></td></tr>
+<tr class="separator:a56b20e7ff535c53b1a7c9eb9ef211cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ed737ef22aa444fd827f32606e383e" id="r_a63ed737ef22aa444fd827f32606e383e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63ed737ef22aa444fd827f32606e383e">OctavePerlin</a> (double x, double y, double z, int octaves, double persistence)</td></tr>
+<tr class="separator:a63ed737ef22aa444fd827f32606e383e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3360623d5fe2e9ec4c0dbaca9819dfbb" id="r_a3360623d5fe2e9ec4c0dbaca9819dfbb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3360623d5fe2e9ec4c0dbaca9819dfbb">perlin</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:a3360623d5fe2e9ec4c0dbaca9819dfbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取影响值  <br /></td></tr>
+<tr class="separator:a3360623d5fe2e9ec4c0dbaca9819dfbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182d44e77d8e20cebc465f2c2ddfb867" id="r_a182d44e77d8e20cebc465f2c2ddfb867"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a182d44e77d8e20cebc465f2c2ddfb867">inc</a> (int num)</td></tr>
+<tr class="memdesc:a182d44e77d8e20cebc465f2c2ddfb867"><td class="mdescLeft">&#160;</td><td class="mdescRight">相当于+1  <br /></td></tr>
+<tr class="separator:a182d44e77d8e20cebc465f2c2ddfb867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a38fb4acdd2df8d7c58cc702c9f08ca89" id="r_a38fb4acdd2df8d7c58cc702c9f08ca89"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38fb4acdd2df8d7c58cc702c9f08ca89">grad</a> (int hash, double x, double y, double z)</td></tr>
+<tr class="memdesc:a38fb4acdd2df8d7c58cc702c9f08ca89"><td class="mdescLeft">&#160;</td><td class="mdescRight">梯度值  <br /></td></tr>
+<tr class="separator:a38fb4acdd2df8d7c58cc702c9f08ca89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f4a49c23b560dbacaff7dc286247a0" id="r_a14f4a49c23b560dbacaff7dc286247a0"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14f4a49c23b560dbacaff7dc286247a0">fade</a> (double t)</td></tr>
+<tr class="memdesc:a14f4a49c23b560dbacaff7dc286247a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">参数方程 曲线五次 大概图像慢-块-慢 0~1  <br /></td></tr>
+<tr class="separator:a14f4a49c23b560dbacaff7dc286247a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0074b9cfa22f3757efc53f00adfe04ab" id="r_a0074b9cfa22f3757efc53f00adfe04ab"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0074b9cfa22f3757efc53f00adfe04ab">lerp</a> (double a, double b, double x)</td></tr>
+<tr class="memdesc:a0074b9cfa22f3757efc53f00adfe04ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">线性插值  <br /></td></tr>
+<tr class="separator:a0074b9cfa22f3757efc53f00adfe04ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a6b22b2bae9dd8f7d41adfd57135a580a" id="r_a6b22b2bae9dd8f7d41adfd57135a580a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b22b2bae9dd8f7d41adfd57135a580a">repeat</a> = -1</td></tr>
+<tr class="memdesc:a6b22b2bae9dd8f7d41adfd57135a580a"><td class="mdescLeft">&#160;</td><td class="mdescRight">两倍排列数来回避超出区间 0~255  <br /></td></tr>
+<tr class="separator:a6b22b2bae9dd8f7d41adfd57135a580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:aea5a3962640ff9223a90ce32094cb135" id="r_aea5a3962640ff9223a90ce32094cb135"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5a3962640ff9223a90ce32094cb135">p</a></td></tr>
+<tr class="separator:aea5a3962640ff9223a90ce32094cb135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Perlin类 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_image_toolkit.html" title="图像处理类.">ImageToolkit</a> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a56b20e7ff535c53b1a7c9eb9ef211cc5" name="a56b20e7ff535c53b1a7c9eb9ef211cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b20e7ff535c53b1a7c9eb9ef211cc5">&#9670;&#160;</a></span>Perlin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Perlin::Perlin </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>repeat</em></span><span class="paramdefsep"> = </span><span class="paramdefval">-1</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数来生成排列数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">repeat</td><td>什么时候开始重复 默认-1表示不起作用 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a14f4a49c23b560dbacaff7dc286247a0" name="a14f4a49c23b560dbacaff7dc286247a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f4a49c23b560dbacaff7dc286247a0">&#9670;&#160;</a></span>fade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Perlin::fade </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参数方程 曲线五次 大概图像慢-块-慢 0~1 </p>
+
+</div>
+</div>
+<a id="a38fb4acdd2df8d7c58cc702c9f08ca89" name="a38fb4acdd2df8d7c58cc702c9f08ca89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fb4acdd2df8d7c58cc702c9f08ca89">&#9670;&#160;</a></span>grad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Perlin::grad </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hash</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>梯度值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hash</td><td>哈希值 0~255 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a182d44e77d8e20cebc465f2c2ddfb867" name="a182d44e77d8e20cebc465f2c2ddfb867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182d44e77d8e20cebc465f2c2ddfb867">&#9670;&#160;</a></span>inc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Perlin::inc </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>相当于+1 </p>
+
+</div>
+</div>
+<a id="a0074b9cfa22f3757efc53f00adfe04ab" name="a0074b9cfa22f3757efc53f00adfe04ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0074b9cfa22f3757efc53f00adfe04ab">&#9670;&#160;</a></span>lerp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Perlin::lerp </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>线性插值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>左区间  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>右区间  </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">x</td><td>约束值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63ed737ef22aa444fd827f32606e383e" name="a63ed737ef22aa444fd827f32606e383e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ed737ef22aa444fd827f32606e383e">&#9670;&#160;</a></span>OctavePerlin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Perlin::OctavePerlin </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>z</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>octaves</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>persistence</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3360623d5fe2e9ec4c0dbaca9819dfbb" name="a3360623d5fe2e9ec4c0dbaca9819dfbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3360623d5fe2e9ec4c0dbaca9819dfbb">&#9670;&#160;</a></span>perlin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Perlin::perlin </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取影响值 </p>
+<dl class="section remark"><dt>备注</dt><dd>函数是三维的，二维只需要z取0 参数坐标还要映射到晶格体上 晶格体决定大小 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>坐标x  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">y</td><td>坐标y  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">z</td><td>坐标z </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="aea5a3962640ff9223a90ce32094cb135" name="aea5a3962640ff9223a90ce32094cb135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5a3962640ff9223a90ce32094cb135">&#9670;&#160;</a></span>p</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; Perlin::p</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b22b2bae9dd8f7d41adfd57135a580a" name="a6b22b2bae9dd8f7d41adfd57135a580a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b22b2bae9dd8f7d41adfd57135a580a">&#9670;&#160;</a></span>repeat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Perlin::repeat = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>两倍排列数来回避超出区间 0~255 </p>
+<p>什么时候开始重复 默认-1表示不起作用 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_perlin.html">Perlin</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

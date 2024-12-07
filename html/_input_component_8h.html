@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/InputComponent.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_input_component_8h.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/InputComponent.h 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>输入交互组件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_core_minimal_8h_source.html">CoreMinimal.h</a>&quot;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;easyx.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_component_8h_source.html">Component.h</a>&quot;</code><br />
+</div>
+<p><a href="_input_component_8h_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_key_bind_info.html">KeyBindInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键映射需要的信息.  <a href="struct_key_bind_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input_component.html">InputComponent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">输入交互组件  <a href="class_input_component.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a5965d192e334909f0030b78735325e8b" id="r_a5965d192e334909f0030b78735325e8b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5965d192e334909f0030b78735325e8b">InputType</a> : uint8 { <a class="el" href="#a5965d192e334909f0030b78735325e8bad78a68f6a85421ae121c2cb5b73a1040">Pressed</a>
+, <a class="el" href="#a5965d192e334909f0030b78735325e8baea1e34304a5d8ffa7c9b0ed8ede4ef1a">Released</a>
+, <a class="el" href="#a5965d192e334909f0030b78735325e8ba09462a0d784f710178c34eaba146810d">Holding</a>
+, <a class="el" href="#a5965d192e334909f0030b78735325e8ba99f490e53ed16a6580a350b42e1143a9">DoubleClick</a>
+ }</td></tr>
+<tr class="memdesc:a5965d192e334909f0030b78735325e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">按键信号类型  <a href="#a5965d192e334909f0030b78735325e8b">更多...</a><br /></td></tr>
+<tr class="separator:a5965d192e334909f0030b78735325e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7885f47644a0388f981f416fa20389b2" id="r_a7885f47644a0388f981f416fa20389b2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7885f47644a0388f981f416fa20389b2">KeyCode</a> { <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a281327a9c3099ed12a88b3e480985b85">VK_LButton</a> = 1
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a59a71341e0648d03426f56d80e226414">VK_RButton</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a8e1d21e28ad24d39d681ec128e068467">VK_MButton</a> = 4
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a79abd79c71be6a7589d99c9ef46a5a8c">VK_wheeledUp</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a44eb1df746b4d43f6e13a8eb653f180a">VK_wheeledDown</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2ab04a566d519a9916e06369af9f694f3b">VK_A</a> =0x41
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a72cebe6f220a8a8556abdb62f9e16876">VK_B</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a8958736b6cfea20fc4b639d71d565ea7">VK_C</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a25a9037b677e6dc09218c85796545d79">VK_D</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a88b8c0ea03f004200a583dc8859a67bc">VK_E</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a94f7097d3047ae5520d05c7be568c4fa">VK_F</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2afc342bff41335a78df41a0547da7be27">VK_G</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a068a13a065742521dc695986a80c63c6">VK_H</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2af4141913c16a45f9c3829375a3ad1c1c">VK_I</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2ada63b3a37da3bd34bc1352fe6905c8e7">VK_J</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a4dc35e2b98af217b99ca70288ebabe9d">VK_K</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a862474a7a894724622606759cfb4bd30">VK_L</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2aefe6ca0098d0d9ffe43d708ce462d647">VK_M</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a139afde2d1fc36922859183ba3ac26b5">VK_N</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a7a749c45882e412024d4cd18d18ae70a">VK_O</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a93a3d2c25b62e5008ac236a051f45dfb">VK_P</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a3105a970d0de22657df0f04cd3b84e24">VK_Q</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a302e0c0df646113caea4a2b0044ee84e">VK_R</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a8419bb2310069a0943f7470be0719dcf">VK_S</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2a98b8efd6a34e3e78803e6d9d8d47f7d8">VK_T</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a985f69a8cd5e92dd17fb8c6cb3dc6bd3">VK_U</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a03f3343dd56bf8e0561f38ed5ef5eeb8">VK_V</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2adfcf41d52c999478ae96a7cb663eefb4">VK_W</a>
+, <br />
+&#160;&#160;<a class="el" href="#a7885f47644a0388f981f416fa20389b2ac31a89b134afd63a60e9c05725b256dc">VK_X</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2a9be08067d513eebf14b65907e5fce035">VK_Y</a>
+, <a class="el" href="#a7885f47644a0388f981f416fa20389b2abb9ca27af609da819e3bd3e04a10126b">VK_Z</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7885f47644a0388f981f416fa20389b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">预设虚拟键值  <a href="#a7885f47644a0388f981f416fa20389b2">更多...</a><br /></td></tr>
+<tr class="separator:a7885f47644a0388f981f416fa20389b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>输入交互组件 </p>
+<p>玩家鼠标键盘输入逻辑处理</p>
+<dl class="section author"><dt>作者</dt><dd>zhn </dd></dl>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a id="a5965d192e334909f0030b78735325e8b" name="a5965d192e334909f0030b78735325e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5965d192e334909f0030b78735325e8b">&#9670;&#160;</a></span>InputType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a5965d192e334909f0030b78735325e8b">InputType</a> : <a class="el" href="_macro_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>按键信号类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a5965d192e334909f0030b78735325e8bad78a68f6a85421ae121c2cb5b73a1040" name="a5965d192e334909f0030b78735325e8bad78a68f6a85421ae121c2cb5b73a1040"></a>Pressed&#160;</td><td class="fielddoc"><p>按下 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5965d192e334909f0030b78735325e8baea1e34304a5d8ffa7c9b0ed8ede4ef1a" name="a5965d192e334909f0030b78735325e8baea1e34304a5d8ffa7c9b0ed8ede4ef1a"></a>Released&#160;</td><td class="fielddoc"><p>释放 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5965d192e334909f0030b78735325e8ba09462a0d784f710178c34eaba146810d" name="a5965d192e334909f0030b78735325e8ba09462a0d784f710178c34eaba146810d"></a>Holding&#160;</td><td class="fielddoc"><p>一直按着 轴交互 频率更高受 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5965d192e334909f0030b78735325e8ba99f490e53ed16a6580a350b42e1143a9" name="a5965d192e334909f0030b78735325e8ba99f490e53ed16a6580a350b42e1143a9"></a>DoubleClick&#160;</td><td class="fielddoc"><p>双击 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7885f47644a0388f981f416fa20389b2" name="a7885f47644a0388f981f416fa20389b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7885f47644a0388f981f416fa20389b2">&#9670;&#160;</a></span>KeyCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a7885f47644a0388f981f416fa20389b2">KeyCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>预设虚拟键值 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a281327a9c3099ed12a88b3e480985b85" name="a7885f47644a0388f981f416fa20389b2a281327a9c3099ed12a88b3e480985b85"></a>VK_LButton&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a59a71341e0648d03426f56d80e226414" name="a7885f47644a0388f981f416fa20389b2a59a71341e0648d03426f56d80e226414"></a>VK_RButton&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a8e1d21e28ad24d39d681ec128e068467" name="a7885f47644a0388f981f416fa20389b2a8e1d21e28ad24d39d681ec128e068467"></a>VK_MButton&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a79abd79c71be6a7589d99c9ef46a5a8c" name="a7885f47644a0388f981f416fa20389b2a79abd79c71be6a7589d99c9ef46a5a8c"></a>VK_wheeledUp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a44eb1df746b4d43f6e13a8eb653f180a" name="a7885f47644a0388f981f416fa20389b2a44eb1df746b4d43f6e13a8eb653f180a"></a>VK_wheeledDown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2ab04a566d519a9916e06369af9f694f3b" name="a7885f47644a0388f981f416fa20389b2ab04a566d519a9916e06369af9f694f3b"></a>VK_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a72cebe6f220a8a8556abdb62f9e16876" name="a7885f47644a0388f981f416fa20389b2a72cebe6f220a8a8556abdb62f9e16876"></a>VK_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a8958736b6cfea20fc4b639d71d565ea7" name="a7885f47644a0388f981f416fa20389b2a8958736b6cfea20fc4b639d71d565ea7"></a>VK_C&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a25a9037b677e6dc09218c85796545d79" name="a7885f47644a0388f981f416fa20389b2a25a9037b677e6dc09218c85796545d79"></a>VK_D&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a88b8c0ea03f004200a583dc8859a67bc" name="a7885f47644a0388f981f416fa20389b2a88b8c0ea03f004200a583dc8859a67bc"></a>VK_E&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a94f7097d3047ae5520d05c7be568c4fa" name="a7885f47644a0388f981f416fa20389b2a94f7097d3047ae5520d05c7be568c4fa"></a>VK_F&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2afc342bff41335a78df41a0547da7be27" name="a7885f47644a0388f981f416fa20389b2afc342bff41335a78df41a0547da7be27"></a>VK_G&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a068a13a065742521dc695986a80c63c6" name="a7885f47644a0388f981f416fa20389b2a068a13a065742521dc695986a80c63c6"></a>VK_H&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2af4141913c16a45f9c3829375a3ad1c1c" name="a7885f47644a0388f981f416fa20389b2af4141913c16a45f9c3829375a3ad1c1c"></a>VK_I&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2ada63b3a37da3bd34bc1352fe6905c8e7" name="a7885f47644a0388f981f416fa20389b2ada63b3a37da3bd34bc1352fe6905c8e7"></a>VK_J&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a4dc35e2b98af217b99ca70288ebabe9d" name="a7885f47644a0388f981f416fa20389b2a4dc35e2b98af217b99ca70288ebabe9d"></a>VK_K&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a862474a7a894724622606759cfb4bd30" name="a7885f47644a0388f981f416fa20389b2a862474a7a894724622606759cfb4bd30"></a>VK_L&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2aefe6ca0098d0d9ffe43d708ce462d647" name="a7885f47644a0388f981f416fa20389b2aefe6ca0098d0d9ffe43d708ce462d647"></a>VK_M&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a139afde2d1fc36922859183ba3ac26b5" name="a7885f47644a0388f981f416fa20389b2a139afde2d1fc36922859183ba3ac26b5"></a>VK_N&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a7a749c45882e412024d4cd18d18ae70a" name="a7885f47644a0388f981f416fa20389b2a7a749c45882e412024d4cd18d18ae70a"></a>VK_O&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a93a3d2c25b62e5008ac236a051f45dfb" name="a7885f47644a0388f981f416fa20389b2a93a3d2c25b62e5008ac236a051f45dfb"></a>VK_P&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a3105a970d0de22657df0f04cd3b84e24" name="a7885f47644a0388f981f416fa20389b2a3105a970d0de22657df0f04cd3b84e24"></a>VK_Q&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a302e0c0df646113caea4a2b0044ee84e" name="a7885f47644a0388f981f416fa20389b2a302e0c0df646113caea4a2b0044ee84e"></a>VK_R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a8419bb2310069a0943f7470be0719dcf" name="a7885f47644a0388f981f416fa20389b2a8419bb2310069a0943f7470be0719dcf"></a>VK_S&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a98b8efd6a34e3e78803e6d9d8d47f7d8" name="a7885f47644a0388f981f416fa20389b2a98b8efd6a34e3e78803e6d9d8d47f7d8"></a>VK_T&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a985f69a8cd5e92dd17fb8c6cb3dc6bd3" name="a7885f47644a0388f981f416fa20389b2a985f69a8cd5e92dd17fb8c6cb3dc6bd3"></a>VK_U&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a03f3343dd56bf8e0561f38ed5ef5eeb8" name="a7885f47644a0388f981f416fa20389b2a03f3343dd56bf8e0561f38ed5ef5eeb8"></a>VK_V&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2adfcf41d52c999478ae96a7cb663eefb4" name="a7885f47644a0388f981f416fa20389b2adfcf41d52c999478ae96a7cb663eefb4"></a>VK_W&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2ac31a89b134afd63a60e9c05725b256dc" name="a7885f47644a0388f981f416fa20389b2ac31a89b134afd63a60e9c05725b256dc"></a>VK_X&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2a9be08067d513eebf14b65907e5fce035" name="a7885f47644a0388f981f416fa20389b2a9be08067d513eebf14b65907e5fce035"></a>VK_Y&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7885f47644a0388f981f416fa20389b2abb9ca27af609da819e3bd3e04a10126b" name="a7885f47644a0388f981f416fa20389b2abb9ca27af609da819e3bd3e04a10126b"></a>VK_Z&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_input_component_8h.html">InputComponent.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

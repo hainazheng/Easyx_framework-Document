@@ -1,0 +1,27 @@
+var struct_vector2_d =
+[
+    [ "Vector2D", "struct_vector2_d.html#a98e9997ebb7a629f4db52397d4e0d653", null ],
+    [ "Vector2D", "struct_vector2_d.html#ab34332f542a2eef92e4a52548f753587", null ],
+    [ "CrossProduct", "struct_vector2_d.html#a763f2758af2aaff1b40895587c346584", null ],
+    [ "Distance", "struct_vector2_d.html#a32707a7fff40c459cd069aff976f6f26", null ],
+    [ "DotProduct", "struct_vector2_d.html#a2d77b8a65ae8a5fed8ee7a2494400566", null ],
+    [ "operator!=", "struct_vector2_d.html#a1ebcd173c5ceac2c07df6a5c7e0a3d50", null ],
+    [ "operator*", "struct_vector2_d.html#a2401b9912ca78d1688dd892a432c7e2d", null ],
+    [ "operator*", "struct_vector2_d.html#a5b6f1e60df60732094694ebab2d2fb4f", null ],
+    [ "operator*=", "struct_vector2_d.html#afcc2603eb34b09b2a92fd8b139626b1c", null ],
+    [ "operator+", "struct_vector2_d.html#a09a704109bb11e79a7ed2cfe2f2d2ad6", null ],
+    [ "operator+=", "struct_vector2_d.html#ad808b7bd7fdc787bdf9ef0502df93c5b", null ],
+    [ "operator-", "struct_vector2_d.html#a01a88d3a414de45d397c95af380815d2", null ],
+    [ "operator-=", "struct_vector2_d.html#a1849945b570870b4e04ff29a665d43fb", null ],
+    [ "operator/", "struct_vector2_d.html#ae873badd1431f5c26666702781276b8f", null ],
+    [ "operator/", "struct_vector2_d.html#afbfc999eea72ada426498fc66459449e", null ],
+    [ "operator==", "struct_vector2_d.html#a6180dfd9afded4616d0ebf9140d46fde", null ],
+    [ "operator==", "struct_vector2_d.html#a1a1c1b8e64c07fb444478d3b798f3053", null ],
+    [ "ProjectVector", "struct_vector2_d.html#af2be8b5131e039afaa37674eab24943f", null ],
+    [ "RotateVector", "struct_vector2_d.html#aa0bb692b61571c281aec34f58ef352aa", null ],
+    [ "size", "struct_vector2_d.html#aabebadf4abdca26a97274fafd15d0107", null ],
+    [ "To_String", "struct_vector2_d.html#a9dfa93fdd2b85cc7bfe70371b64224ad", null ],
+    [ "unit", "struct_vector2_d.html#ad243e8aa421642ffe0cced1ae6a93e5f", null ],
+    [ "x", "struct_vector2_d.html#aeb4253ba6555251d010ea4450619029e", null ],
+    [ "y", "struct_vector2_d.html#a85215519d3f71d0e6be7d636346f3b7d", null ]
+];

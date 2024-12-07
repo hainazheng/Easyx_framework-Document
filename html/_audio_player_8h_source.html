@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/AudioPlayer.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_audio_player_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/AudioPlayer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_audio_player_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_scene_component_8h.html">SceneComponent.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_audio_player.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_audio_player.html">AudioPlayer</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_scene_component.html">SceneComponent</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_audio_player.html#afcae83e581ea7ff2687d9b61f0e6539e">   20</a></span>    std::unordered_set&lt;std::string&gt;<a class="code hl_variable" href="class_audio_player.html#afcae83e581ea7ff2687d9b61f0e6539e">paths</a>;           </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_audio_player.html#abd8c11b8c19423ca8eb6c3245632f665">   22</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_audio_player.html#abd8c11b8c19423ca8eb6c3245632f665">innerRadius</a> = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_audio_player.html#a8527e308f70b8ef53023aec9770efc72">   23</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_audio_player.html#a8527e308f70b8ef53023aec9770efc72">outerRadius</a> = 0;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_audio_player.html#ac11ad54286575c78c5af6dbffb494564">   24</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_audio_player.html#ac11ad54286575c78c5af6dbffb494564">bSpacial</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_audio_player.html#a37e407e4f6c7e0b636db1aa435fca3ff">   25</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_audio_player.html#a37e407e4f6c7e0b636db1aa435fca3ff">bVolume</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_audio_player.html#a8650eb382d022e1597830fc860be0c61">   26</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_audio_player.html#a8650eb382d022e1597830fc860be0c61">volume</a> = 1000;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_audio_player.html#a252c5f4be6e083e37260d76d4cc4f9a0">   28</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_audio_player.html#a252c5f4be6e083e37260d76d4cc4f9a0">currentVol</a> = 0;         </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_audio_player.html#a41d5beac7ef47d2d935f17e822cbfd9f">~AudioPlayer</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a175c029feb86c8aced92706519235020">Update</a>(<span class="keywordtype">float</span> deltaTime)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_audio_player.html#a68de299fffd66e5ab73632418c7bbb24">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a68de299fffd66e5ab73632418c7bbb24">SetSpacial</a>(<span class="keywordtype">bool</span> spacial) { <a class="code hl_variable" href="class_audio_player.html#ac11ad54286575c78c5af6dbffb494564">bSpacial</a> = spacial; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_audio_player.html#aff475c019e35884883674034e82b0542">   48</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#aff475c019e35884883674034e82b0542">SetRadius</a>(<span class="keywordtype">float</span> inner, <span class="keywordtype">float</span> outer)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_variable" href="class_audio_player.html#abd8c11b8c19423ca8eb6c3245632f665">innerRadius</a> = (inner &lt; 0 ? 0 : inner);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="class_audio_player.html#a8527e308f70b8ef53023aec9770efc72">outerRadius</a> = (outer &lt; 0 ? 0 : outer);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#af6d887a8a9bb060ce7c0092f93f4b28f">SetVolume</a>(<span class="keywordtype">int</span> vol);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a81b27e1699bb208e022b9599816e6e32">Play</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>, <span class="keywordtype">bool</span> repeat = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a2c9c998977033b0dd17483296c1c6cf9">Stop</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a831467d595c284fd412c1648cffe8023">Close</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a0f6024b54895b42c50ac45c53163f76d">Pause</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_audio_player.html#a2948b6d94e56b2dbabd9576ca376dfd2">Resume</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+</div>
+<div class="ttc" id="a_scene_component_8h_html"><div class="ttname"><a href="_scene_component_8h.html">SceneComponent.h</a></div><div class="ttdoc">场景组件类</div></div>
+<div class="ttc" id="aclass_audio_player_html"><div class="ttname"><a href="class_audio_player.html">AudioPlayer</a></div><div class="ttdoc">音频组件.</div><div class="ttdef"><b>定义</b> AudioPlayer.h:18</div></div>
+<div class="ttc" id="aclass_audio_player_html_a0f6024b54895b42c50ac45c53163f76d"><div class="ttname"><a href="class_audio_player.html#a0f6024b54895b42c50ac45c53163f76d">AudioPlayer::Pause</a></div><div class="ttdeci">void Pause(std::string name)</div><div class="ttdoc">暂停音乐.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:77</div></div>
+<div class="ttc" id="aclass_audio_player_html_a175c029feb86c8aced92706519235020"><div class="ttname"><a href="class_audio_player.html#a175c029feb86c8aced92706519235020">AudioPlayer::Update</a></div><div class="ttdeci">virtual void Update(float deltaTime) override</div><div class="ttdoc">实现空间感</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:20</div></div>
+<div class="ttc" id="aclass_audio_player_html_a252c5f4be6e083e37260d76d4cc4f9a0"><div class="ttname"><a href="class_audio_player.html#a252c5f4be6e083e37260d76d4cc4f9a0">AudioPlayer::currentVol</a></div><div class="ttdeci">int currentVol</div><div class="ttdoc">当前音量</div><div class="ttdef"><b>定义</b> AudioPlayer.h:28</div></div>
+<div class="ttc" id="aclass_audio_player_html_a2948b6d94e56b2dbabd9576ca376dfd2"><div class="ttname"><a href="class_audio_player.html#a2948b6d94e56b2dbabd9576ca376dfd2">AudioPlayer::Resume</a></div><div class="ttdeci">void Resume(std::string name)</div><div class="ttdoc">继续音乐.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:82</div></div>
+<div class="ttc" id="aclass_audio_player_html_a2c9c998977033b0dd17483296c1c6cf9"><div class="ttname"><a href="class_audio_player.html#a2c9c998977033b0dd17483296c1c6cf9">AudioPlayer::Stop</a></div><div class="ttdeci">void Stop(std::string name)</div><div class="ttdoc">回收音乐资源（节省内存，但再次播放会消耗较大性能）.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:66</div></div>
+<div class="ttc" id="aclass_audio_player_html_a37e407e4f6c7e0b636db1aa435fca3ff"><div class="ttname"><a href="class_audio_player.html#a37e407e4f6c7e0b636db1aa435fca3ff">AudioPlayer::bVolume</a></div><div class="ttdeci">bool bVolume</div><div class="ttdoc">是否设置了音量 默认系统音量</div><div class="ttdef"><b>定义</b> AudioPlayer.h:25</div></div>
+<div class="ttc" id="aclass_audio_player_html_a41d5beac7ef47d2d935f17e822cbfd9f"><div class="ttname"><a href="class_audio_player.html#a41d5beac7ef47d2d935f17e822cbfd9f">AudioPlayer::~AudioPlayer</a></div><div class="ttdeci">virtual ~AudioPlayer()</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:11</div></div>
+<div class="ttc" id="aclass_audio_player_html_a68de299fffd66e5ab73632418c7bbb24"><div class="ttname"><a href="class_audio_player.html#a68de299fffd66e5ab73632418c7bbb24">AudioPlayer::SetSpacial</a></div><div class="ttdeci">void SetSpacial(bool spacial)</div><div class="ttdoc">是否支持空间感.</div><div class="ttdef"><b>定义</b> AudioPlayer.h:40</div></div>
+<div class="ttc" id="aclass_audio_player_html_a81b27e1699bb208e022b9599816e6e32"><div class="ttname"><a href="class_audio_player.html#a81b27e1699bb208e022b9599816e6e32">AudioPlayer::Play</a></div><div class="ttdeci">void Play(std::string name, bool repeat=false)</div><div class="ttdoc">播放音乐.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:55</div></div>
+<div class="ttc" id="aclass_audio_player_html_a831467d595c284fd412c1648cffe8023"><div class="ttname"><a href="class_audio_player.html#a831467d595c284fd412c1648cffe8023">AudioPlayer::Close</a></div><div class="ttdeci">void Close(std::string name)</div><div class="ttdoc">停止音乐.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:71</div></div>
+<div class="ttc" id="aclass_audio_player_html_a8527e308f70b8ef53023aec9770efc72"><div class="ttname"><a href="class_audio_player.html#a8527e308f70b8ef53023aec9770efc72">AudioPlayer::outerRadius</a></div><div class="ttdeci">float outerRadius</div><div class="ttdoc">音源外径</div><div class="ttdef"><b>定义</b> AudioPlayer.h:23</div></div>
+<div class="ttc" id="aclass_audio_player_html_a8650eb382d022e1597830fc860be0c61"><div class="ttname"><a href="class_audio_player.html#a8650eb382d022e1597830fc860be0c61">AudioPlayer::volume</a></div><div class="ttdeci">int volume</div><div class="ttdoc">媒体音量大小，范围为0~1000</div><div class="ttdef"><b>定义</b> AudioPlayer.h:26</div></div>
+<div class="ttc" id="aclass_audio_player_html_abd8c11b8c19423ca8eb6c3245632f665"><div class="ttname"><a href="class_audio_player.html#abd8c11b8c19423ca8eb6c3245632f665">AudioPlayer::innerRadius</a></div><div class="ttdeci">float innerRadius</div><div class="ttdoc">音源内径</div><div class="ttdef"><b>定义</b> AudioPlayer.h:22</div></div>
+<div class="ttc" id="aclass_audio_player_html_ac11ad54286575c78c5af6dbffb494564"><div class="ttname"><a href="class_audio_player.html#ac11ad54286575c78c5af6dbffb494564">AudioPlayer::bSpacial</a></div><div class="ttdeci">bool bSpacial</div><div class="ttdoc">支持空间感的播放器时间开销较大，慎用</div><div class="ttdef"><b>定义</b> AudioPlayer.h:24</div></div>
+<div class="ttc" id="aclass_audio_player_html_af6d887a8a9bb060ce7c0092f93f4b28f"><div class="ttname"><a href="class_audio_player.html#af6d887a8a9bb060ce7c0092f93f4b28f">AudioPlayer::SetVolume</a></div><div class="ttdeci">void SetVolume(int vol)</div><div class="ttdoc">设置音量大小.</div><div class="ttdef"><b>定义</b> AudioPlayer.cpp:44</div></div>
+<div class="ttc" id="aclass_audio_player_html_afcae83e581ea7ff2687d9b61f0e6539e"><div class="ttname"><a href="class_audio_player.html#afcae83e581ea7ff2687d9b61f0e6539e">AudioPlayer::paths</a></div><div class="ttdeci">std::unordered_set&lt; std::string &gt; paths</div><div class="ttdoc">音频名字容器 一直存着直到析构</div><div class="ttdef"><b>定义</b> AudioPlayer.h:20</div></div>
+<div class="ttc" id="aclass_audio_player_html_aff475c019e35884883674034e82b0542"><div class="ttname"><a href="class_audio_player.html#aff475c019e35884883674034e82b0542">AudioPlayer::SetRadius</a></div><div class="ttdeci">void SetRadius(float inner, float outer)</div><div class="ttdoc">设置内外径，从内径到外径声源递减至零.</div><div class="ttdef"><b>定义</b> AudioPlayer.h:48</div></div>
+<div class="ttc" id="aclass_scene_component_html"><div class="ttname"><a href="class_scene_component.html">SceneComponent</a></div><div class="ttdoc">场景组件基类.</div><div class="ttdef"><b>定义</b> SceneComponent.h:15</div></div>
+<div class="ttc" id="aclassbase_html_a65510a23838809e27dd3c8bae787aac5"><div class="ttname"><a href="classbase.html#a65510a23838809e27dd3c8bae787aac5">base::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">类似&quot;class base * __ptr64 tag的值&quot;</div><div class="ttdef"><b>定义</b> CoreMinimal.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_audio_player_8h.html">AudioPlayer.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

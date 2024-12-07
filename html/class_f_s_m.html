@@ -1,0 +1,1160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: FSM类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_f_s_m.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="class_f_s_m-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">FSM类 参考<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>状态机组件.  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_f_s_m_8h_source.html">FSM.h</a>&gt;</code></p>
+<div class="dynheader">
+类 FSM 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_f_s_m.png" usemap="#FSM_map" alt=""/>
+  <map id="FSM_map" name="FSM_map">
+<area href="class_component.html" title="组件基类." alt="Component" shape="rect" coords="0,56,75,80"/>
+<area href="classbase.html" title="基类." alt="base" shape="rect" coords="0,0,75,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a785fd1cea0d04cafc005e3223064de40" id="r_a785fd1cea0d04cafc005e3223064de40"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a785fd1cea0d04cafc005e3223064de40"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a785fd1cea0d04cafc005e3223064de40">AddStatus</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>, std::string parent=&quot;root&quot;)</td></tr>
+<tr class="memdesc:a785fd1cea0d04cafc005e3223064de40"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加节点状态  <br /></td></tr>
+<tr class="separator:a785fd1cea0d04cafc005e3223064de40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729746d19ffeb5b60efbf079e0ea074b" id="r_a729746d19ffeb5b60efbf079e0ea074b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729746d19ffeb5b60efbf079e0ea074b">RemoveStatus</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>, bool delchild=1)</td></tr>
+<tr class="memdesc:a729746d19ffeb5b60efbf079e0ea074b"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除节点状态  <br /></td></tr>
+<tr class="separator:a729746d19ffeb5b60efbf079e0ea074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686a9fd4e2877212e053c113b6a2b759" id="r_a686a9fd4e2877212e053c113b6a2b759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a686a9fd4e2877212e053c113b6a2b759">GetNormalStatus</a> ()</td></tr>
+<tr class="memdesc:a686a9fd4e2877212e053c113b6a2b759"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到当前执行的状态节点.  <br /></td></tr>
+<tr class="separator:a686a9fd4e2877212e053c113b6a2b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5582b2e10285eb6beabb41638e27df7" id="r_ae5582b2e10285eb6beabb41638e27df7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5582b2e10285eb6beabb41638e27df7">GetLastStatus</a> ()</td></tr>
+<tr class="memdesc:ae5582b2e10285eb6beabb41638e27df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">得到上一次执行的状态名.  <br /></td></tr>
+<tr class="separator:ae5582b2e10285eb6beabb41638e27df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8f4b9a2b2568a04ac38b9325960f2b" id="r_a4d8f4b9a2b2568a04ac38b9325960f2b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d8f4b9a2b2568a04ac38b9325960f2b">getNameStatus</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item)</td></tr>
+<tr class="memdesc:a4d8f4b9a2b2568a04ac38b9325960f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取状态节点名字.  <br /></td></tr>
+<tr class="separator:a4d8f4b9a2b2568a04ac38b9325960f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1484f7d3f502afead48f7b9ac034f511" id="r_a1484f7d3f502afead48f7b9ac034f511"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1484f7d3f502afead48f7b9ac034f511">FindStatusByName</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="memdesc:a1484f7d3f502afead48f7b9ac034f511"><td class="mdescLeft">&#160;</td><td class="mdescRight">由名字查找状态节点.  <br /></td></tr>
+<tr class="separator:a1484f7d3f502afead48f7b9ac034f511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74eedb89159c315318da13d2f1eb1a80" id="r_a74eedb89159c315318da13d2f1eb1a80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74eedb89159c315318da13d2f1eb1a80">BeginPlay</a> ()</td></tr>
+<tr class="memdesc:a74eedb89159c315318da13d2f1eb1a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载一些参数.  <br /></td></tr>
+<tr class="separator:a74eedb89159c315318da13d2f1eb1a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f0b1984d263188cdb9ecaa3564c827" id="r_ad8f0b1984d263188cdb9ecaa3564c827"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="class_f_s_m_items.html">FSMItems</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8f0b1984d263188cdb9ecaa3564c827">GetPath</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item)</td></tr>
+<tr class="memdesc:ad8f0b1984d263188cdb9ecaa3564c827"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取节点路径.  <br /></td></tr>
+<tr class="separator:ad8f0b1984d263188cdb9ecaa3564c827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96f0952af9c1f080076de9359b05ab7" id="r_ac96f0952af9c1f080076de9359b05ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac96f0952af9c1f080076de9359b05ab7">TransitionState</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="memdesc:ac96f0952af9c1f080076de9359b05ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">切换状态.  <br /></td></tr>
+<tr class="separator:ac96f0952af9c1f080076de9359b05ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e31f575d04bdd03323cbe223196650" id="r_a19e31f575d04bdd03323cbe223196650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19e31f575d04bdd03323cbe223196650">Init</a> ()</td></tr>
+<tr class="memdesc:a19e31f575d04bdd03323cbe223196650"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化.  <br /></td></tr>
+<tr class="separator:a19e31f575d04bdd03323cbe223196650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd03b1d57263ba2706bf79520bc2041" id="r_adcd03b1d57263ba2706bf79520bc2041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcd03b1d57263ba2706bf79520bc2041">Destruct</a> ()</td></tr>
+<tr class="memdesc:adcd03b1d57263ba2706bf79520bc2041"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁状态机.  <br /></td></tr>
+<tr class="separator:adcd03b1d57263ba2706bf79520bc2041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae5aa161040fa163d2212db2e269c9b" id="r_a4ae5aa161040fa163d2212db2e269c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ae5aa161040fa163d2212db2e269c9b">Awake</a> ()</td></tr>
+<tr class="memdesc:a4ae5aa161040fa163d2212db2e269c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">唤醒状态树.  <br /></td></tr>
+<tr class="separator:a4ae5aa161040fa163d2212db2e269c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fccf1c016c43e4fa4ee512311bf9d7d" id="r_a2fccf1c016c43e4fa4ee512311bf9d7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fccf1c016c43e4fa4ee512311bf9d7d">FSM</a> ()</td></tr>
+<tr class="memdesc:a2fccf1c016c43e4fa4ee512311bf9d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数.  <br /></td></tr>
+<tr class="separator:a2fccf1c016c43e4fa4ee512311bf9d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42500598c00f9461687b804732851c23" id="r_a42500598c00f9461687b804732851c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42500598c00f9461687b804732851c23">~FSM</a> ()</td></tr>
+<tr class="memdesc:a42500598c00f9461687b804732851c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">析构函数 销毁所有节点回收资源.  <br /></td></tr>
+<tr class="separator:a42500598c00f9461687b804732851c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_component')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component" id="r_a4b612e95c5124b7e9fb109ce92ba062f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a4b612e95c5124b7e9fb109ce92ba062f">EndPlay</a> ()</td></tr>
+<tr class="memdesc:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">把一些不能写在析构函数的一些操作写在这里  <br /></td></tr>
+<tr class="separator:a4b612e95c5124b7e9fb109ce92ba062f inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component" id="r_ad18c38d69d7d77ec399a64175aa998ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#ad18c38d69d7d77ec399a64175aa998ad">SetOwner</a> (class <a class="el" href="class_object.html">Object</a> *owner)</td></tr>
+<tr class="memdesc:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绑定对象.  <br /></td></tr>
+<tr class="separator:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component" id="r_a66fa458a9bf940a8357688085ddc251c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a66fa458a9bf940a8357688085ddc251c">Activate</a> ()</td></tr>
+<tr class="memdesc:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活组件  <br /></td></tr>
+<tr class="separator:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component" id="r_a68acbf339604cf393cfc178135e48a5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a68acbf339604cf393cfc178135e48a5f">Deactivate</a> ()</td></tr>
+<tr class="memdesc:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">停用组件  <br /></td></tr>
+<tr class="separator:a68acbf339604cf393cfc178135e48a5f inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component" id="r_a0deb5ee1c90da8fdb1de7113a981e96c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">GetOwner</a> () const</td></tr>
+<tr class="memdesc:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取绑定对象指针  <br /></td></tr>
+<tr class="separator:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classbase')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classbase.html">base</a></td></tr>
+<tr class="memitem:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase" id="r_a3b0362be8b58605e4975b969dd8131a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a3b0362be8b58605e4975b969dd8131a4">base</a> ()</td></tr>
+<tr class="separator:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase" id="r_a28380c406d2ac063fe11950bff012c06"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a28380c406d2ac063fe11950bff012c06">~base</a> ()</td></tr>
+<tr class="separator:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase" id="r_acaf71fb0984c325434465393af6994c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#acaf71fb0984c325434465393af6994c7">GetName</a> () const</td></tr>
+<tr class="separator:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase" id="r_a8e45fd097ee216399bb2216d9f843420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a8e45fd097ee216399bb2216d9f843420">SetName</a> (const std::string &amp;<a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="separator:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a5c4fd88a633304fcae9622999fbcaf6c" id="r_a5c4fd88a633304fcae9622999fbcaf6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c4fd88a633304fcae9622999fbcaf6c">RegisterStatus</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>, <a class="el" href="class_f_s_m_items.html">FSMItems</a> *item)</td></tr>
+<tr class="memdesc:a5c4fd88a633304fcae9622999fbcaf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册状态在状态机.  <br /></td></tr>
+<tr class="separator:a5c4fd88a633304fcae9622999fbcaf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1905f3b2a019a4ad142fb0c3635d8773" id="r_a1905f3b2a019a4ad142fb0c3635d8773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1905f3b2a019a4ad142fb0c3635d8773">process_Update</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item)</td></tr>
+<tr class="memdesc:a1905f3b2a019a4ad142fb0c3635d8773"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归从上到下执行行为.  <br /></td></tr>
+<tr class="separator:a1905f3b2a019a4ad142fb0c3635d8773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c6e69cd2758b6b8d7f3d00e7916eba" id="r_a56c6e69cd2758b6b8d7f3d00e7916eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56c6e69cd2758b6b8d7f3d00e7916eba">process_Enter</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item, <a class="el" href="class_f_s_m_items.html">FSMItems</a> *end=nullptr)</td></tr>
+<tr class="memdesc:a56c6e69cd2758b6b8d7f3d00e7916eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归从上到下执行进入事件.  <br /></td></tr>
+<tr class="separator:a56c6e69cd2758b6b8d7f3d00e7916eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef82245f3c2e5521cac3ac1f47abd5ff" id="r_aef82245f3c2e5521cac3ac1f47abd5ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef82245f3c2e5521cac3ac1f47abd5ff">process_Exit</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item, <a class="el" href="class_f_s_m_items.html">FSMItems</a> *end=nullptr)</td></tr>
+<tr class="memdesc:aef82245f3c2e5521cac3ac1f47abd5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">递归从下到上执行退出事件.  <br /></td></tr>
+<tr class="separator:aef82245f3c2e5521cac3ac1f47abd5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94257ef812ca56d82b937acee497ade6" id="r_a94257ef812ca56d82b937acee497ade6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94257ef812ca56d82b937acee497ade6">Update</a> (float deltaTime)</td></tr>
+<tr class="memdesc:a94257ef812ca56d82b937acee497ade6"><td class="mdescLeft">&#160;</td><td class="mdescRight">每一帧执行行为.  <br /></td></tr>
+<tr class="separator:a94257ef812ca56d82b937acee497ade6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cff84a501576502683cbacb91d06ed3" id="r_a3cff84a501576502683cbacb91d06ed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cff84a501576502683cbacb91d06ed3">Clear</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="memdesc:a3cff84a501576502683cbacb91d06ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空某个节点子状态(也包括当前节点).  <br /></td></tr>
+<tr class="separator:a3cff84a501576502683cbacb91d06ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a921cafa8e8141a0b0944f568f7d0f2d5" id="r_a921cafa8e8141a0b0944f568f7d0f2d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921cafa8e8141a0b0944f568f7d0f2d5">UnregisterStatus</a> (std::string <a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="memdesc:a921cafa8e8141a0b0944f568f7d0f2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消注册状态在状态机.  <br /></td></tr>
+<tr class="separator:a921cafa8e8141a0b0944f568f7d0f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af113cf6589618f456382420804f10cfe" id="r_af113cf6589618f456382420804f10cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af113cf6589618f456382420804f10cfe">UnregisterStatus</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *item)</td></tr>
+<tr class="memdesc:af113cf6589618f456382420804f10cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消注册状态在状态机.  <br /></td></tr>
+<tr class="separator:af113cf6589618f456382420804f10cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f0588e12862113dfe1da31cb4a3915" id="r_af1f0588e12862113dfe1da31cb4a3915"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f0588e12862113dfe1da31cb4a3915">lowestCommonAncestor</a> (<a class="el" href="class_f_s_m_items.html">FSMItems</a> *<a class="el" href="#a398562c234058aa2b29b79126aed70d1">root</a>, <a class="el" href="class_f_s_m_items.html">FSMItems</a> *p, <a class="el" href="class_f_s_m_items.html">FSMItems</a> *q)</td></tr>
+<tr class="memdesc:af1f0588e12862113dfe1da31cb4a3915"><td class="mdescLeft">&#160;</td><td class="mdescRight">寻找最近公共祖先.  <br /></td></tr>
+<tr class="separator:af1f0588e12862113dfe1da31cb4a3915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a05a6cf756650fdda264d8d4b6a02cd11" id="r_a05a6cf756650fdda264d8d4b6a02cd11"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="class_f_s_m_items.html">FSMItems</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05a6cf756650fdda264d8d4b6a02cd11">status</a></td></tr>
+<tr class="memdesc:a05a6cf756650fdda264d8d4b6a02cd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">节点映射 [名字，状态节点] 用名称访问节点.  <br /></td></tr>
+<tr class="separator:a05a6cf756650fdda264d8d4b6a02cd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a398562c234058aa2b29b79126aed70d1" id="r_a398562c234058aa2b29b79126aed70d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a398562c234058aa2b29b79126aed70d1">root</a></td></tr>
+<tr class="memdesc:a398562c234058aa2b29b79126aed70d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">根节点  <br /></td></tr>
+<tr class="separator:a398562c234058aa2b29b79126aed70d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eef80ff0331d103653388b3681af12c" id="r_a4eef80ff0331d103653388b3681af12c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eef80ff0331d103653388b3681af12c">normalstatus</a> =nullptr</td></tr>
+<tr class="memdesc:a4eef80ff0331d103653388b3681af12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">现在状态节点  <br /></td></tr>
+<tr class="separator:a4eef80ff0331d103653388b3681af12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b0b81b6b020cedf8c5cea3cb86988a" id="r_a05b0b81b6b020cedf8c5cea3cb86988a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05b0b81b6b020cedf8c5cea3cb86988a">laststatus</a> = &quot;null&quot;</td></tr>
+<tr class="memdesc:a05b0b81b6b020cedf8c5cea3cb86988a"><td class="mdescLeft">&#160;</td><td class="mdescRight">前一状态  <br /></td></tr>
+<tr class="separator:a05b0b81b6b020cedf8c5cea3cb86988a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb8d92620bb446af2ee6c3906d63d27" id="r_afcb8d92620bb446af2ee6c3906d63d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_f_s_m___info.html">FSM_Info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a></td></tr>
+<tr class="memdesc:afcb8d92620bb446af2ee6c3906d63d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">需要的参数.  <br /></td></tr>
+<tr class="separator:afcb8d92620bb446af2ee6c3906d63d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_component')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component" id="r_a0d14459b1874626134163b11d1dbfcf0"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0d14459b1874626134163b11d1dbfcf0">pOwner</a> = nullptr</td></tr>
+<tr class="memdesc:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理控制逻辑 有对象物体的指针才能进行控制  <br /></td></tr>
+<tr class="separator:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component" id="r_a950b1a2299221cbe0e3fd0a79b9b487c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a950b1a2299221cbe0e3fd0a79b9b487c">bIsEnabled</a> = true</td></tr>
+<tr class="memdesc:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否激活  <br /></td></tr>
+<tr class="separator:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>状态机组件. </p>
+<p>执行状态的管理 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a2fccf1c016c43e4fa4ee512311bf9d7d" name="a2fccf1c016c43e4fa4ee512311bf9d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fccf1c016c43e4fa4ee512311bf9d7d">&#9670;&#160;</a></span>FSM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FSM::FSM </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数. </p>
+<p>主要就是创建根节点 </p>
+
+</div>
+</div>
+<a id="a42500598c00f9461687b804732851c23" name="a42500598c00f9461687b804732851c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42500598c00f9461687b804732851c23">&#9670;&#160;</a></span>~FSM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FSM::~FSM </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>析构函数 销毁所有节点回收资源. </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a785fd1cea0d04cafc005e3223064de40" name="a785fd1cea0d04cafc005e3223064de40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785fd1cea0d04cafc005e3223064de40">&#9670;&#160;</a></span>AddStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * FSM::AddStatus </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;root&quot;</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>添加节点状态 </p>
+<p>默认状态并行. </p><dl class="section remark"><dt>备注</dt><dd>!!!用户添加创建新节点要用这个 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态节点名字 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>父节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>新节点的指针 </dd></dl>
+
+</div>
+</div>
+<a id="a4ae5aa161040fa163d2212db2e269c9b" name="a4ae5aa161040fa163d2212db2e269c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae5aa161040fa163d2212db2e269c9b">&#9670;&#160;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::Awake </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>唤醒状态树. </p>
+<p>组件用不到 </p>
+
+</div>
+</div>
+<a id="a74eedb89159c315318da13d2f1eb1a80" name="a74eedb89159c315318da13d2f1eb1a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74eedb89159c315318da13d2f1eb1a80">&#9670;&#160;</a></span>BeginPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FSM::BeginPlay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载一些参数. </p>
+<dl class="section remark"><dt>备注</dt><dd>FSM_Info类添加了哪些也要加上 </dd>
+<dd>
+要动态加载就写在update里面 </dd></dl>
+
+<p>重载 <a class="el" href="class_component.html#a3d9800f7fdc728bd95b4668ff1a06af9">Component</a> .</p>
+
+</div>
+</div>
+<a id="a3cff84a501576502683cbacb91d06ed3" name="a3cff84a501576502683cbacb91d06ed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cff84a501576502683cbacb91d06ed3">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::Clear </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空某个节点子状态(也包括当前节点). </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态节点名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcd03b1d57263ba2706bf79520bc2041" name="adcd03b1d57263ba2706bf79520bc2041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd03b1d57263ba2706bf79520bc2041">&#9670;&#160;</a></span>Destruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::Destruct </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>销毁状态机. </p>
+
+<p>重载 <a class="el" href="class_component.html#a796d5cd46061d3426d098f0d74c38596">Component</a> .</p>
+
+</div>
+</div>
+<a id="a1484f7d3f502afead48f7b9ac034f511" name="a1484f7d3f502afead48f7b9ac034f511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1484f7d3f502afead48f7b9ac034f511">&#9670;&#160;</a></span>FindStatusByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_s_m_items.html">FSMItems</a> * FSM::FindStatusByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>由名字查找状态节点. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态节点 </dd></dl>
+
+</div>
+</div>
+<a id="ae5582b2e10285eb6beabb41638e27df7" name="ae5582b2e10285eb6beabb41638e27df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5582b2e10285eb6beabb41638e27df7">&#9670;&#160;</a></span>GetLastStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FSM::GetLastStatus </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>得到上一次执行的状态名. </p>
+<dl class="section return"><dt>返回</dt><dd>状态名 </dd></dl>
+
+</div>
+</div>
+<a id="a4d8f4b9a2b2568a04ac38b9325960f2b" name="a4d8f4b9a2b2568a04ac38b9325960f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8f4b9a2b2568a04ac38b9325960f2b">&#9670;&#160;</a></span>getNameStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FSM::getNameStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取状态节点名字. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态名字 </dd></dl>
+
+</div>
+</div>
+<a id="a686a9fd4e2877212e053c113b6a2b759" name="a686a9fd4e2877212e053c113b6a2b759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a686a9fd4e2877212e053c113b6a2b759">&#9670;&#160;</a></span>GetNormalStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_s_m_items.html">FSMItems</a> * FSM::GetNormalStatus </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>得到当前执行的状态节点. </p>
+<dl class="section return"><dt>返回</dt><dd>状态节点 </dd></dl>
+
+</div>
+</div>
+<a id="ad8f0b1984d263188cdb9ecaa3564c827" name="ad8f0b1984d263188cdb9ecaa3564c827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f0b1984d263188cdb9ecaa3564c827">&#9670;&#160;</a></span>GetPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::list&lt; <a class="el" href="class_f_s_m_items.html">FSMItems</a> * &gt; FSM::GetPath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取节点路径. </p>
+<p>用链表满足先进先出 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>路径节点链表 存储从自己开始到根节点 </dd></dl>
+
+</div>
+</div>
+<a id="a19e31f575d04bdd03323cbe223196650" name="a19e31f575d04bdd03323cbe223196650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e31f575d04bdd03323cbe223196650">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化. </p>
+<p>主要是为了以后作为一个独立的类需要的函数 实现更加复杂的管理 </p>
+
+</div>
+</div>
+<a id="af1f0588e12862113dfe1da31cb4a3915" name="af1f0588e12862113dfe1da31cb4a3915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f0588e12862113dfe1da31cb4a3915">&#9670;&#160;</a></span>lowestCommonAncestor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_s_m_items.html">FSMItems</a> * FSM::lowestCommonAncestor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>q</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>寻找最近公共祖先. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">root</td><td>根状态节点 其中的一个公共祖先 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>第一个状态节点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">q</td><td>第二个状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最近公共祖先节点 </dd></dl>
+
+</div>
+</div>
+<a id="a56c6e69cd2758b6b8d7f3d00e7916eba" name="a56c6e69cd2758b6b8d7f3d00e7916eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c6e69cd2758b6b8d7f3d00e7916eba">&#9670;&#160;</a></span>process_Enter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::process_Enter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>end</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>递归从上到下执行进入事件. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>执行节点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>从哪个上层节点开始 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef82245f3c2e5521cac3ac1f47abd5ff" name="aef82245f3c2e5521cac3ac1f47abd5ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef82245f3c2e5521cac3ac1f47abd5ff">&#9670;&#160;</a></span>process_Exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::process_Exit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>end</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>递归从下到上执行退出事件. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>执行节点 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>执行到哪个上层节点为止 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1905f3b2a019a4ad142fb0c3635d8773" name="a1905f3b2a019a4ad142fb0c3635d8773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1905f3b2a019a4ad142fb0c3635d8773">&#9670;&#160;</a></span>process_Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::process_Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>递归从上到下执行行为. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5c4fd88a633304fcae9622999fbcaf6c" name="a5c4fd88a633304fcae9622999fbcaf6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4fd88a633304fcae9622999fbcaf6c">&#9670;&#160;</a></span>RegisterStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::RegisterStatus </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册状态在状态机. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a729746d19ffeb5b60efbf079e0ea074b" name="a729746d19ffeb5b60efbf079e0ea074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729746d19ffeb5b60efbf079e0ea074b">&#9670;&#160;</a></span>RemoveStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::RemoveStatus </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>delchild</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移除节点状态 </p>
+<p>默认删除所有子节点状态.</p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delchild</td><td>是否删除所有子节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac96f0952af9c1f080076de9359b05ab7" name="ac96f0952af9c1f080076de9359b05ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96f0952af9c1f080076de9359b05ab7">&#9670;&#160;</a></span>TransitionState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::TransitionState </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>切换状态. </p>
+<dl class="section remark"><dt>备注</dt><dd>切换状态调用的函数 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>状态名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af113cf6589618f456382420804f10cfe" name="af113cf6589618f456382420804f10cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af113cf6589618f456382420804f10cfe">&#9670;&#160;</a></span>UnregisterStatus() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::UnregisterStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_s_m_items.html">FSMItems</a> *</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消注册状态在状态机. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态节点 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a921cafa8e8141a0b0944f568f7d0f2d5" name="a921cafa8e8141a0b0944f568f7d0f2d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921cafa8e8141a0b0944f568f7d0f2d5">&#9670;&#160;</a></span>UnregisterStatus() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FSM::UnregisterStatus </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消注册状态在状态机. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>状态节点名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94257ef812ca56d82b937acee497ade6" name="a94257ef812ca56d82b937acee497ade6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94257ef812ca56d82b937acee497ade6">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FSM::Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>每一帧执行行为. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deltaTime</td><td>帧间隔时间 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载 <a class="el" href="class_component.html#a93437569d1894195f587ba1c21e4412e">Component</a> .</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="afcb8d92620bb446af2ee6c3906d63d27" name="afcb8d92620bb446af2ee6c3906d63d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb8d92620bb446af2ee6c3906d63d27">&#9670;&#160;</a></span>fsm_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_f_s_m___info.html">FSM_Info</a> FSM::fsm_info</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>需要的参数. </p>
+
+</div>
+</div>
+<a id="a05b0b81b6b020cedf8c5cea3cb86988a" name="a05b0b81b6b020cedf8c5cea3cb86988a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b0b81b6b020cedf8c5cea3cb86988a">&#9670;&#160;</a></span>laststatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FSM::laststatus = &quot;null&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前一状态 </p>
+<dl class="section remark"><dt>备注</dt><dd>没有则为null 或者前一个删除了. </dd></dl>
+
+</div>
+</div>
+<a id="a4eef80ff0331d103653388b3681af12c" name="a4eef80ff0331d103653388b3681af12c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eef80ff0331d103653388b3681af12c">&#9670;&#160;</a></span>normalstatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_s_m_items.html">FSMItems</a>* FSM::normalstatus =nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>现在状态节点 </p>
+
+</div>
+</div>
+<a id="a398562c234058aa2b29b79126aed70d1" name="a398562c234058aa2b29b79126aed70d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a398562c234058aa2b29b79126aed70d1">&#9670;&#160;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_s_m_items.html">FSMItems</a>* FSM::root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>根节点 </p>
+
+</div>
+</div>
+<a id="a05a6cf756650fdda264d8d4b6a02cd11" name="a05a6cf756650fdda264d8d4b6a02cd11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a6cf756650fdda264d8d4b6a02cd11">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="class_f_s_m_items.html">FSMItems</a>*&gt; FSM::status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>节点映射 [名字，状态节点] 用名称访问节点. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_f_s_m.html">FSM</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/FSM.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_f_s_m_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/FSM.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_f_s_m_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include&quot;<a class="code" href="_core_minimal_8h.html">CoreMinimal.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include&quot;<a class="code" href="_delegate_8h.html">Delegate.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include&lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include&lt;map&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include&lt;chrono&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include&quot;<a class="code" href="_collider_8h.html">Collider.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include&lt;stack&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include&quot;<a class="code" href="_ani_edge_8h.html">AniEdge.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include&quot;<a class="code" href="_log_8h.html">Log.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//分层状态机</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//enum class role_status:uint8</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//  attack,</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">//  idle,</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">//  dead,</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//  escape</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//enum class action_status :uint8</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//  walk,</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//  rush,</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//  jump,</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//  attack,</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//  stop</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//enum class role_Events :uint8</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//  event1,</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//  event2,</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//  event3</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//enum class action_Events :uint8</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//  event1,</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//  event2,</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//  event3,</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">//  event4,</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//  event5</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><a class="code hl_define" href="_delegate_8h.html#ad82d6472270613d25c95f960f72f782c">DECLARE_NO_PARAM_UNICAST_DELEGATE</a>(action)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//class FSMItems</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">//  friend class FSM;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//  role_status current_rolestatus;     //当前角色层状态</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//  action_status current_actionstatus; //当前行为层状态</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//  role_status next_rolestatus;            //角色层次态</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">//  action_status next_actionstatus;            //行为层次态</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">//  action action_role;                     //角色动作</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">//  action action_act;                      //行为动作</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//  role_Events role_event;                         //角色事件</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//  action_Events act_event;                        //行为事件</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//public:</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">//  //构造函数</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//  FSMItems(role_status _current_rolestatus,</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//  action_status _current_actionstatus,</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">//  role_status _next_rolestatus,</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">//  action_status _next_actionstatus,</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">//  action _action_role,</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//  action _action_act,</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//  role_Events _role_event,</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//  action_Events _act_event):</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//      current_rolestatus(_current_rolestatus),</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">//      current_actionstatus(_current_actionstatus),</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">//      next_rolestatus(_next_rolestatus),</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">//      next_actionstatus(_next_actionstatus),</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">//      action_role(_action_role),</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">//      action_act(_action_act),</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">//      role_event(_role_event),</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">//      act_event(_act_event){}</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">//</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">//class status</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//{</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//  virtual void update() = 0;</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">//  virtual void enter() = 0;</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">//  virtual void exit() = 0;</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">//};</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="};">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="struct_status_sort.html">  108</a></span>struct <a class="code hl_struct" href="struct_status_sort.html">StatusSort</a></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* a, <span class="keyword">const</span> <span class="keyword">class</span> <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* b)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//基本逻辑</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">/*        一颗树存储所有状态          */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">/*         同一层级的节点可以转换的     */</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">/*         节点有自己的事件    */</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="};">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html">  124</a></span><span class="keyword">class </span><a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>{</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#abb5d87caf466f4fe41c240f3592c8553">  126</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_f_s_m.html">FSM</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">  128</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a>;                  </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">/*std::unordered_set&lt;std::string&gt; a;*/</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">  130</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">status</a>;         </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">  132</a></span>    std::set&lt; FSMItems*,StatusSort&gt; <a class="code hl_variable" href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">children</a>;           </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">  134</a></span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>=<span class="keyword">nullptr</span>;           </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a04bba5babe6a6348b86a9e5210669dd7">  144</a></span>    <a class="code hl_function" href="class_f_s_m_items.html#a04bba5babe6a6348b86a9e5210669dd7">FSMItems</a>(<span class="keywordtype">int</span> _status, <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* _parent = <span class="keyword">nullptr</span>, <span class="keywordtype">int</span> _level = 0) :</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_variable" href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">status</a>(_status)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_function" href="class_f_s_m_items.html#af24755ebf75ad3dfb23cd021d36ba388">AttachTo</a>(_parent);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a> = _level;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="comment">//自动推导节点深度</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a> = <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a>+1;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a07bd49f2addcc0c2cbc047efdeb252e2">  161</a></span>    <a class="code hl_function" href="class_f_s_m_items.html#a07bd49f2addcc0c2cbc047efdeb252e2">~FSMItems</a>()</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="foldopen" id="foldopen00170" data-start="{" data-end="}">
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#af24755ebf75ad3dfb23cd021d36ba388">  170</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m_items.html#af24755ebf75ad3dfb23cd021d36ba388">AttachTo</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* par)</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <a class="code hl_function" href="class_f_s_m_items.html#a82bd56d19d2903def5635574bbc37d77">DetachForm</a>(this-&gt;parent);</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">if</span> (par)</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a> = par;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a> = <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a>+1;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <a class="code hl_variable" href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">status</a> = <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>-&gt;<a class="code hl_function" href="class_f_s_m_items.html#a20953624f5881028d0eecbe4f5ae91b4">newchildstatus</a>();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            par-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">children</a>.insert(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    }</div>
+</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        </div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a82bd56d19d2903def5635574bbc37d77">  188</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m_items.html#a82bd56d19d2903def5635574bbc37d77">DetachForm</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* par)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">if</span> (par)</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            par-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">children</a>.erase(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">if</span> (par == <a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>)<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <a class="code hl_variable" href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">level</a> = 0;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m_items.html#a70f3ddaf954d9df87fe19651c7ac8890">Destory</a>();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="foldopen" id="foldopen00209" data-start="{" data-end="}">
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a20953624f5881028d0eecbe4f5ae91b4">  209</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_f_s_m_items.html#a20953624f5881028d0eecbe4f5ae91b4">newchildstatus</a>()</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="comment">//寻找子孩子中是否有状态值</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordtype">int</span> new_status = 0;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code hl_variable" href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">children</a>)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>            <span class="keywordflow">if</span> (it-&gt;GetStatus() == new_status ) { new_status++; }</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>            <span class="keywordflow">else</span> { <span class="keywordflow">break</span>; }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        }</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keywordflow">return</span> new_status;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="foldopen" id="foldopen00226" data-start="{" data-end="}">
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#ab67f6e074c67eee99e30fdfd27710384">  226</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_f_s_m_items.html#ab67f6e074c67eee99e30fdfd27710384">GetStatus</a>()<span class="keyword">const</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">status</a>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#af506061a521441c55cdad71c56f8480e">  231</a></span>    <a class="code hl_class" href="class_f_s_m.html">FSM</a>* <a class="code hl_variable" href="class_f_s_m_items.html#af506061a521441c55cdad71c56f8480e">fsm</a> = <span class="keyword">nullptr</span>;             </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a3eca54d821c00a1a108cb695368fd0ee">  232</a></span>    <a class="code hl_class" href="class_animator.html">Animator</a>* <a class="code hl_variable" href="class_f_s_m_items.html#a3eca54d821c00a1a108cb695368fd0ee">ani</a> = <span class="keyword">nullptr</span>;        </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a3ae5d840438b7ac387d6ef9de4c18d52">  233</a></span>    <a class="code hl_class" href="class_collider.html">Collider</a>* <a class="code hl_variable" href="class_f_s_m_items.html#a3ae5d840438b7ac387d6ef9de4c18d52">col</a> = <span class="keyword">nullptr</span>;        </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#a1649811e98cedcb888d7fd1cc5c106da">  235</a></span>    action <a class="code hl_variable" href="class_f_s_m_items.html#a1649811e98cedcb888d7fd1cc5c106da">act</a>;             </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#ab95883cd54d2e5e28060aee6119e3452">  236</a></span>    action <a class="code hl_variable" href="class_f_s_m_items.html#ab95883cd54d2e5e28060aee6119e3452">enter</a>;           </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="class_f_s_m_items.html#aabd95b0927a46242ab19cacefff90ea5">  237</a></span>    action <a class="code hl_variable" href="class_f_s_m_items.html#aabd95b0927a46242ab19cacefff90ea5">exit</a>;            </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>};</div>
+</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="foldopen" id="foldopen00245" data-start="{" data-end="};">
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="struct_f_s_m___info.html">  245</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_f_s_m___info.html">FSM_Info</a></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>{</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="struct_f_s_m___info.html#ae42fec62a9797e86598493c6964de29b">  247</a></span>    <a class="code hl_class" href="class_animator.html">Animator</a>* <a class="code hl_variable" href="struct_f_s_m___info.html#ae42fec62a9797e86598493c6964de29b">ani</a> = <span class="keyword">nullptr</span>;        </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="comment">//time_point&lt;steady_clock&gt; clock;       //计时</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="struct_f_s_m___info.html#a32dae64ad3c31b0bf348cc069ed7d4ef">  250</a></span>    <a class="code hl_class" href="class_collider.html">Collider</a>* <a class="code hl_variable" href="struct_f_s_m___info.html#a32dae64ad3c31b0bf348cc069ed7d4ef">col</a> = <span class="keyword">nullptr</span>;        </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>};</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="foldopen" id="foldopen00258" data-start="{" data-end="};">
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="class_f_s_m.html">  258</a></span><span class="keyword">class </span><a class="code hl_class" href="class_f_s_m.html">FSM</a> final:<span class="keyword">public</span> <a class="code hl_class" href="class_component.html">Component</a></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>{</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="foldopen" id="foldopen00271" data-start="{" data-end="}">
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a785fd1cea0d04cafc005e3223064de40">  271</a></span>    T* <a class="code hl_function" href="class_f_s_m.html#a785fd1cea0d04cafc005e3223064de40">AddStatus</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>, std::string parent = <span class="stringliteral">&quot;root&quot;</span>)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    {</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="comment">//寻找状态机是否有父节点，一定要绑定在一个父节点的下面</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* it = <a class="code hl_function" href="class_f_s_m.html#a1484f7d3f502afead48f7b9ac034f511">FindStatusByName</a>(parent);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keywordflow">if</span> (!it) {</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <a class="code hl_function" href="class_log.html#a62bd4b0528aa23befb3226da3d5622f6">Log::instance</a>()-&gt;<a class="code hl_function" href="class_log.html#ab91d69d448051c3d127c0dac54b7869b">printf</a>(<a class="code hl_variable" href="class_log.html#a0a37b6e34e4662db8a9c6797a83a7348">Log::LEVEL_ERR</a>, __FILE__, __LINE__,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                <span class="stringliteral">&quot;父节点:%s不存在&quot;</span>, parent.c_str()); <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        }   </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="comment">//创建节点</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        T* item = <span class="keyword">new</span> T(it-&gt;<a class="code hl_function" href="class_f_s_m_items.html#a20953624f5881028d0eecbe4f5ae91b4">newchildstatus</a>(), it);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="keywordflow">if</span> (item &amp;&amp; <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>*<span class="keyword">&gt;</span>(item))       <span class="comment">//用静态转化是因为子类转化为父类，不能父类转化成子类</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            item-&gt;fsm = <span class="keyword">this</span>;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            item-&gt;ani = this-&gt;<a class="code hl_variable" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a>.<a class="code hl_variable" href="struct_f_s_m___info.html#ae42fec62a9797e86598493c6964de29b">ani</a>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            item-&gt;col = this-&gt;<a class="code hl_variable" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a>.<a class="code hl_variable" href="struct_f_s_m___info.html#a32dae64ad3c31b0bf348cc069ed7d4ef">col</a>;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>            <span class="comment">//映射</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.insert({ <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>,item });</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <span class="keywordflow">return</span> item;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <a class="code hl_function" href="class_log.html#a62bd4b0528aa23befb3226da3d5622f6">Log::instance</a>()-&gt;<a class="code hl_function" href="class_log.html#ab91d69d448051c3d127c0dac54b7869b">printf</a>(<a class="code hl_variable" href="class_log.html#a0a37b6e34e4662db8a9c6797a83a7348">Log::LEVEL_ERR</a>, __FILE__, __LINE__,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="stringliteral">&quot;创建节点状态:%s失败&quot;</span>, <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>.c_str());</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keyword">delete</span> item;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    };</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a729746d19ffeb5b60efbf079e0ea074b">RemoveStatus</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>,<span class="keywordtype">bool</span> delchild=1);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a5c4fd88a633304fcae9622999fbcaf6c">  315</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a5c4fd88a633304fcae9622999fbcaf6c">RegisterStatus</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>,<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item)</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    {</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.insert({<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>,item});</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    }</div>
+</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="foldopen" id="foldopen00325" data-start="{" data-end="}">
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a1905f3b2a019a4ad142fb0c3635d8773">  325</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a1905f3b2a019a4ad142fb0c3635d8773">process_Update</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="keywordflow">if</span> (!item)<span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <span class="keywordflow">if</span> (item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>!=<span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        {</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>            <a class="code hl_function" href="class_f_s_m.html#a1905f3b2a019a4ad142fb0c3635d8773">process_Update</a>(item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>);</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        }</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a1649811e98cedcb888d7fd1cc5c106da">act</a>(); </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    }</div>
+</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="foldopen" id="foldopen00341" data-start="{" data-end="}">
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a56c6e69cd2758b6b8d7f3d00e7916eba">  341</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a56c6e69cd2758b6b8d7f3d00e7916eba">process_Enter</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item, <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* end=<span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    {</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">if</span> (!item)<span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        <span class="keywordflow">if</span> (item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a> != end)</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        {</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            <a class="code hl_function" href="class_f_s_m.html#a56c6e69cd2758b6b8d7f3d00e7916eba">process_Enter</a>(item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>,end);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        }</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#ab95883cd54d2e5e28060aee6119e3452">enter</a>();</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    }</div>
+</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="foldopen" id="foldopen00357" data-start="{" data-end="}">
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno"><a class="line" href="class_f_s_m.html#aef82245f3c2e5521cac3ac1f47abd5ff">  357</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#aef82245f3c2e5521cac3ac1f47abd5ff">process_Exit</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item,<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* end = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    {</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>        <span class="keywordflow">if</span> (!item)<span class="keywordflow">return</span>;item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#aabd95b0927a46242ab19cacefff90ea5">exit</a>();</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">if</span> (item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a> != end)</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        {</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>            </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            <a class="code hl_function" href="class_f_s_m.html#aef82245f3c2e5521cac3ac1f47abd5ff">process_Exit</a>(item-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>,end);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>            </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        }</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    }</div>
+</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="foldopen" id="foldopen00374" data-start="{" data-end="}">
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a94257ef812ca56d82b937acee497ade6">  374</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a94257ef812ca56d82b937acee497ade6">Update</a>(<span class="keywordtype">float</span> deltaTime)</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    {</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>        <a class="code hl_function" href="class_component.html#a93437569d1894195f587ba1c21e4412e">Component::Update</a>(deltaTime);</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        <a class="code hl_function" href="class_f_s_m.html#a1905f3b2a019a4ad142fb0c3635d8773">process_Update</a>(<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>);</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        <span class="comment">//normalstatus-&gt;act();</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    }</div>
+</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    </div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    </div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a3cff84a501576502683cbacb91d06ed3">Clear</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="foldopen" id="foldopen00398" data-start="{" data-end="}">
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a921cafa8e8141a0b0944f568f7d0f2d5">  398</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a921cafa8e8141a0b0944f568f7d0f2d5">UnregisterStatus</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    {</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        <span class="keyword">auto</span> it = <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.find(<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);        </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.erase(it);           </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00408" data-start="{" data-end="}">
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="class_f_s_m.html#af113cf6589618f456382420804f10cfe">  408</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#af113cf6589618f456382420804f10cfe">UnregisterStatus</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item)</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    {</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;it : <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>)</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        {</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>            <span class="keywordflow">if</span> (it.second == item)</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            {</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.erase(it.first);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>            }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        }</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        </div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    }</div>
+</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00426" data-start="{" data-end="}">
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a686a9fd4e2877212e053c113b6a2b759">  426</a></span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_function" href="class_f_s_m.html#a686a9fd4e2877212e053c113b6a2b759">GetNormalStatus</a>()</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    {</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>;</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>    }</div>
+</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span> </div>
+<div class="foldopen" id="foldopen00436" data-start="{" data-end="}">
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno"><a class="line" href="class_f_s_m.html#ae5582b2e10285eb6beabb41638e27df7">  436</a></span>    std::string <a class="code hl_function" href="class_f_s_m.html#ae5582b2e10285eb6beabb41638e27df7">GetLastStatus</a>()</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    {</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_f_s_m.html#a05b0b81b6b020cedf8c5cea3cb86988a">laststatus</a>;</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    }</div>
+</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
+<div class="foldopen" id="foldopen00447" data-start="{" data-end="}">
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a4d8f4b9a2b2568a04ac38b9325960f2b">  447</a></span>    std::string <a class="code hl_function" href="class_f_s_m.html#a4d8f4b9a2b2568a04ac38b9325960f2b">getNameStatus</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item)</div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    {</div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        <span class="keywordflow">if</span> (!item)<span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;null&quot;</span>);</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it:<a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>)</div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>        {</div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>            <span class="keywordflow">if</span> ((it.second) == (item))<span class="keywordflow">return</span> it.first;</div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        </div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        }</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>        <span class="keywordflow">return</span> std::string(<span class="stringliteral">&quot;null&quot;</span>);</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    }</div>
+</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="foldopen" id="foldopen00464" data-start="{" data-end="}">
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a1484f7d3f502afead48f7b9ac034f511">  464</a></span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_function" href="class_f_s_m.html#a1484f7d3f502afead48f7b9ac034f511">FindStatusByName</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    {</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="keyword">auto</span> it=<a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.find(<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        <span class="comment">/*auto it = status.begin();*/</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keywordflow">if</span> (it != <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.end())</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>        {</div>
+<div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>            <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>        }</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    }</div>
+</div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
+<div class="foldopen" id="foldopen00480" data-start="{" data-end="}">
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a74eedb89159c315318da13d2f1eb1a80">  480</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a74eedb89159c315318da13d2f1eb1a80">BeginPlay</a>()</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span>    {</div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>        <span class="comment">//加载信息</span></div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>    <a class="code hl_variable" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a>.<a class="code hl_variable" href="struct_f_s_m___info.html#ae42fec62a9797e86598493c6964de29b">ani</a> = <a class="code hl_function" href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">GetOwner</a>()-&gt;<a class="code hl_function" href="class_object.html#a90eb4903e90c87b59f07e0e438100482">GetComponentByClass</a>&lt;<a class="code hl_class" href="class_animator.html">Animator</a>&gt;(); </div>
+<div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>    <a class="code hl_variable" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a>.<a class="code hl_variable" href="struct_f_s_m___info.html#a32dae64ad3c31b0bf348cc069ed7d4ef">col</a>= <a class="code hl_function" href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">GetOwner</a>()-&gt;<a class="code hl_function" href="class_object.html#a90eb4903e90c87b59f07e0e438100482">GetComponentByClass</a>&lt;<a class="code hl_class" href="class_collider.html">Collider</a>&gt;();</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    }</div>
+</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>    <span class="comment">//std::string GetName()const { for (auto&amp; it : status) { if (&amp;(it.second) == (aninode))return it.first; }; }</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_function" href="class_f_s_m.html#af1f0588e12862113dfe1da31cb4a3915">lowestCommonAncestor</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a>, <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* p, <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* q);</div>
+<div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00507" data-start="{" data-end="}">
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno"><a class="line" href="class_f_s_m.html#ad8f0b1984d263188cdb9ecaa3564c827">  507</a></span>    std::list&lt;FSMItems*&gt; <a class="code hl_function" href="class_f_s_m.html#ad8f0b1984d263188cdb9ecaa3564c827">GetPath</a>(<a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* item)</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    {</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    std::list&lt;FSMItems*&gt; path;</div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>    <span class="keywordflow">if</span> (!item)<span class="keywordflow">return</span> path;</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        </div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* it = item;</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        <span class="keywordflow">while</span> (it != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        {</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            path.push_back(it);</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>            it = it-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">parent</a>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        }</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>        <span class="keywordflow">return</span> path;</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    }</div>
+</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
+<div class="foldopen" id="foldopen00526" data-start="{" data-end="}">
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno"><a class="line" href="class_f_s_m.html#ac96f0952af9c1f080076de9359b05ab7">  526</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#ac96f0952af9c1f080076de9359b05ab7">TransitionState</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    {</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        {</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>            <a class="code hl_function" href="class_f_s_m.html#aef82245f3c2e5521cac3ac1f47abd5ff">process_Exit</a>(<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>,<a class="code hl_function" href="class_f_s_m.html#af1f0588e12862113dfe1da31cb4a3915">lowestCommonAncestor</a>(<a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a>, <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>[<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>],<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>));</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        </div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        }</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        <a class="code hl_variable" href="class_f_s_m.html#a05b0b81b6b020cedf8c5cea3cb86988a">laststatus</a> = <a class="code hl_function" href="class_f_s_m.html#a4d8f4b9a2b2568a04ac38b9325960f2b">getNameStatus</a>(<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        <a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a> = <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>[<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>];</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        </div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>)</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>        {</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>            <a class="code hl_function" href="class_f_s_m.html#a56c6e69cd2758b6b8d7f3d00e7916eba">process_Enter</a>(<a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>, <a class="code hl_function" href="class_f_s_m.html#af1f0588e12862113dfe1da31cb4a3915">lowestCommonAncestor</a>(<a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a>, <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>[<a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>], <a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>));</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>        }</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    }</div>
+</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a19e31f575d04bdd03323cbe223196650">  548</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a19e31f575d04bdd03323cbe223196650">Init</a>() {};</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#adcd03b1d57263ba2706bf79520bc2041">Destruct</a>();</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
+<div class="foldopen" id="foldopen00560" data-start="{" data-end="}">
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a4ae5aa161040fa163d2212db2e269c9b">  560</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_f_s_m.html#a4ae5aa161040fa163d2212db2e269c9b">Awake</a>()</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    {</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        <a class="code hl_function" href="class_f_s_m.html#a19e31f575d04bdd03323cbe223196650">Init</a>();</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    }</div>
+</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <span class="comment">/*FSM(std::string name) </span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment">    { fsm_info.ani = GetOwner()-&gt;GetComponentByClass&lt;Animator&gt;();</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="comment">    root = new FSMItems(0); status.insert({ &quot;root&quot;,root }); root-&gt;fsm = this;</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="comment">    root-&gt;ani = this-&gt;fsm_info.ani; AddStatus&lt;&gt;(name, &quot;root&quot;); Awake();</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="comment">    TransitionState(name); }*/</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
+<div class="foldopen" id="foldopen00575" data-start="{" data-end="}">
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a2fccf1c016c43e4fa4ee512311bf9d7d">  575</a></span>    <a class="code hl_function" href="class_f_s_m.html#a2fccf1c016c43e4fa4ee512311bf9d7d">FSM</a>() </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        <a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a> = <span class="keyword">new</span> <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>(0); <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>.insert({ <span class="stringliteral">&quot;root&quot;</span>,<a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a> }); <a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a>-&gt;<a class="code hl_variable" href="class_f_s_m_items.html#af506061a521441c55cdad71c56f8480e">fsm</a> = <span class="keyword">this</span>; </div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>          <a class="code hl_function" href="class_f_s_m.html#ac96f0952af9c1f080076de9359b05ab7">TransitionState</a>(<span class="stringliteral">&quot;root&quot;</span>);</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    }</div>
+</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a42500598c00f9461687b804732851c23">  587</a></span>    <a class="code hl_function" href="class_f_s_m.html#a42500598c00f9461687b804732851c23">~FSM</a>() { <a class="code hl_function" href="class_f_s_m.html#adcd03b1d57263ba2706bf79520bc2041">Destruct</a>(); }</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">  594</a></span>    std::unordered_map&lt;std::string, FSMItems*&gt; <a class="code hl_variable" href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">status</a>;</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">  596</a></span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_variable" href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">root</a> ;</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">  598</a></span>    <a class="code hl_class" href="class_f_s_m_items.html">FSMItems</a>* <a class="code hl_variable" href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">normalstatus</a>=<span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno"><a class="line" href="class_f_s_m.html#a05b0b81b6b020cedf8c5cea3cb86988a">  604</a></span>    std::string <a class="code hl_variable" href="class_f_s_m.html#a05b0b81b6b020cedf8c5cea3cb86988a">laststatus</a> = <span class="stringliteral">&quot;null&quot;</span>;</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">  609</a></span>    <a class="code hl_struct" href="struct_f_s_m___info.html">FSM_Info</a> <a class="code hl_variable" href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">fsm_info</a>;</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>};</div>
+</div>
+<div class="ttc" id="a_ani_edge_8h_html"><div class="ttname"><a href="_ani_edge_8h.html">AniEdge.h</a></div><div class="ttdoc">动画过渡</div></div>
+<div class="ttc" id="a_collider_8h_html"><div class="ttname"><a href="_collider_8h.html">Collider.h</a></div><div class="ttdoc">游戏场景中所有碰撞相关事件的处理</div></div>
+<div class="ttc" id="a_core_minimal_8h_html"><div class="ttname"><a href="_core_minimal_8h.html">CoreMinimal.h</a></div><div class="ttdoc">核心代码文件</div></div>
+<div class="ttc" id="a_delegate_8h_html"><div class="ttname"><a href="_delegate_8h.html">Delegate.h</a></div><div class="ttdoc">委托类.</div></div>
+<div class="ttc" id="a_delegate_8h_html_ad82d6472270613d25c95f960f72f782c"><div class="ttname"><a href="_delegate_8h.html#ad82d6472270613d25c95f960f72f782c">DECLARE_NO_PARAM_UNICAST_DELEGATE</a></div><div class="ttdeci">#define DECLARE_NO_PARAM_UNICAST_DELEGATE(name)</div><div class="ttdef"><b>定义</b> Delegate.h:116</div></div>
+<div class="ttc" id="a_log_8h_html"><div class="ttname"><a href="_log_8h.html">Log.h</a></div><div class="ttdoc">日志类</div></div>
+<div class="ttc" id="aclass_animator_html"><div class="ttname"><a href="class_animator.html">Animator</a></div><div class="ttdoc">动画播放器组件</div><div class="ttdef"><b>定义</b> Animator.h:111</div></div>
+<div class="ttc" id="aclass_collider_html"><div class="ttname"><a href="class_collider.html">Collider</a></div><div class="ttdoc">碰撞器基类.</div><div class="ttdef"><b>定义</b> Collider.h:130</div></div>
+<div class="ttc" id="aclass_component_html"><div class="ttname"><a href="class_component.html">Component</a></div><div class="ttdoc">组件基类.</div><div class="ttdef"><b>定义</b> Component.h:14</div></div>
+<div class="ttc" id="aclass_component_html_a0deb5ee1c90da8fdb1de7113a981e96c"><div class="ttname"><a href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">Component::GetOwner</a></div><div class="ttdeci">Object * GetOwner() const</div><div class="ttdoc">获取绑定对象指针</div><div class="ttdef"><b>定义</b> Component.h:48</div></div>
+<div class="ttc" id="aclass_component_html_a93437569d1894195f587ba1c21e4412e"><div class="ttname"><a href="class_component.html#a93437569d1894195f587ba1c21e4412e">Component::Update</a></div><div class="ttdeci">virtual void Update(float deltaTime) override</div><div class="ttdef"><b>定义</b> Component.h:21</div></div>
+<div class="ttc" id="aclass_f_s_m_html"><div class="ttname"><a href="class_f_s_m.html">FSM</a></div><div class="ttdoc">状态机组件.</div><div class="ttdef"><b>定义</b> FSM.h:259</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a05a6cf756650fdda264d8d4b6a02cd11"><div class="ttname"><a href="class_f_s_m.html#a05a6cf756650fdda264d8d4b6a02cd11">FSM::status</a></div><div class="ttdeci">std::unordered_map&lt; std::string, FSMItems * &gt; status</div><div class="ttdoc">节点映射 [名字，状态节点] 用名称访问节点.</div><div class="ttdef"><b>定义</b> FSM.h:594</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a05b0b81b6b020cedf8c5cea3cb86988a"><div class="ttname"><a href="class_f_s_m.html#a05b0b81b6b020cedf8c5cea3cb86988a">FSM::laststatus</a></div><div class="ttdeci">std::string laststatus</div><div class="ttdoc">前一状态</div><div class="ttdef"><b>定义</b> FSM.h:604</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a1484f7d3f502afead48f7b9ac034f511"><div class="ttname"><a href="class_f_s_m.html#a1484f7d3f502afead48f7b9ac034f511">FSM::FindStatusByName</a></div><div class="ttdeci">FSMItems * FindStatusByName(std::string name)</div><div class="ttdoc">由名字查找状态节点.</div><div class="ttdef"><b>定义</b> FSM.h:464</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a1905f3b2a019a4ad142fb0c3635d8773"><div class="ttname"><a href="class_f_s_m.html#a1905f3b2a019a4ad142fb0c3635d8773">FSM::process_Update</a></div><div class="ttdeci">void process_Update(FSMItems *item)</div><div class="ttdoc">递归从上到下执行行为.</div><div class="ttdef"><b>定义</b> FSM.h:325</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a19e31f575d04bdd03323cbe223196650"><div class="ttname"><a href="class_f_s_m.html#a19e31f575d04bdd03323cbe223196650">FSM::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初始化.</div><div class="ttdef"><b>定义</b> FSM.h:548</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a2fccf1c016c43e4fa4ee512311bf9d7d"><div class="ttname"><a href="class_f_s_m.html#a2fccf1c016c43e4fa4ee512311bf9d7d">FSM::FSM</a></div><div class="ttdeci">FSM()</div><div class="ttdoc">构造函数.</div><div class="ttdef"><b>定义</b> FSM.h:575</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a398562c234058aa2b29b79126aed70d1"><div class="ttname"><a href="class_f_s_m.html#a398562c234058aa2b29b79126aed70d1">FSM::root</a></div><div class="ttdeci">FSMItems * root</div><div class="ttdoc">根节点</div><div class="ttdef"><b>定义</b> FSM.h:596</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a3cff84a501576502683cbacb91d06ed3"><div class="ttname"><a href="class_f_s_m.html#a3cff84a501576502683cbacb91d06ed3">FSM::Clear</a></div><div class="ttdeci">void Clear(std::string name)</div><div class="ttdoc">清空某个节点子状态(也包括当前节点).</div><div class="ttdef"><b>定义</b> FSM.cpp:16</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a42500598c00f9461687b804732851c23"><div class="ttname"><a href="class_f_s_m.html#a42500598c00f9461687b804732851c23">FSM::~FSM</a></div><div class="ttdeci">~FSM()</div><div class="ttdoc">析构函数 销毁所有节点回收资源.</div><div class="ttdef"><b>定义</b> FSM.h:587</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a4ae5aa161040fa163d2212db2e269c9b"><div class="ttname"><a href="class_f_s_m.html#a4ae5aa161040fa163d2212db2e269c9b">FSM::Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdoc">唤醒状态树.</div><div class="ttdef"><b>定义</b> FSM.h:560</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a4d8f4b9a2b2568a04ac38b9325960f2b"><div class="ttname"><a href="class_f_s_m.html#a4d8f4b9a2b2568a04ac38b9325960f2b">FSM::getNameStatus</a></div><div class="ttdeci">std::string getNameStatus(FSMItems *item)</div><div class="ttdoc">获取状态节点名字.</div><div class="ttdef"><b>定义</b> FSM.h:447</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a4eef80ff0331d103653388b3681af12c"><div class="ttname"><a href="class_f_s_m.html#a4eef80ff0331d103653388b3681af12c">FSM::normalstatus</a></div><div class="ttdeci">FSMItems * normalstatus</div><div class="ttdoc">现在状态节点</div><div class="ttdef"><b>定义</b> FSM.h:598</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a56c6e69cd2758b6b8d7f3d00e7916eba"><div class="ttname"><a href="class_f_s_m.html#a56c6e69cd2758b6b8d7f3d00e7916eba">FSM::process_Enter</a></div><div class="ttdeci">void process_Enter(FSMItems *item, FSMItems *end=nullptr)</div><div class="ttdoc">递归从上到下执行进入事件.</div><div class="ttdef"><b>定义</b> FSM.h:341</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a5c4fd88a633304fcae9622999fbcaf6c"><div class="ttname"><a href="class_f_s_m.html#a5c4fd88a633304fcae9622999fbcaf6c">FSM::RegisterStatus</a></div><div class="ttdeci">void RegisterStatus(std::string name, FSMItems *item)</div><div class="ttdoc">注册状态在状态机.</div><div class="ttdef"><b>定义</b> FSM.h:315</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a686a9fd4e2877212e053c113b6a2b759"><div class="ttname"><a href="class_f_s_m.html#a686a9fd4e2877212e053c113b6a2b759">FSM::GetNormalStatus</a></div><div class="ttdeci">FSMItems * GetNormalStatus()</div><div class="ttdoc">得到当前执行的状态节点.</div><div class="ttdef"><b>定义</b> FSM.h:426</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a729746d19ffeb5b60efbf079e0ea074b"><div class="ttname"><a href="class_f_s_m.html#a729746d19ffeb5b60efbf079e0ea074b">FSM::RemoveStatus</a></div><div class="ttdeci">void RemoveStatus(std::string name, bool delchild=1)</div><div class="ttdoc">移除节点状态</div><div class="ttdef"><b>定义</b> FSM.cpp:6</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a74eedb89159c315318da13d2f1eb1a80"><div class="ttname"><a href="class_f_s_m.html#a74eedb89159c315318da13d2f1eb1a80">FSM::BeginPlay</a></div><div class="ttdeci">virtual void BeginPlay()</div><div class="ttdoc">加载一些参数.</div><div class="ttdef"><b>定义</b> FSM.h:480</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a785fd1cea0d04cafc005e3223064de40"><div class="ttname"><a href="class_f_s_m.html#a785fd1cea0d04cafc005e3223064de40">FSM::AddStatus</a></div><div class="ttdeci">T * AddStatus(std::string name, std::string parent=&quot;root&quot;)</div><div class="ttdoc">添加节点状态</div><div class="ttdef"><b>定义</b> FSM.h:271</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a921cafa8e8141a0b0944f568f7d0f2d5"><div class="ttname"><a href="class_f_s_m.html#a921cafa8e8141a0b0944f568f7d0f2d5">FSM::UnregisterStatus</a></div><div class="ttdeci">void UnregisterStatus(std::string name)</div><div class="ttdoc">取消注册状态在状态机.</div><div class="ttdef"><b>定义</b> FSM.h:398</div></div>
+<div class="ttc" id="aclass_f_s_m_html_a94257ef812ca56d82b937acee497ade6"><div class="ttname"><a href="class_f_s_m.html#a94257ef812ca56d82b937acee497ade6">FSM::Update</a></div><div class="ttdeci">virtual void Update(float deltaTime)</div><div class="ttdoc">每一帧执行行为.</div><div class="ttdef"><b>定义</b> FSM.h:374</div></div>
+<div class="ttc" id="aclass_f_s_m_html_ac96f0952af9c1f080076de9359b05ab7"><div class="ttname"><a href="class_f_s_m.html#ac96f0952af9c1f080076de9359b05ab7">FSM::TransitionState</a></div><div class="ttdeci">void TransitionState(std::string name)</div><div class="ttdoc">切换状态.</div><div class="ttdef"><b>定义</b> FSM.h:526</div></div>
+<div class="ttc" id="aclass_f_s_m_html_ad8f0b1984d263188cdb9ecaa3564c827"><div class="ttname"><a href="class_f_s_m.html#ad8f0b1984d263188cdb9ecaa3564c827">FSM::GetPath</a></div><div class="ttdeci">std::list&lt; FSMItems * &gt; GetPath(FSMItems *item)</div><div class="ttdoc">获取节点路径.</div><div class="ttdef"><b>定义</b> FSM.h:507</div></div>
+<div class="ttc" id="aclass_f_s_m_html_adcd03b1d57263ba2706bf79520bc2041"><div class="ttname"><a href="class_f_s_m.html#adcd03b1d57263ba2706bf79520bc2041">FSM::Destruct</a></div><div class="ttdeci">void Destruct()</div><div class="ttdoc">销毁状态机.</div><div class="ttdef"><b>定义</b> FSM.cpp:66</div></div>
+<div class="ttc" id="aclass_f_s_m_html_ae5582b2e10285eb6beabb41638e27df7"><div class="ttname"><a href="class_f_s_m.html#ae5582b2e10285eb6beabb41638e27df7">FSM::GetLastStatus</a></div><div class="ttdeci">std::string GetLastStatus()</div><div class="ttdoc">得到上一次执行的状态名.</div><div class="ttdef"><b>定义</b> FSM.h:436</div></div>
+<div class="ttc" id="aclass_f_s_m_html_aef82245f3c2e5521cac3ac1f47abd5ff"><div class="ttname"><a href="class_f_s_m.html#aef82245f3c2e5521cac3ac1f47abd5ff">FSM::process_Exit</a></div><div class="ttdeci">void process_Exit(FSMItems *item, FSMItems *end=nullptr)</div><div class="ttdoc">递归从下到上执行退出事件.</div><div class="ttdef"><b>定义</b> FSM.h:357</div></div>
+<div class="ttc" id="aclass_f_s_m_html_af113cf6589618f456382420804f10cfe"><div class="ttname"><a href="class_f_s_m.html#af113cf6589618f456382420804f10cfe">FSM::UnregisterStatus</a></div><div class="ttdeci">void UnregisterStatus(FSMItems *item)</div><div class="ttdoc">取消注册状态在状态机.</div><div class="ttdef"><b>定义</b> FSM.h:408</div></div>
+<div class="ttc" id="aclass_f_s_m_html_af1f0588e12862113dfe1da31cb4a3915"><div class="ttname"><a href="class_f_s_m.html#af1f0588e12862113dfe1da31cb4a3915">FSM::lowestCommonAncestor</a></div><div class="ttdeci">FSMItems * lowestCommonAncestor(FSMItems *root, FSMItems *p, FSMItems *q)</div><div class="ttdoc">寻找最近公共祖先.</div><div class="ttdef"><b>定义</b> FSM.cpp:37</div></div>
+<div class="ttc" id="aclass_f_s_m_html_afcb8d92620bb446af2ee6c3906d63d27"><div class="ttname"><a href="class_f_s_m.html#afcb8d92620bb446af2ee6c3906d63d27">FSM::fsm_info</a></div><div class="ttdeci">FSM_Info fsm_info</div><div class="ttdoc">需要的参数.</div><div class="ttdef"><b>定义</b> FSM.h:609</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html"><div class="ttname"><a href="class_f_s_m_items.html">FSMItems</a></div><div class="ttdoc">状态基类.</div><div class="ttdef"><b>定义</b> FSM.h:125</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a04bba5babe6a6348b86a9e5210669dd7"><div class="ttname"><a href="class_f_s_m_items.html#a04bba5babe6a6348b86a9e5210669dd7">FSMItems::FSMItems</a></div><div class="ttdeci">FSMItems(int _status, FSMItems *_parent=nullptr, int _level=0)</div><div class="ttdoc">构造函数.</div><div class="ttdef"><b>定义</b> FSM.h:144</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a07bd49f2addcc0c2cbc047efdeb252e2"><div class="ttname"><a href="class_f_s_m_items.html#a07bd49f2addcc0c2cbc047efdeb252e2">FSMItems::~FSMItems</a></div><div class="ttdeci">~FSMItems()</div><div class="ttdoc">析构函数.</div><div class="ttdef"><b>定义</b> FSM.h:161</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a0f1bf34199ee3d6b0b443087405167c2"><div class="ttname"><a href="class_f_s_m_items.html#a0f1bf34199ee3d6b0b443087405167c2">FSMItems::parent</a></div><div class="ttdeci">FSMItems * parent</div><div class="ttdoc">父节点状态</div><div class="ttdef"><b>定义</b> FSM.h:134</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a1649811e98cedcb888d7fd1cc5c106da"><div class="ttname"><a href="class_f_s_m_items.html#a1649811e98cedcb888d7fd1cc5c106da">FSMItems::act</a></div><div class="ttdeci">action act</div><div class="ttdoc">执行事件(每帧执行) 一般用户重写新节点就是添加事件</div><div class="ttdef"><b>定义</b> FSM.h:235</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a20953624f5881028d0eecbe4f5ae91b4"><div class="ttname"><a href="class_f_s_m_items.html#a20953624f5881028d0eecbe4f5ae91b4">FSMItems::newchildstatus</a></div><div class="ttdeci">int newchildstatus()</div><div class="ttdoc">获取还没有的子节点状态值.</div><div class="ttdef"><b>定义</b> FSM.h:209</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a37d2a7e213f38990f400fdb96d6ec4c4"><div class="ttname"><a href="class_f_s_m_items.html#a37d2a7e213f38990f400fdb96d6ec4c4">FSMItems::status</a></div><div class="ttdeci">int status</div><div class="ttdoc">状态值</div><div class="ttdef"><b>定义</b> FSM.h:130</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a3ae5d840438b7ac387d6ef9de4c18d52"><div class="ttname"><a href="class_f_s_m_items.html#a3ae5d840438b7ac387d6ef9de4c18d52">FSMItems::col</a></div><div class="ttdeci">Collider * col</div><div class="ttdoc">同物体的碰撞组件</div><div class="ttdef"><b>定义</b> FSM.h:233</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a3eca54d821c00a1a108cb695368fd0ee"><div class="ttname"><a href="class_f_s_m_items.html#a3eca54d821c00a1a108cb695368fd0ee">FSMItems::ani</a></div><div class="ttdeci">Animator * ani</div><div class="ttdoc">同物体的动画组件</div><div class="ttdef"><b>定义</b> FSM.h:232</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a6ba7e3c62f9abce200a76a69b9943781"><div class="ttname"><a href="class_f_s_m_items.html#a6ba7e3c62f9abce200a76a69b9943781">FSMItems::children</a></div><div class="ttdeci">std::set&lt; FSMItems *, StatusSort &gt; children</div><div class="ttdoc">孩子状态容器</div><div class="ttdef"><b>定义</b> FSM.h:132</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a70f3ddaf954d9df87fe19651c7ac8890"><div class="ttname"><a href="class_f_s_m_items.html#a70f3ddaf954d9df87fe19651c7ac8890">FSMItems::Destory</a></div><div class="ttdeci">void Destory()</div><div class="ttdoc">删除节点状态.</div><div class="ttdef"><b>定义</b> FSM.cpp:93</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_a82bd56d19d2903def5635574bbc37d77"><div class="ttname"><a href="class_f_s_m_items.html#a82bd56d19d2903def5635574bbc37d77">FSMItems::DetachForm</a></div><div class="ttdeci">void DetachForm(FSMItems *par)</div><div class="ttdoc">解除绑定.</div><div class="ttdef"><b>定义</b> FSM.h:188</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_aabd95b0927a46242ab19cacefff90ea5"><div class="ttname"><a href="class_f_s_m_items.html#aabd95b0927a46242ab19cacefff90ea5">FSMItems::exit</a></div><div class="ttdeci">action exit</div><div class="ttdoc">退出事件 一般用户重写新节点就是添加事件</div><div class="ttdef"><b>定义</b> FSM.h:237</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_ab67f6e074c67eee99e30fdfd27710384"><div class="ttname"><a href="class_f_s_m_items.html#ab67f6e074c67eee99e30fdfd27710384">FSMItems::GetStatus</a></div><div class="ttdeci">int GetStatus() const</div><div class="ttdoc">获取状态值.</div><div class="ttdef"><b>定义</b> FSM.h:226</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_ab95883cd54d2e5e28060aee6119e3452"><div class="ttname"><a href="class_f_s_m_items.html#ab95883cd54d2e5e28060aee6119e3452">FSMItems::enter</a></div><div class="ttdeci">action enter</div><div class="ttdoc">进入事件 一般用户重写新节点就是添加事件</div><div class="ttdef"><b>定义</b> FSM.h:236</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_ac6cf089b8fd235756654c351756acec2"><div class="ttname"><a href="class_f_s_m_items.html#ac6cf089b8fd235756654c351756acec2">FSMItems::level</a></div><div class="ttdeci">int level</div><div class="ttdoc">根深度</div><div class="ttdef"><b>定义</b> FSM.h:128</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_af24755ebf75ad3dfb23cd021d36ba388"><div class="ttname"><a href="class_f_s_m_items.html#af24755ebf75ad3dfb23cd021d36ba388">FSMItems::AttachTo</a></div><div class="ttdeci">void AttachTo(FSMItems *par)</div><div class="ttdoc">设置父节点.</div><div class="ttdef"><b>定义</b> FSM.h:170</div></div>
+<div class="ttc" id="aclass_f_s_m_items_html_af506061a521441c55cdad71c56f8480e"><div class="ttname"><a href="class_f_s_m_items.html#af506061a521441c55cdad71c56f8480e">FSMItems::fsm</a></div><div class="ttdeci">FSM * fsm</div><div class="ttdoc">绑定的状态机</div><div class="ttdef"><b>定义</b> FSM.h:231</div></div>
+<div class="ttc" id="aclass_log_html_a0a37b6e34e4662db8a9c6797a83a7348"><div class="ttname"><a href="class_log.html#a0a37b6e34e4662db8a9c6797a83a7348">Log::LEVEL_ERR</a></div><div class="ttdeci">static int const LEVEL_ERR</div><div class="ttdoc">日志等级 - 一般错误</div><div class="ttdef"><b>定义</b> Log.h:29</div></div>
+<div class="ttc" id="aclass_log_html_a62bd4b0528aa23befb3226da3d5622f6"><div class="ttname"><a href="class_log.html#a62bd4b0528aa23befb3226da3d5622f6">Log::instance</a></div><div class="ttdeci">static Log * instance()</div><div class="ttdoc">获取实例</div><div class="ttdef"><b>定义</b> Log.cpp:22</div></div>
+<div class="ttc" id="aclass_log_html_ab91d69d448051c3d127c0dac54b7869b"><div class="ttname"><a href="class_log.html#ab91d69d448051c3d127c0dac54b7869b">Log::printf</a></div><div class="ttdeci">void printf(int level, char const *file, int line, char const *format,...) const</div><div class="ttdoc">按格式打印日志</div><div class="ttdef"><b>定义</b> Log.cpp:36</div></div>
+<div class="ttc" id="aclass_object_html_a90eb4903e90c87b59f07e0e438100482"><div class="ttname"><a href="class_object.html#a90eb4903e90c87b59f07e0e438100482">Object::GetComponentByClass</a></div><div class="ttdeci">T * GetComponentByClass()</div><div class="ttdoc">访问物体对象的跟他匹配的组件.</div><div class="ttdef"><b>定义</b> Object.h:91</div></div>
+<div class="ttc" id="aclassbase_html_a65510a23838809e27dd3c8bae787aac5"><div class="ttname"><a href="classbase.html#a65510a23838809e27dd3c8bae787aac5">base::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">类似&quot;class base * __ptr64 tag的值&quot;</div><div class="ttdef"><b>定义</b> CoreMinimal.h:31</div></div>
+<div class="ttc" id="astruct_f_s_m___info_html"><div class="ttname"><a href="struct_f_s_m___info.html">FSM_Info</a></div><div class="ttdoc">FSM需要的参数.</div><div class="ttdef"><b>定义</b> FSM.h:246</div></div>
+<div class="ttc" id="astruct_f_s_m___info_html_a32dae64ad3c31b0bf348cc069ed7d4ef"><div class="ttname"><a href="struct_f_s_m___info.html#a32dae64ad3c31b0bf348cc069ed7d4ef">FSM_Info::col</a></div><div class="ttdeci">Collider * col</div><div class="ttdoc">绑定的碰撞体</div><div class="ttdef"><b>定义</b> FSM.h:250</div></div>
+<div class="ttc" id="astruct_f_s_m___info_html_ae42fec62a9797e86598493c6964de29b"><div class="ttname"><a href="struct_f_s_m___info.html#ae42fec62a9797e86598493c6964de29b">FSM_Info::ani</a></div><div class="ttdeci">Animator * ani</div><div class="ttdoc">动画播放器 默认是绑定的物体的播放器 由他进行渲染</div><div class="ttdef"><b>定义</b> FSM.h:247</div></div>
+<div class="ttc" id="astruct_status_sort_html"><div class="ttname"><a href="struct_status_sort.html">StatusSort</a></div><div class="ttdoc">动作委托类</div><div class="ttdef"><b>定义</b> FSM.h:109</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_f_s_m_8h.html">FSM.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

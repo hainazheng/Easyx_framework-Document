@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: Math类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_math.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="class_math-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Math类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>全局数学函数库  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_math_8h_source.html">Math.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:af7c6ff206ac45d03bb0dc5a54ff8a147" id="r_af7c6ff206ac45d03bb0dc5a54ff8a147"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7c6ff206ac45d03bb0dc5a54ff8a147">RandInt</a> (int lower, int upper)</td></tr>
+<tr class="memdesc:af7c6ff206ac45d03bb0dc5a54ff8a147"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取整数类型随机数  <br /></td></tr>
+<tr class="separator:af7c6ff206ac45d03bb0dc5a54ff8a147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4061ce1cfd4c539dc0f872c7ddd79241" id="r_a4061ce1cfd4c539dc0f872c7ddd79241"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4061ce1cfd4c539dc0f872c7ddd79241">RandReal</a> (double lower, double upper)</td></tr>
+<tr class="memdesc:a4061ce1cfd4c539dc0f872c7ddd79241"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取实数类型随机数  <br /></td></tr>
+<tr class="separator:a4061ce1cfd4c539dc0f872c7ddd79241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267a29b0176c77fcb0f58f3ff4b46f80" id="r_a267a29b0176c77fcb0f58f3ff4b46f80"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a267a29b0176c77fcb0f58f3ff4b46f80">RandPerc</a> ()</td></tr>
+<tr class="memdesc:a267a29b0176c77fcb0f58f3ff4b46f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">随机生成[0,1)的随机数，用来生成比例  <br /></td></tr>
+<tr class="separator:a267a29b0176c77fcb0f58f3ff4b46f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15495c8ff5108aa6110112c5896be363" id="r_a15495c8ff5108aa6110112c5896be363"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a15495c8ff5108aa6110112c5896be363"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a15495c8ff5108aa6110112c5896be363">Clamp</a> (T value, T lower, T upper)</td></tr>
+<tr class="memdesc:a15495c8ff5108aa6110112c5896be363"><td class="mdescLeft">&#160;</td><td class="mdescRight">将某数限制在某个范围内  <br /></td></tr>
+<tr class="separator:a15495c8ff5108aa6110112c5896be363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bc9c594e1346f7b68b1ee3a4699d9a" id="r_ab7bc9c594e1346f7b68b1ee3a4699d9a"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7bc9c594e1346f7b68b1ee3a4699d9a">Clamp</a> (double value, double lower, double upper)</td></tr>
+<tr class="separator:ab7bc9c594e1346f7b68b1ee3a4699d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115acfc6c4f3c155dc76e1c3818bdded" id="r_a115acfc6c4f3c155dc76e1c3818bdded"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a115acfc6c4f3c155dc76e1c3818bdded">mapping</a> (double value, double oldlower, double oldupper, double newlower, double newupper)</td></tr>
+<tr class="memdesc:a115acfc6c4f3c155dc76e1c3818bdded"><td class="mdescLeft">&#160;</td><td class="mdescRight">映射函数 是不是闭区间要看旧区间是不是闭区间  <br /></td></tr>
+<tr class="separator:a115acfc6c4f3c155dc76e1c3818bdded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>全局数学函数库 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="ab7bc9c594e1346f7b68b1ee3a4699d9a" name="ab7bc9c594e1346f7b68b1ee3a4699d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bc9c594e1346f7b68b1ee3a4699d9a">&#9670;&#160;</a></span>Clamp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Math::Clamp </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>upper</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15495c8ff5108aa6110112c5896be363" name="a15495c8ff5108aa6110112c5896be363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15495c8ff5108aa6110112c5896be363">&#9670;&#160;</a></span>Clamp() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T Math::Clamp </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>lower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>upper</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将某数限制在某个范围内 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>某个数  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lower</td><td>区间最小值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upper</td><td>区间最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a115acfc6c4f3c155dc76e1c3818bdded" name="a115acfc6c4f3c155dc76e1c3818bdded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115acfc6c4f3c155dc76e1c3818bdded">&#9670;&#160;</a></span>mapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Math::mapping </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>oldlower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>oldupper</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>newlower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>newupper</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>映射函数 是不是闭区间要看旧区间是不是闭区间 </p>
+<dl class="section remark"><dt>备注</dt><dd>！！！全部参数都是double类型计算量可能会很大，性能开销要注意 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>某个数  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oldlower</td><td>旧区间最小值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">oldupper</td><td>旧区间最大值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newlower</td><td>新区间最小值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">newupper</td><td>新区间最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af7c6ff206ac45d03bb0dc5a54ff8a147" name="af7c6ff206ac45d03bb0dc5a54ff8a147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c6ff206ac45d03bb0dc5a54ff8a147">&#9670;&#160;</a></span>RandInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Math::RandInt </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>lower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>upper</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取整数类型随机数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lower</td><td>区间最小值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upper</td><td>区间最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a267a29b0176c77fcb0f58f3ff4b46f80" name="a267a29b0176c77fcb0f58f3ff4b46f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267a29b0176c77fcb0f58f3ff4b46f80">&#9670;&#160;</a></span>RandPerc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Math::RandPerc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>随机生成[0,1)的随机数，用来生成比例 </p>
+
+</div>
+</div>
+<a id="a4061ce1cfd4c539dc0f872c7ddd79241" name="a4061ce1cfd4c539dc0f872c7ddd79241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4061ce1cfd4c539dc0f872c7ddd79241">&#9670;&#160;</a></span>RandReal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Math::RandReal </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>lower</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>upper</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取实数类型随机数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">lower</td><td>区间最小值  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">upper</td><td>区间最大值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_math.html">Math</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

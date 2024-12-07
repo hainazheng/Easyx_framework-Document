@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/ColliderManager.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_collider_manager_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/ColliderManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collider_manager_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include&quot;unordered_map&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include&quot;unordered_set&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include&lt;string&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">   17</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> :uint8_t</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">Default</a>,            </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">sunshine</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d">plateform</a>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9">Zomble</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c">plant</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e">Bullet</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment">/*思路*/</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/*用哈希映射实现碰撞物体的存储变少和碰撞检测变少 说白了就是进行碰撞体种类名的映射          */</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*存在单向或者双向的关系*/</span></div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_collider_manager.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="class_collider_manager.html">ColliderManager</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//1.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">/*std::unordered_map&lt;std::string, std::unordered_set&lt;std::string&gt;&gt;collidermap;  */</span>      <span class="comment">//实现映射，某个物体种类存储的是跟它可以发生碰撞检测的物体种类</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//一个正整数可以唯一表示为两个随机整数的平方和</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">   43</a></span>    std::unordered_set&lt;int&gt; <a class="code hl_variable" href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">collisionmap</a>;       </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//物体种类映射，默认没有和没有之间进行判定</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_collider_manager.html#a201f2dc964a20c397a864d0609ef7951">   47</a></span>    <a class="code hl_function" href="class_collider_manager.html#a201f2dc964a20c397a864d0609ef7951">ColliderManager</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">//1.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="comment">/*collidermap.insert({ &quot;Default&quot;,std::unordered_set&lt;std::string&gt;{&quot;Default&quot; } });*/</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_variable" href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">collisionmap</a>.insert(<span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a>)*<span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a>)+ <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a>) * <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a>));</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">collisionmap</a>.insert(<span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d">CollisionType::plateform</a>) * <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d">CollisionType::plateform</a>) + <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>) * <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>));</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">collisionmap</a>.insert(<span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>) * <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>) + <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>) * <span class="keywordtype">int</span>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a>));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_function" href="class_collider_manager.html#a67d522647314a3dee4d7fc708cc8d4b8">AddMapping</a>(<a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e">CollisionType::Bullet</a>, <a class="code hl_enumvalue" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9">CollisionType::Zomble</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="class_collider_manager.html#a3752fcac4c0bf9bd84ffcfadab07f5f7">Initialize</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_collider_manager.html#a3752fcac4c0bf9bd84ffcfadab07f5f7">Initialize</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">/*bool ExistMapping(const std::string&amp; key1,const std::string&amp; key2);*/</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_collider_manager.html#a4d0b040664871749b92039370d77ebe2">ExistMapping</a>(<a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> type1,<a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> type2);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">/*std::unordered_set&lt;std::string&gt;* FindMapping(const std::string&amp; key1);*/</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    std::unordered_set&lt;int&gt; <a class="code hl_function" href="class_collider_manager.html#a29b72ca4f2285051eec2133b738cc552">FindMapping</a>(<a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> type1);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">/*void AddMapping(const std::string&amp; key1, const std::string&amp; key2);*/</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_collider_manager.html#a67d522647314a3dee4d7fc708cc8d4b8">AddMapping</a>(<a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> type1, <a class="code hl_enumeration" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> type2);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+</div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a></div><div class="ttdeci">CollisionType</div><div class="ttdoc">碰撞种类 需要用户自己设置种类.</div><div class="ttdef"><b>定义</b> ColliderManager.h:18</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a0571749e2ac330a7455809c6b0e7af90">CollisionType::sunshine</a></div><div class="ttdeci">@ sunshine</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7533f96ec01fd81438833f71539c7d4e">CollisionType::Bullet</a></div><div class="ttdeci">@ Bullet</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a78b209a6129d6bbdf46d6a7aff527d5d">CollisionType::plateform</a></div><div class="ttdeci">@ plateform</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdoc">默认种类</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a9ea0a36b3a20901fafe834eb519a595c">CollisionType::plant</a></div><div class="ttdeci">@ plant</div></div>
+<div class="ttc" id="a_collider_manager_8h_html_a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9"><div class="ttname"><a href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0ac06dfdd286c280bd47f05a8ab52debd9">CollisionType::Zomble</a></div><div class="ttdeci">@ Zomble</div></div>
+<div class="ttc" id="aclass_collider_manager_html"><div class="ttname"><a href="class_collider_manager.html">ColliderManager</a></div><div class="ttdoc">碰撞管理器</div><div class="ttdef"><b>定义</b> ColliderManager.h:38</div></div>
+<div class="ttc" id="aclass_collider_manager_html_a201f2dc964a20c397a864d0609ef7951"><div class="ttname"><a href="class_collider_manager.html#a201f2dc964a20c397a864d0609ef7951">ColliderManager::ColliderManager</a></div><div class="ttdeci">ColliderManager()</div><div class="ttdef"><b>定义</b> ColliderManager.h:47</div></div>
+<div class="ttc" id="aclass_collider_manager_html_a29b72ca4f2285051eec2133b738cc552"><div class="ttname"><a href="class_collider_manager.html#a29b72ca4f2285051eec2133b738cc552">ColliderManager::FindMapping</a></div><div class="ttdeci">std::unordered_set&lt; int &gt; FindMapping(CollisionType type1)</div><div class="ttdoc">查找与关键字有碰撞关系的种类</div><div class="ttdef"><b>定义</b> ColliderManager.cpp:62</div></div>
+<div class="ttc" id="aclass_collider_manager_html_a3752fcac4c0bf9bd84ffcfadab07f5f7"><div class="ttname"><a href="class_collider_manager.html#a3752fcac4c0bf9bd84ffcfadab07f5f7">ColliderManager::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdoc">初始化映射关系</div><div class="ttdef"><b>定义</b> ColliderManager.cpp:7</div></div>
+<div class="ttc" id="aclass_collider_manager_html_a4d0b040664871749b92039370d77ebe2"><div class="ttname"><a href="class_collider_manager.html#a4d0b040664871749b92039370d77ebe2">ColliderManager::ExistMapping</a></div><div class="ttdeci">bool ExistMapping(CollisionType type1, CollisionType type2)</div><div class="ttdoc">关键字之间是否存在映射</div><div class="ttdef"><b>定义</b> ColliderManager.cpp:20</div></div>
+<div class="ttc" id="aclass_collider_manager_html_a67d522647314a3dee4d7fc708cc8d4b8"><div class="ttname"><a href="class_collider_manager.html#a67d522647314a3dee4d7fc708cc8d4b8">ColliderManager::AddMapping</a></div><div class="ttdeci">void AddMapping(CollisionType type1, CollisionType type2)</div><div class="ttdoc">添加碰撞种类的映射.</div><div class="ttdef"><b>定义</b> ColliderManager.cpp:101</div></div>
+<div class="ttc" id="aclass_collider_manager_html_aa072c2bcbff50073001be373f9806759"><div class="ttname"><a href="class_collider_manager.html#aa072c2bcbff50073001be373f9806759">ColliderManager::collisionmap</a></div><div class="ttdeci">std::unordered_set&lt; int &gt; collisionmap</div><div class="ttdoc">实现相当于哈希映射 节省消耗</div><div class="ttdef"><b>定义</b> ColliderManager.h:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_collider_manager_8h.html">ColliderManager.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

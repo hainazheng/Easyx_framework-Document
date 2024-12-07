@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/Particle.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_particle_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/Particle.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_particle_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_core_minimal_8h.html">CoreMinimal.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include&quot;<a class="code" href="_visual_interface_8h.html">VisualInterface.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include&lt;deque&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include&quot;<a class="code" href="_scene_component_8h.html">SceneComponent.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">using </span>std::chrono::steady_clock;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using </span>std::chrono::duration;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">using </span>std::chrono::time_point;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74">   19</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74">ParticlePattern</a>:<a class="code hl_typedef" href="_macro_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_enumvalue" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74a4f1f6016fc9f3f2353c0cc7c67b292bd">Center</a>,         </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_enumvalue" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74a4803e6b9e63dabf04de980788d6a13c4">Line</a>,           </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_particle_info.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_particle_info.html">ParticleInfo</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_particle_info.html#a2a9d76e1da0360aeda31fc17bfa5a789">   29</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="struct_particle_info.html#a2a9d76e1da0360aeda31fc17bfa5a789">offset</a>;        </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_particle_info.html#a8c422539ed87c68616a16010fd02d0b1">   30</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_particle_info.html#a8c422539ed87c68616a16010fd02d0b1">index</a>=0;            </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_particle_info.html#afa1578ba3b7ac9c2c91fef7901397ae4">   31</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="struct_particle_info.html#afa1578ba3b7ac9c2c91fef7901397ae4">velocity</a>;      </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_particle_info.html#a229eddf3fd32236aa060b67a90f119fe">   32</a></span>    time_point&lt;steady_clock&gt; <a class="code hl_variable" href="struct_particle_info.html#a229eddf3fd32236aa060b67a90f119fe">lasttime</a>;      </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_particle_info.html#a2739bb9eddd2d999d75936173e910932">   33</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_particle_info.html#a2739bb9eddd2d999d75936173e910932">alpha</a> = 255.f;            </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_particle_info.html#a877b7ab598c3712ccf4b5280be534541">   34</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_particle_info.html#a877b7ab598c3712ccf4b5280be534541">size</a> = 1.f;               </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_particle_info.html#acf83388119ba115e2dbeb31e9d0729b9">   35</a></span>    <a class="code hl_function" href="struct_particle_info.html#acf83388119ba115e2dbeb31e9d0729b9">ParticleInfo</a>(){ <a class="code hl_variable" href="struct_particle_info.html#a229eddf3fd32236aa060b67a90f119fe">lasttime</a> = steady_clock::now(); }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>};</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="};">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_particle.html">   47</a></span><span class="keyword">class </span><a class="code hl_class" href="class_particle.html">Particle</a> :<span class="keyword">public</span> <a class="code hl_class" href="class_scene_component.html">SceneComponent</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_layer_interface.html">LayerInterface</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_image_interface.html">ImageInterface</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_particle.html#a17c086ebc79ad589f1d6c4d3ca72b9da">   49</a></span>    std::deque&lt;ParticleInfo&gt; <a class="code hl_variable" href="class_particle.html#a17c086ebc79ad589f1d6c4d3ca72b9da">particle</a>;      </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_particle.html#ab548f70758bf626e285203cdc3a728a4">   50</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_particle.html#ab548f70758bf626e285203cdc3a728a4">capacity</a> = 0;           </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">//float speed = 1.f;            //描述速度快慢的标量</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_particle.html#afd7431ad5b5eb552f6d8b02b94541f70">   53</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#afd7431ad5b5eb552f6d8b02b94541f70">maxSpeed</a> = 1.f;           </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_particle.html#a202b1f4cbd69c4b6164794491ce1c0d4">   54</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a202b1f4cbd69c4b6164794491ce1c0d4">minSpeed</a> = 1.f;           </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_particle.html#a133eb6aa8bfed161e69f464682754e98">   55</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a133eb6aa8bfed161e69f464682754e98">gravity</a> = 9.8f;           </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_particle.html#a79e332f17a1b96210a5ae3ce99f68c99">   56</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a79e332f17a1b96210a5ae3ce99f68c99">lifetime</a> = 1.f;           </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_particle.html#a96ca1336988b24553588b2cb75f88209">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_particle.html#a96ca1336988b24553588b2cb75f88209">isLoop</a> = <span class="keyword">true</span>;             </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_particle.html#a35f1b02edf28162610da106e1c4ef7d2">   58</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a35f1b02edf28162610da106e1c4ef7d2">Interval</a>=0.1f;            </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_particle.html#a524d7df70f3d754907c1f0b744545011">   61</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a524d7df70f3d754907c1f0b744545011">fadingtime</a> = 0;           </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_particle.html#ad1e808c9d2735592f13351d753183c6f">   64</a></span>    IMAGE** <a class="code hl_variable" href="class_particle.html#ad1e808c9d2735592f13351d753183c6f">images</a>=<span class="keyword">nullptr</span>;                 </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_particle.html#a06703ba7fe37a062d5199e2ce5838aca">   65</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_particle.html#a06703ba7fe37a062d5199e2ce5838aca">number</a> = 0;                         </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_particle.html#ac944c463e99ed2dde4446ed99ccaac0c">   66</a></span>    time_point&lt;steady_clock&gt; <a class="code hl_variable" href="class_particle.html#ac944c463e99ed2dde4446ed99ccaac0c">lasttime</a>;      </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_particle.html#afc3c3ccb594e4ea82094632bbc257b20">   67</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#afc3c3ccb594e4ea82094632bbc257b20">sizeRange</a>;                     </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_particle.html#adf14dd983081cbdce9496f34e5bfbb70">   69</a></span>    <a class="code hl_enumeration" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74">ParticlePattern</a> <a class="code hl_variable" href="class_particle.html#adf14dd983081cbdce9496f34e5bfbb70">pattern</a> = <a class="code hl_enumvalue" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74a4f1f6016fc9f3f2353c0cc7c67b292bd">ParticlePattern::Center</a>;      </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_particle.html#a2d4e42a097b2d7228e7e9fc5a8000d93">   70</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#a2d4e42a097b2d7228e7e9fc5a8000d93">unitVector</a> = <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(0, 1);       </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">//中心放射状属性成员</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_particle.html#a3e1e5f4ef37075a01490b5e67dc572b6">   73</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#a3e1e5f4ef37075a01490b5e67dc572b6">radius</a> = <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(0, 0);           </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_particle.html#ace985daf2a52f7bc7e088d609c7f22fd">   74</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#ace985daf2a52f7bc7e088d609c7f22fd">scoop</a> = <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(0, 360);          </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//线性放射状属性成员 只能在确定的角度生成线,粒子跟线成90度</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_particle.html#ab8654da8480c970dac009e8890d27f8b">   77</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#ab8654da8480c970dac009e8890d27f8b">length</a> = 1.f;             </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_particle.html#a5bef07b3e74afef92aeafc17d57268e2">   78</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a5bef07b3e74afef92aeafc17d57268e2">angle</a> = 0.f;              </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#accdcffc0aff02af75448f1504cc9b311">produce</a>();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_particle.html#a40f4c7e248029d72e7714b7802d5e5e1">   84</a></span>    <a class="code hl_function" href="class_particle.html#a40f4c7e248029d72e7714b7802d5e5e1">Particle</a>() :<a class="code hl_variable" href="class_particle.html#afc3c3ccb594e4ea82094632bbc257b20">sizeRange</a>(<a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(0.75, 1.25)) { <a class="code hl_variable" href="class_particle.html#ac944c463e99ed2dde4446ed99ccaac0c">lasttime</a> = steady_clock::now(); };</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a459fa3d17b3873d5ca907519ceb0d9cd">Load</a>(std::string <a class="code hl_variable" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_particle.html#ac350f2afc853c8e1293d561b3cfcdfab">   97</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#ac350f2afc853c8e1293d561b3cfcdfab">SetMaxSpeed</a>(<span class="keywordtype">float</span> speed) { this-&gt;maxSpeed = speed; }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_particle.html#a554dd0b298c7ceca27c9e8b5badfe8fd">  104</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a554dd0b298c7ceca27c9e8b5badfe8fd">SetMinSpeed</a>(<span class="keywordtype">float</span> speed) { this-&gt;minSpeed = speed; }</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_particle.html#a8c12889adb21295cde4af59bbad76c58">  111</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a8c12889adb21295cde4af59bbad76c58">SetSizeRange</a>(<span class="keywordtype">float</span> lower, <span class="keywordtype">float</span> upper) { <a class="code hl_variable" href="class_particle.html#afc3c3ccb594e4ea82094632bbc257b20">sizeRange</a> = { lower,upper }; }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a4a6c0e41f15753ba7d4f80897eeb8d15">Update</a>(<span class="keywordtype">float</span> deltaTime)<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a571f021ec066d579fab391fd824a240e">Render</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_particle.html#a166995b6d7f451f9a034cdca1da77a07">  117</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a166995b6d7f451f9a034cdca1da77a07">SetCapacity</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_particle.html#ab548f70758bf626e285203cdc3a728a4">capacity</a>) { this-&gt;capacity = <a class="code hl_variable" href="class_particle.html#ab548f70758bf626e285203cdc3a728a4">capacity</a>; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="comment">/*void SetSpeed(float speed) { this-&gt;speed = speed; }*/</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_particle.html#a3f314192b5498ae6d0808474e0c30584">  121</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a3f314192b5498ae6d0808474e0c30584">SetGravity</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_particle.html#a133eb6aa8bfed161e69f464682754e98">gravity</a>) { this-&gt;gravity = <a class="code hl_variable" href="class_particle.html#a133eb6aa8bfed161e69f464682754e98">gravity</a>; }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_particle.html#a88b519c267970dafb838ddd6c30b5d04">  124</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a88b519c267970dafb838ddd6c30b5d04">SetLifetime</a>(<span class="keywordtype">int</span> <a class="code hl_variable" href="class_particle.html#a79e332f17a1b96210a5ae3ce99f68c99">lifetime</a>) { this-&gt;lifetime = <a class="code hl_variable" href="class_particle.html#a79e332f17a1b96210a5ae3ce99f68c99">lifetime</a>; }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_particle.html#a8d2399c0483f8464a4c6b8e6d060e524">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a8d2399c0483f8464a4c6b8e6d060e524">SetIsLoop</a>(<span class="keywordtype">bool</span> isloop) { this-&gt;isLoop = isloop; }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="comment">//设置粒子生产间隔</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_particle.html#a3f759ab3810dc5494d89d5ccb78859f2">  130</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a3f759ab3810dc5494d89d5ccb78859f2">SetInterval</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a35f1b02edf28162610da106e1c4ef7d2">Interval</a>) { this-&gt;Interval = <a class="code hl_variable" href="class_particle.html#a35f1b02edf28162610da106e1c4ef7d2">Interval</a>; }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="comment">//设置粒子渐变消失时间 </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_particle.html#a300046d40ed5b82554067c0b86b50689">  133</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a300046d40ed5b82554067c0b86b50689">SetFadingtime</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a524d7df70f3d754907c1f0b744545011">fadingtime</a>) { this-&gt;fadingtime = <a class="code hl_variable" href="class_particle.html#a524d7df70f3d754907c1f0b744545011">fadingtime</a>; }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="comment">//设置粒子模式</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_particle.html#a086fa22a08b066c801f1023147297efd">  136</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a086fa22a08b066c801f1023147297efd">SetPattern</a>(<a class="code hl_enumeration" href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74">ParticlePattern</a> <a class="code hl_variable" href="class_particle.html#adf14dd983081cbdce9496f34e5bfbb70">pattern</a>) { this-&gt;pattern = <a class="code hl_variable" href="class_particle.html#adf14dd983081cbdce9496f34e5bfbb70">pattern</a>; }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_particle.html#a3b515296f5013e2c3b29a5af427fb521">  143</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a3b515296f5013e2c3b29a5af427fb521">SetCenter</a>(<a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#a3e1e5f4ef37075a01490b5e67dc572b6">radius</a>, <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_particle.html#ace985daf2a52f7bc7e088d609c7f22fd">scoop</a>) { this-&gt;radius = <a class="code hl_variable" href="class_particle.html#a3e1e5f4ef37075a01490b5e67dc572b6">radius</a>; this-&gt;scoop = <a class="code hl_variable" href="class_particle.html#ace985daf2a52f7bc7e088d609c7f22fd">scoop</a>; }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_particle.html#a1e8f63790ec05094a012e64278d800a8">  151</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_particle.html#a1e8f63790ec05094a012e64278d800a8">SetLine</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#ab8654da8480c970dac009e8890d27f8b">length</a>, <span class="keywordtype">float</span> <a class="code hl_variable" href="class_particle.html#a5bef07b3e74afef92aeafc17d57268e2">angle</a>) { this-&gt;length = <a class="code hl_variable" href="class_particle.html#ab8654da8480c970dac009e8890d27f8b">length</a>; this-&gt;angle = <a class="code hl_variable" href="class_particle.html#a5bef07b3e74afef92aeafc17d57268e2">angle</a>; }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>};</div>
+</div>
+<div class="ttc" id="a_core_minimal_8h_html"><div class="ttname"><a href="_core_minimal_8h.html">CoreMinimal.h</a></div><div class="ttdoc">核心代码文件</div></div>
+<div class="ttc" id="a_macro_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="_macro_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>定义</b> Macro.h:22</div></div>
+<div class="ttc" id="a_particle_8h_html_a8103daf190a37bd87511d636d287ba74"><div class="ttname"><a href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74">ParticlePattern</a></div><div class="ttdeci">ParticlePattern</div><div class="ttdoc">粒子发射的形式</div><div class="ttdef"><b>定义</b> Particle.h:20</div></div>
+<div class="ttc" id="a_particle_8h_html_a8103daf190a37bd87511d636d287ba74a4803e6b9e63dabf04de980788d6a13c4"><div class="ttname"><a href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74a4803e6b9e63dabf04de980788d6a13c4">ParticlePattern::Line</a></div><div class="ttdeci">@ Line</div><div class="ttdoc">线性放射状 只能在确定的角度生成线,粒子跟线成90度</div></div>
+<div class="ttc" id="a_particle_8h_html_a8103daf190a37bd87511d636d287ba74a4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="_particle_8h.html#a8103daf190a37bd87511d636d287ba74a4f1f6016fc9f3f2353c0cc7c67b292bd">ParticlePattern::Center</a></div><div class="ttdeci">@ Center</div><div class="ttdoc">中心放射状</div></div>
+<div class="ttc" id="a_scene_component_8h_html"><div class="ttname"><a href="_scene_component_8h.html">SceneComponent.h</a></div><div class="ttdoc">场景组件类</div></div>
+<div class="ttc" id="a_visual_interface_8h_html"><div class="ttname"><a href="_visual_interface_8h.html">VisualInterface.h</a></div><div class="ttdoc">包含一切与2D图像处理与渲染有关的接口</div></div>
+<div class="ttc" id="aclass_image_interface_html"><div class="ttname"><a href="class_image_interface.html">ImageInterface</a></div><div class="ttdoc">图形接口.</div><div class="ttdef"><b>定义</b> VisualInterface.h:59</div></div>
+<div class="ttc" id="aclass_layer_interface_html"><div class="ttname"><a href="class_layer_interface.html">LayerInterface</a></div><div class="ttdoc">实现图层顺序接口</div><div class="ttdef"><b>定义</b> VisualInterface.h:21</div></div>
+<div class="ttc" id="aclass_particle_html"><div class="ttname"><a href="class_particle.html">Particle</a></div><div class="ttdoc">粒子组件</div><div class="ttdef"><b>定义</b> Particle.h:48</div></div>
+<div class="ttc" id="aclass_particle_html_a06703ba7fe37a062d5199e2ce5838aca"><div class="ttname"><a href="class_particle.html#a06703ba7fe37a062d5199e2ce5838aca">Particle::number</a></div><div class="ttdeci">int number</div><div class="ttdoc">动画粒子总帧数</div><div class="ttdef"><b>定义</b> Particle.h:65</div></div>
+<div class="ttc" id="aclass_particle_html_a086fa22a08b066c801f1023147297efd"><div class="ttname"><a href="class_particle.html#a086fa22a08b066c801f1023147297efd">Particle::SetPattern</a></div><div class="ttdeci">void SetPattern(ParticlePattern pattern)</div><div class="ttdef"><b>定义</b> Particle.h:136</div></div>
+<div class="ttc" id="aclass_particle_html_a133eb6aa8bfed161e69f464682754e98"><div class="ttname"><a href="class_particle.html#a133eb6aa8bfed161e69f464682754e98">Particle::gravity</a></div><div class="ttdeci">float gravity</div><div class="ttdoc">重力加速度</div><div class="ttdef"><b>定义</b> Particle.h:55</div></div>
+<div class="ttc" id="aclass_particle_html_a166995b6d7f451f9a034cdca1da77a07"><div class="ttname"><a href="class_particle.html#a166995b6d7f451f9a034cdca1da77a07">Particle::SetCapacity</a></div><div class="ttdeci">void SetCapacity(int capacity)</div><div class="ttdoc">设置粒子容量</div><div class="ttdef"><b>定义</b> Particle.h:117</div></div>
+<div class="ttc" id="aclass_particle_html_a17c086ebc79ad589f1d6c4d3ca72b9da"><div class="ttname"><a href="class_particle.html#a17c086ebc79ad589f1d6c4d3ca72b9da">Particle::particle</a></div><div class="ttdeci">std::deque&lt; ParticleInfo &gt; particle</div><div class="ttdoc">粒子容器 用于管理生产出来的每一个粒子</div><div class="ttdef"><b>定义</b> Particle.h:49</div></div>
+<div class="ttc" id="aclass_particle_html_a1e8f63790ec05094a012e64278d800a8"><div class="ttname"><a href="class_particle.html#a1e8f63790ec05094a012e64278d800a8">Particle::SetLine</a></div><div class="ttdeci">void SetLine(float length, float angle)</div><div class="ttdoc">设置线性放射状参数</div><div class="ttdef"><b>定义</b> Particle.h:151</div></div>
+<div class="ttc" id="aclass_particle_html_a202b1f4cbd69c4b6164794491ce1c0d4"><div class="ttname"><a href="class_particle.html#a202b1f4cbd69c4b6164794491ce1c0d4">Particle::minSpeed</a></div><div class="ttdeci">float minSpeed</div><div class="ttdoc">粒子最小初速度</div><div class="ttdef"><b>定义</b> Particle.h:54</div></div>
+<div class="ttc" id="aclass_particle_html_a2d4e42a097b2d7228e7e9fc5a8000d93"><div class="ttname"><a href="class_particle.html#a2d4e42a097b2d7228e7e9fc5a8000d93">Particle::unitVector</a></div><div class="ttdeci">Vector2D unitVector</div><div class="ttdoc">粒子方向单位向量</div><div class="ttdef"><b>定义</b> Particle.h:70</div></div>
+<div class="ttc" id="aclass_particle_html_a300046d40ed5b82554067c0b86b50689"><div class="ttname"><a href="class_particle.html#a300046d40ed5b82554067c0b86b50689">Particle::SetFadingtime</a></div><div class="ttdeci">void SetFadingtime(float fadingtime)</div><div class="ttdef"><b>定义</b> Particle.h:133</div></div>
+<div class="ttc" id="aclass_particle_html_a35f1b02edf28162610da106e1c4ef7d2"><div class="ttname"><a href="class_particle.html#a35f1b02edf28162610da106e1c4ef7d2">Particle::Interval</a></div><div class="ttdeci">float Interval</div><div class="ttdoc">生产间隔</div><div class="ttdef"><b>定义</b> Particle.h:58</div></div>
+<div class="ttc" id="aclass_particle_html_a3b515296f5013e2c3b29a5af427fb521"><div class="ttname"><a href="class_particle.html#a3b515296f5013e2c3b29a5af427fb521">Particle::SetCenter</a></div><div class="ttdeci">void SetCenter(Vector2D radius, Vector2D scoop)</div><div class="ttdoc">设置中心放射状参数</div><div class="ttdef"><b>定义</b> Particle.h:143</div></div>
+<div class="ttc" id="aclass_particle_html_a3e1e5f4ef37075a01490b5e67dc572b6"><div class="ttname"><a href="class_particle.html#a3e1e5f4ef37075a01490b5e67dc572b6">Particle::radius</a></div><div class="ttdeci">Vector2D radius</div><div class="ttdoc">内外半径 [内径，外径]</div><div class="ttdef"><b>定义</b> Particle.h:73</div></div>
+<div class="ttc" id="aclass_particle_html_a3f314192b5498ae6d0808474e0c30584"><div class="ttname"><a href="class_particle.html#a3f314192b5498ae6d0808474e0c30584">Particle::SetGravity</a></div><div class="ttdeci">void SetGravity(int gravity)</div><div class="ttdoc">设置粒子重力</div><div class="ttdef"><b>定义</b> Particle.h:121</div></div>
+<div class="ttc" id="aclass_particle_html_a3f759ab3810dc5494d89d5ccb78859f2"><div class="ttname"><a href="class_particle.html#a3f759ab3810dc5494d89d5ccb78859f2">Particle::SetInterval</a></div><div class="ttdeci">void SetInterval(float Interval)</div><div class="ttdef"><b>定义</b> Particle.h:130</div></div>
+<div class="ttc" id="aclass_particle_html_a40f4c7e248029d72e7714b7802d5e5e1"><div class="ttname"><a href="class_particle.html#a40f4c7e248029d72e7714b7802d5e5e1">Particle::Particle</a></div><div class="ttdeci">Particle()</div><div class="ttdef"><b>定义</b> Particle.h:84</div></div>
+<div class="ttc" id="aclass_particle_html_a459fa3d17b3873d5ca907519ceb0d9cd"><div class="ttname"><a href="class_particle.html#a459fa3d17b3873d5ca907519ceb0d9cd">Particle::Load</a></div><div class="ttdeci">void Load(std::string name)</div><div class="ttdoc">加载粒子资源.</div><div class="ttdef"><b>定义</b> Particle.cpp:35</div></div>
+<div class="ttc" id="aclass_particle_html_a4a6c0e41f15753ba7d4f80897eeb8d15"><div class="ttname"><a href="class_particle.html#a4a6c0e41f15753ba7d4f80897eeb8d15">Particle::Update</a></div><div class="ttdeci">virtual void Update(float deltaTime) override</div><div class="ttdef"><b>定义</b> Particle.cpp:43</div></div>
+<div class="ttc" id="aclass_particle_html_a524d7df70f3d754907c1f0b744545011"><div class="ttname"><a href="class_particle.html#a524d7df70f3d754907c1f0b744545011">Particle::fadingtime</a></div><div class="ttdeci">float fadingtime</div><div class="ttdoc">粒子逐渐消失的时间</div><div class="ttdef"><b>定义</b> Particle.h:61</div></div>
+<div class="ttc" id="aclass_particle_html_a554dd0b298c7ceca27c9e8b5badfe8fd"><div class="ttname"><a href="class_particle.html#a554dd0b298c7ceca27c9e8b5badfe8fd">Particle::SetMinSpeed</a></div><div class="ttdeci">void SetMinSpeed(float speed)</div><div class="ttdoc">设置粒子发射最小初速度.</div><div class="ttdef"><b>定义</b> Particle.h:104</div></div>
+<div class="ttc" id="aclass_particle_html_a571f021ec066d579fab391fd824a240e"><div class="ttname"><a href="class_particle.html#a571f021ec066d579fab391fd824a240e">Particle::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdoc">纯虚函数，继承的类都有它来实现渲染，world默认遍历函数实现渲染</div><div class="ttdef"><b>定义</b> Particle.cpp:113</div></div>
+<div class="ttc" id="aclass_particle_html_a5bef07b3e74afef92aeafc17d57268e2"><div class="ttname"><a href="class_particle.html#a5bef07b3e74afef92aeafc17d57268e2">Particle::angle</a></div><div class="ttdeci">float angle</div><div class="ttdoc">相对于线的角度</div><div class="ttdef"><b>定义</b> Particle.h:78</div></div>
+<div class="ttc" id="aclass_particle_html_a79e332f17a1b96210a5ae3ce99f68c99"><div class="ttname"><a href="class_particle.html#a79e332f17a1b96210a5ae3ce99f68c99">Particle::lifetime</a></div><div class="ttdeci">float lifetime</div><div class="ttdoc">单个粒子的生命周期</div><div class="ttdef"><b>定义</b> Particle.h:56</div></div>
+<div class="ttc" id="aclass_particle_html_a88b519c267970dafb838ddd6c30b5d04"><div class="ttname"><a href="class_particle.html#a88b519c267970dafb838ddd6c30b5d04">Particle::SetLifetime</a></div><div class="ttdeci">void SetLifetime(int lifetime)</div><div class="ttdoc">设置单个粒子生命周期</div><div class="ttdef"><b>定义</b> Particle.h:124</div></div>
+<div class="ttc" id="aclass_particle_html_a8c12889adb21295cde4af59bbad76c58"><div class="ttname"><a href="class_particle.html#a8c12889adb21295cde4af59bbad76c58">Particle::SetSizeRange</a></div><div class="ttdeci">void SetSizeRange(float lower, float upper)</div><div class="ttdoc">设置大小范围（倍率系数）</div><div class="ttdef"><b>定义</b> Particle.h:111</div></div>
+<div class="ttc" id="aclass_particle_html_a8d2399c0483f8464a4c6b8e6d060e524"><div class="ttname"><a href="class_particle.html#a8d2399c0483f8464a4c6b8e6d060e524">Particle::SetIsLoop</a></div><div class="ttdeci">void SetIsLoop(bool isloop)</div><div class="ttdoc">设置粒子是否持续生产</div><div class="ttdef"><b>定义</b> Particle.h:127</div></div>
+<div class="ttc" id="aclass_particle_html_a96ca1336988b24553588b2cb75f88209"><div class="ttname"><a href="class_particle.html#a96ca1336988b24553588b2cb75f88209">Particle::isLoop</a></div><div class="ttdeci">bool isLoop</div><div class="ttdoc">是否循环生产</div><div class="ttdef"><b>定义</b> Particle.h:57</div></div>
+<div class="ttc" id="aclass_particle_html_ab548f70758bf626e285203cdc3a728a4"><div class="ttname"><a href="class_particle.html#ab548f70758bf626e285203cdc3a728a4">Particle::capacity</a></div><div class="ttdeci">int capacity</div><div class="ttdoc">粒子容量</div><div class="ttdef"><b>定义</b> Particle.h:50</div></div>
+<div class="ttc" id="aclass_particle_html_ab8654da8480c970dac009e8890d27f8b"><div class="ttname"><a href="class_particle.html#ab8654da8480c970dac009e8890d27f8b">Particle::length</a></div><div class="ttdeci">float length</div><div class="ttdoc">放射范围 [起始范围，结束范围]</div><div class="ttdef"><b>定义</b> Particle.h:77</div></div>
+<div class="ttc" id="aclass_particle_html_ac350f2afc853c8e1293d561b3cfcdfab"><div class="ttname"><a href="class_particle.html#ac350f2afc853c8e1293d561b3cfcdfab">Particle::SetMaxSpeed</a></div><div class="ttdeci">void SetMaxSpeed(float speed)</div><div class="ttdoc">设置粒子发射最大初速度.</div><div class="ttdef"><b>定义</b> Particle.h:97</div></div>
+<div class="ttc" id="aclass_particle_html_ac944c463e99ed2dde4446ed99ccaac0c"><div class="ttname"><a href="class_particle.html#ac944c463e99ed2dde4446ed99ccaac0c">Particle::lasttime</a></div><div class="ttdeci">time_point&lt; steady_clock &gt; lasttime</div><div class="ttdoc">记录生产的时间点</div><div class="ttdef"><b>定义</b> Particle.h:66</div></div>
+<div class="ttc" id="aclass_particle_html_accdcffc0aff02af75448f1504cc9b311"><div class="ttname"><a href="class_particle.html#accdcffc0aff02af75448f1504cc9b311">Particle::produce</a></div><div class="ttdeci">void produce()</div><div class="ttdoc">生产器</div><div class="ttdef"><b>定义</b> Particle.cpp:7</div></div>
+<div class="ttc" id="aclass_particle_html_ace985daf2a52f7bc7e088d609c7f22fd"><div class="ttname"><a href="class_particle.html#ace985daf2a52f7bc7e088d609c7f22fd">Particle::scoop</a></div><div class="ttdeci">Vector2D scoop</div><div class="ttdef"><b>定义</b> Particle.h:74</div></div>
+<div class="ttc" id="aclass_particle_html_ad1e808c9d2735592f13351d753183c6f"><div class="ttname"><a href="class_particle.html#ad1e808c9d2735592f13351d753183c6f">Particle::images</a></div><div class="ttdeci">IMAGE ** images</div><div class="ttdoc">动画帧数组</div><div class="ttdef"><b>定义</b> Particle.h:64</div></div>
+<div class="ttc" id="aclass_particle_html_adf14dd983081cbdce9496f34e5bfbb70"><div class="ttname"><a href="class_particle.html#adf14dd983081cbdce9496f34e5bfbb70">Particle::pattern</a></div><div class="ttdeci">ParticlePattern pattern</div><div class="ttdef"><b>定义</b> Particle.h:69</div></div>
+<div class="ttc" id="aclass_particle_html_afc3c3ccb594e4ea82094632bbc257b20"><div class="ttname"><a href="class_particle.html#afc3c3ccb594e4ea82094632bbc257b20">Particle::sizeRange</a></div><div class="ttdeci">Vector2D sizeRange</div><div class="ttdoc">大小范围（倍率系数）</div><div class="ttdef"><b>定义</b> Particle.h:67</div></div>
+<div class="ttc" id="aclass_particle_html_afd7431ad5b5eb552f6d8b02b94541f70"><div class="ttname"><a href="class_particle.html#afd7431ad5b5eb552f6d8b02b94541f70">Particle::maxSpeed</a></div><div class="ttdeci">float maxSpeed</div><div class="ttdoc">粒子最大初速度</div><div class="ttdef"><b>定义</b> Particle.h:53</div></div>
+<div class="ttc" id="aclass_scene_component_html"><div class="ttname"><a href="class_scene_component.html">SceneComponent</a></div><div class="ttdoc">场景组件基类.</div><div class="ttdef"><b>定义</b> SceneComponent.h:15</div></div>
+<div class="ttc" id="aclassbase_html_a65510a23838809e27dd3c8bae787aac5"><div class="ttname"><a href="classbase.html#a65510a23838809e27dd3c8bae787aac5">base::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">类似&quot;class base * __ptr64 tag的值&quot;</div><div class="ttdef"><b>定义</b> CoreMinimal.h:31</div></div>
+<div class="ttc" id="astruct_particle_info_html"><div class="ttname"><a href="struct_particle_info.html">ParticleInfo</a></div><div class="ttdoc">记录粒子信息类</div><div class="ttdef"><b>定义</b> Particle.h:28</div></div>
+<div class="ttc" id="astruct_particle_info_html_a229eddf3fd32236aa060b67a90f119fe"><div class="ttname"><a href="struct_particle_info.html#a229eddf3fd32236aa060b67a90f119fe">ParticleInfo::lasttime</a></div><div class="ttdeci">time_point&lt; steady_clock &gt; lasttime</div><div class="ttdoc">粒子创建时间</div><div class="ttdef"><b>定义</b> Particle.h:32</div></div>
+<div class="ttc" id="astruct_particle_info_html_a2739bb9eddd2d999d75936173e910932"><div class="ttname"><a href="struct_particle_info.html#a2739bb9eddd2d999d75936173e910932">ParticleInfo::alpha</a></div><div class="ttdeci">float alpha</div><div class="ttdoc">透明度 实现粒子逐渐透明效果</div><div class="ttdef"><b>定义</b> Particle.h:33</div></div>
+<div class="ttc" id="astruct_particle_info_html_a2a9d76e1da0360aeda31fc17bfa5a789"><div class="ttname"><a href="struct_particle_info.html#a2a9d76e1da0360aeda31fc17bfa5a789">ParticleInfo::offset</a></div><div class="ttdeci">Vector2D offset</div><div class="ttdoc">用于记录粒子相对于粒子创建器中心位置</div><div class="ttdef"><b>定义</b> Particle.h:29</div></div>
+<div class="ttc" id="astruct_particle_info_html_a877b7ab598c3712ccf4b5280be534541"><div class="ttname"><a href="struct_particle_info.html#a877b7ab598c3712ccf4b5280be534541">ParticleInfo::size</a></div><div class="ttdeci">float size</div><div class="ttdoc">大小</div><div class="ttdef"><b>定义</b> Particle.h:34</div></div>
+<div class="ttc" id="astruct_particle_info_html_a8c422539ed87c68616a16010fd02d0b1"><div class="ttname"><a href="struct_particle_info.html#a8c422539ed87c68616a16010fd02d0b1">ParticleInfo::index</a></div><div class="ttdeci">int index</div><div class="ttdoc">当前帧索引 这个粒子是哪张图片</div><div class="ttdef"><b>定义</b> Particle.h:30</div></div>
+<div class="ttc" id="astruct_particle_info_html_acf83388119ba115e2dbeb31e9d0729b9"><div class="ttname"><a href="struct_particle_info.html#acf83388119ba115e2dbeb31e9d0729b9">ParticleInfo::ParticleInfo</a></div><div class="ttdeci">ParticleInfo()</div><div class="ttdef"><b>定义</b> Particle.h:35</div></div>
+<div class="ttc" id="astruct_particle_info_html_afa1578ba3b7ac9c2c91fef7901397ae4"><div class="ttname"><a href="struct_particle_info.html#afa1578ba3b7ac9c2c91fef7901397ae4">ParticleInfo::velocity</a></div><div class="ttdeci">Vector2D velocity</div><div class="ttdoc">速度</div><div class="ttdef"><b>定义</b> Particle.h:31</div></div>
+<div class="ttc" id="astruct_vector2_d_html"><div class="ttname"><a href="struct_vector2_d.html">Vector2D</a></div><div class="ttdoc">二维向量</div><div class="ttdef"><b>定义</b> Struct.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_particle_8h.html">Particle.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

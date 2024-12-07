@@ -1,0 +1,1615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: Collider类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_collider.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pub-static-attribs">静态 Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_collider-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Collider类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>碰撞器基类.  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collider_8h_source.html">Collider.h</a>&gt;</code></p>
+<div class="dynheader">
+类 Collider 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_collider.png" usemap="#Collider_map" alt=""/>
+  <map id="Collider_map" name="Collider_map">
+<area href="class_scene_component.html" title="场景组件基类." alt="SceneComponent" shape="rect" coords="60,112,171,136"/>
+<area href="class_component.html" title="组件基类." alt="Component" shape="rect" coords="60,56,171,80"/>
+<area href="classbase.html" title="基类." alt="base" shape="rect" coords="60,0,171,24"/>
+<area href="class_box_collider.html" title="盒型碰撞器." alt="BoxCollider" shape="rect" coords="0,224,111,248"/>
+<area href="class_circle_collider.html" title="圆形碰撞器." alt="CircleCollider" shape="rect" coords="121,224,232,248"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa7186870221f868bbc74c3ae8609fa66" id="r_aa7186870221f868bbc74c3ae8609fa66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7186870221f868bbc74c3ae8609fa66">Collider</a> ()</td></tr>
+<tr class="memdesc:aa7186870221f868bbc74c3ae8609fa66"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数.  <br /></td></tr>
+<tr class="separator:aa7186870221f868bbc74c3ae8609fa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1ce43b287c870fd72918b023217a33" id="r_abf1ce43b287c870fd72918b023217a33"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf1ce43b287c870fd72918b023217a33">~Collider</a> ()</td></tr>
+<tr class="separator:abf1ce43b287c870fd72918b023217a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c763aab6dfc83c22fb96db853e1572" id="r_a07c763aab6dfc83c22fb96db853e1572"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07c763aab6dfc83c22fb96db853e1572">BeginPlay</a> () override</td></tr>
+<tr class="memdesc:a07c763aab6dfc83c22fb96db853e1572"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化逻辑.  <br /></td></tr>
+<tr class="separator:a07c763aab6dfc83c22fb96db853e1572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233759543642dee96394de925e628c04" id="r_a233759543642dee96394de925e628c04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a233759543642dee96394de925e628c04">EndPlay</a> () override</td></tr>
+<tr class="memdesc:a233759543642dee96394de925e628c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理析构处理不了的.  <br /></td></tr>
+<tr class="separator:a233759543642dee96394de925e628c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0d30ba9de7565a450c05a149636493" id="r_abf0d30ba9de7565a450c05a149636493"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf0d30ba9de7565a450c05a149636493">Update</a> (float deltaTime) override</td></tr>
+<tr class="memdesc:abf0d30ba9de7565a450c05a149636493"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现更新碰撞坐标, 进行容器的更新.  <br /></td></tr>
+<tr class="separator:abf0d30ba9de7565a450c05a149636493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62626b978d73a37d71d438160c6b707c" id="r_a62626b978d73a37d71d438160c6b707c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="class_object.html">Object</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62626b978d73a37d71d438160c6b707c">GetCollisionsByType</a> (<a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> <a class="el" href="#a8569d76c30add66e37d787bb3c84cfd5">type</a>)</td></tr>
+<tr class="memdesc:a62626b978d73a37d71d438160c6b707c"><td class="mdescLeft">&#160;</td><td class="mdescRight">由种类名获取所有跟这个碰撞体有碰撞的物体容器.  <br /></td></tr>
+<tr class="separator:a62626b978d73a37d71d438160c6b707c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae383186ae62d2543beb56a5ba833f72d" id="r_ae383186ae62d2543beb56a5ba833f72d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae383186ae62d2543beb56a5ba833f72d">GetLayer</a> () const</td></tr>
+<tr class="memdesc:ae383186ae62d2543beb56a5ba833f72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取碰撞层级.  <br /></td></tr>
+<tr class="separator:ae383186ae62d2543beb56a5ba833f72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b32228c6dbfba1e68e0cf1a1b55c9a2" id="r_a9b32228c6dbfba1e68e0cf1a1b55c9a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b32228c6dbfba1e68e0cf1a1b55c9a2">SetLayer</a> (int <a class="el" href="#aed1e6b0b203d12bde9e245012e977436">layer</a>)</td></tr>
+<tr class="memdesc:a9b32228c6dbfba1e68e0cf1a1b55c9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置碰撞层级.  <br /></td></tr>
+<tr class="separator:a9b32228c6dbfba1e68e0cf1a1b55c9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774703d056cbefe6bfc00524eab379f6" id="r_a774703d056cbefe6bfc00524eab379f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a774703d056cbefe6bfc00524eab379f6">GetType</a> () const</td></tr>
+<tr class="memdesc:a774703d056cbefe6bfc00524eab379f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取碰撞物体种类.  <br /></td></tr>
+<tr class="separator:a774703d056cbefe6bfc00524eab379f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e594469ae034d49a455717b76ef8663" id="r_a7e594469ae034d49a455717b76ef8663"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e594469ae034d49a455717b76ef8663">SetType</a> (<a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> <a class="el" href="#a8569d76c30add66e37d787bb3c84cfd5">type</a>)</td></tr>
+<tr class="memdesc:a7e594469ae034d49a455717b76ef8663"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置碰撞物体种类.  <br /></td></tr>
+<tr class="separator:a7e594469ae034d49a455717b76ef8663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e233571a67ae51401fe9dfb3f0490d2" id="r_a8e233571a67ae51401fe9dfb3f0490d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6">ColliderShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e233571a67ae51401fe9dfb3f0490d2">GetShape</a> () const</td></tr>
+<tr class="memdesc:a8e233571a67ae51401fe9dfb3f0490d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取碰撞形状.  <br /></td></tr>
+<tr class="separator:a8e233571a67ae51401fe9dfb3f0490d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dea33883afbec95a5a8f0705cb4093c" id="r_a2dea33883afbec95a5a8f0705cb4093c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dea33883afbec95a5a8f0705cb4093c">SetCollisionMode</a> (<a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a> <a class="el" href="#a58936bf75e431e64c8d10defbdff3cf5">mode</a>)</td></tr>
+<tr class="memdesc:a2dea33883afbec95a5a8f0705cb4093c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置碰撞模式.  <br /></td></tr>
+<tr class="separator:a2dea33883afbec95a5a8f0705cb4093c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdc7b2725542c3d6320643b317a351b" id="r_aefdc7b2725542c3d6320643b317a351b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefdc7b2725542c3d6320643b317a351b">GetCollisionMode</a> ()</td></tr>
+<tr class="memdesc:aefdc7b2725542c3d6320643b317a351b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取碰撞模式.  <br /></td></tr>
+<tr class="separator:aefdc7b2725542c3d6320643b317a351b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34ce8e5580a7002c3ac795c50a7081f" id="r_ad34ce8e5580a7002c3ac795c50a7081f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34ce8e5580a7002c3ac795c50a7081f">Deactivate</a> () override</td></tr>
+<tr class="memdesc:ad34ce8e5580a7002c3ac795c50a7081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">停用碰撞体.  <br /></td></tr>
+<tr class="separator:ad34ce8e5580a7002c3ac795c50a7081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9061f95f9f2fd9f5f6785afb6a310601" id="r_a9061f95f9f2fd9f5f6785afb6a310601"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9061f95f9f2fd9f5f6785afb6a310601">DrawDebugLine</a> ()=0</td></tr>
+<tr class="memdesc:a9061f95f9f2fd9f5f6785afb6a310601"><td class="mdescLeft">&#160;</td><td class="mdescRight">绘制调试线 _debug_模式执行.  <br /></td></tr>
+<tr class="separator:a9061f95f9f2fd9f5f6785afb6a310601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99343e13eebca05459a7337b175e18e" id="r_ab99343e13eebca05459a7337b175e18e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab99343e13eebca05459a7337b175e18e">IsCollisionsEmpty</a> () const</td></tr>
+<tr class="memdesc:ab99343e13eebca05459a7337b175e18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否与任何碰撞体无接触  <br /></td></tr>
+<tr class="separator:ab99343e13eebca05459a7337b175e18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3510b79a0bf83d503c844aa78151f0c1" id="r_a3510b79a0bf83d503c844aa78151f0c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3510b79a0bf83d503c844aa78151f0c1">SetPhysicsMaterial</a> (const <a class="el" href="struct_physics_material.html">PhysicsMaterial</a> &amp;<a class="el" href="#a3d1c275d9b5f990d044d9a35c3b5f36e">material</a>)</td></tr>
+<tr class="memdesc:a3510b79a0bf83d503c844aa78151f0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置物理材质  <br /></td></tr>
+<tr class="separator:a3510b79a0bf83d503c844aa78151f0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e3482f40b38638548b09717c04013c" id="r_aa4e3482f40b38638548b09717c04013c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4e3482f40b38638548b09717c04013c">GetRect</a> () const</td></tr>
+<tr class="separator:aa4e3482f40b38638548b09717c04013c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4ca50e2fdbc527dce21a57f949cc16" id="r_a3b4ca50e2fdbc527dce21a57f949cc16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_hit_result.html">HitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b4ca50e2fdbc527dce21a57f949cc16">CollisionHit</a> (<a class="el" href="class_collider.html">Collider</a> *another)</td></tr>
+<tr class="separator:a3b4ca50e2fdbc527dce21a57f949cc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_scene_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_scene_component')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_scene_component.html">SceneComponent</a></td></tr>
+<tr class="memitem:a9242f3ae10edf182245650da6a49ac9a inherit pub_methods_class_scene_component" id="r_a9242f3ae10edf182245650da6a49ac9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a9242f3ae10edf182245650da6a49ac9a">AttachTo</a> (<a class="el" href="class_scene_component.html">SceneComponent</a> *par)</td></tr>
+<tr class="memdesc:a9242f3ae10edf182245650da6a49ac9a inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置所属组件  <br /></td></tr>
+<tr class="separator:a9242f3ae10edf182245650da6a49ac9a inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a395d86c905ddcedeea678058a9bb9a27 inherit pub_methods_class_scene_component" id="r_a395d86c905ddcedeea678058a9bb9a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a395d86c905ddcedeea678058a9bb9a27">DetachForm</a> (<a class="el" href="class_scene_component.html">SceneComponent</a> *par)</td></tr>
+<tr class="memdesc:a395d86c905ddcedeea678058a9bb9a27 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除所属组件.  <br /></td></tr>
+<tr class="separator:a395d86c905ddcedeea678058a9bb9a27 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad854714c29539d7151a01f8ae0a72b1a inherit pub_methods_class_scene_component" id="r_ad854714c29539d7151a01f8ae0a72b1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#ad854714c29539d7151a01f8ae0a72b1a">Destruct</a> ()</td></tr>
+<tr class="memdesc:ad854714c29539d7151a01f8ae0a72b1a inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">解除场景组件绑定并销毁  <br /></td></tr>
+<tr class="separator:ad854714c29539d7151a01f8ae0a72b1a inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4cc8d778fd95bbe762f1defc3e80974 inherit pub_methods_class_scene_component" id="r_aa4cc8d778fd95bbe762f1defc3e80974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#aa4cc8d778fd95bbe762f1defc3e80974">GetLocalPosition</a> () const</td></tr>
+<tr class="memdesc:aa4cc8d778fd95bbe762f1defc3e80974 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取相对坐标  <br /></td></tr>
+<tr class="separator:aa4cc8d778fd95bbe762f1defc3e80974 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8feb11316280402ef6380fd85420694 inherit pub_methods_class_scene_component" id="r_ac8feb11316280402ef6380fd85420694"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#ac8feb11316280402ef6380fd85420694">GetLocalRotation</a> () const</td></tr>
+<tr class="memdesc:ac8feb11316280402ef6380fd85420694 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取相对角度  <br /></td></tr>
+<tr class="separator:ac8feb11316280402ef6380fd85420694 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3bfa82bd37f551f897d7923d1d91c7 inherit pub_methods_class_scene_component" id="r_a4b3bfa82bd37f551f897d7923d1d91c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a4b3bfa82bd37f551f897d7923d1d91c7">GetLocalScale</a> () const</td></tr>
+<tr class="memdesc:a4b3bfa82bd37f551f897d7923d1d91c7 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取相对缩放大小  <br /></td></tr>
+<tr class="separator:a4b3bfa82bd37f551f897d7923d1d91c7 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568e0f1cd120b3920764dbbdf260c78d inherit pub_methods_class_scene_component" id="r_a568e0f1cd120b3920764dbbdf260c78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a568e0f1cd120b3920764dbbdf260c78d">GetWorldPosition</a> () const</td></tr>
+<tr class="memdesc:a568e0f1cd120b3920764dbbdf260c78d inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取场景组件的世界坐标  <br /></td></tr>
+<tr class="separator:a568e0f1cd120b3920764dbbdf260c78d inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be0ccb0d86504c7535a23d41ff3af4f inherit pub_methods_class_scene_component" id="r_a7be0ccb0d86504c7535a23d41ff3af4f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a7be0ccb0d86504c7535a23d41ff3af4f">GetWorldRotation</a> () const</td></tr>
+<tr class="memdesc:a7be0ccb0d86504c7535a23d41ff3af4f inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取场景组件的世界旋转角度  <br /></td></tr>
+<tr class="separator:a7be0ccb0d86504c7535a23d41ff3af4f inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4348bc50489ef33dee2882c903155396 inherit pub_methods_class_scene_component" id="r_a4348bc50489ef33dee2882c903155396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a4348bc50489ef33dee2882c903155396">GetWorldScale</a> () const</td></tr>
+<tr class="memdesc:a4348bc50489ef33dee2882c903155396 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取场景组件的世界的缩放大小  <br /></td></tr>
+<tr class="separator:a4348bc50489ef33dee2882c903155396 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b9d55cf1a25b9035dc05d89423a1ac inherit pub_methods_class_scene_component" id="r_aa5b9d55cf1a25b9035dc05d89423a1ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#aa5b9d55cf1a25b9035dc05d89423a1ac">SetLocalPosition</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;pos)</td></tr>
+<tr class="memdesc:aa5b9d55cf1a25b9035dc05d89423a1ac inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置相对坐标  <br /></td></tr>
+<tr class="separator:aa5b9d55cf1a25b9035dc05d89423a1ac inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688dbf0593b93a110e1f0a18adfdd1d1 inherit pub_methods_class_scene_component" id="r_a688dbf0593b93a110e1f0a18adfdd1d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a688dbf0593b93a110e1f0a18adfdd1d1">SetLocalRotation</a> (float rot)</td></tr>
+<tr class="memdesc:a688dbf0593b93a110e1f0a18adfdd1d1 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置相对角度  <br /></td></tr>
+<tr class="separator:a688dbf0593b93a110e1f0a18adfdd1d1 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8600f6071969e65caa02661dd4f155c8 inherit pub_methods_class_scene_component" id="r_a8600f6071969e65caa02661dd4f155c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a8600f6071969e65caa02661dd4f155c8">SetLocalScale</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;scale)</td></tr>
+<tr class="memdesc:a8600f6071969e65caa02661dd4f155c8 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置相对缩放大小  <br /></td></tr>
+<tr class="separator:a8600f6071969e65caa02661dd4f155c8 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d8acde4a0df26c1ed6b565db865ae7 inherit pub_methods_class_scene_component" id="r_ae4d8acde4a0df26c1ed6b565db865ae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#ae4d8acde4a0df26c1ed6b565db865ae7">AddPosition</a> (const <a class="el" href="struct_vector2_d.html">Vector2D</a> &amp;pos)</td></tr>
+<tr class="memdesc:ae4d8acde4a0df26c1ed6b565db865ae7 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">加上一个坐标  <br /></td></tr>
+<tr class="separator:ae4d8acde4a0df26c1ed6b565db865ae7 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba94abc80cb16188fd0e1638b3bd3a6 inherit pub_methods_class_scene_component" id="r_adba94abc80cb16188fd0e1638b3bd3a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#adba94abc80cb16188fd0e1638b3bd3a6">AddRotation</a> (float rot)</td></tr>
+<tr class="memdesc:adba94abc80cb16188fd0e1638b3bd3a6 inherit pub_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">加上一个角度  <br /></td></tr>
+<tr class="separator:adba94abc80cb16188fd0e1638b3bd3a6 inherit pub_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_component')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component" id="r_ad18c38d69d7d77ec399a64175aa998ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#ad18c38d69d7d77ec399a64175aa998ad">SetOwner</a> (class <a class="el" href="class_object.html">Object</a> *owner)</td></tr>
+<tr class="memdesc:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置绑定对象.  <br /></td></tr>
+<tr class="separator:ad18c38d69d7d77ec399a64175aa998ad inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component" id="r_a66fa458a9bf940a8357688085ddc251c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a66fa458a9bf940a8357688085ddc251c">Activate</a> ()</td></tr>
+<tr class="memdesc:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">激活组件  <br /></td></tr>
+<tr class="separator:a66fa458a9bf940a8357688085ddc251c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component" id="r_a0deb5ee1c90da8fdb1de7113a981e96c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0deb5ee1c90da8fdb1de7113a981e96c">GetOwner</a> () const</td></tr>
+<tr class="memdesc:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取绑定对象指针  <br /></td></tr>
+<tr class="separator:a0deb5ee1c90da8fdb1de7113a981e96c inherit pub_methods_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classbase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classbase')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classbase.html">base</a></td></tr>
+<tr class="memitem:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase" id="r_a3b0362be8b58605e4975b969dd8131a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a3b0362be8b58605e4975b969dd8131a4">base</a> ()</td></tr>
+<tr class="separator:a3b0362be8b58605e4975b969dd8131a4 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase" id="r_a28380c406d2ac063fe11950bff012c06"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a28380c406d2ac063fe11950bff012c06">~base</a> ()</td></tr>
+<tr class="separator:a28380c406d2ac063fe11950bff012c06 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase" id="r_acaf71fb0984c325434465393af6994c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#acaf71fb0984c325434465393af6994c7">GetName</a> () const</td></tr>
+<tr class="separator:acaf71fb0984c325434465393af6994c7 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase" id="r_a8e45fd097ee216399bb2216d9f843420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbase.html#a8e45fd097ee216399bb2216d9f843420">SetName</a> (const std::string &amp;<a class="el" href="classbase.html#a65510a23838809e27dd3c8bae787aac5">name</a>)</td></tr>
+<tr class="separator:a8e45fd097ee216399bb2216d9f843420 inherit pub_methods_classbase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a1a8c487103985b2f455edcb4a8bf4465" id="r_a1a8c487103985b2f455edcb4a8bf4465"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hit_result.html">HitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a8c487103985b2f455edcb4a8bf4465">CollisionHitCircleToCircle</a> (<a class="el" href="class_collider.html">Collider</a> *, <a class="el" href="class_collider.html">Collider</a> *)</td></tr>
+<tr class="memdesc:a1a8c487103985b2f455edcb4a8bf4465"><td class="mdescLeft">&#160;</td><td class="mdescRight">圆实体类型之间发生物理碰撞  <br /></td></tr>
+<tr class="separator:a1a8c487103985b2f455edcb4a8bf4465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae293f7f310d7a28f4c4680fd93a23c8a" id="r_ae293f7f310d7a28f4c4680fd93a23c8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hit_result.html">HitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae293f7f310d7a28f4c4680fd93a23c8a">CollisionHitCircleToBox</a> (<a class="el" href="class_collider.html">Collider</a> *, <a class="el" href="class_collider.html">Collider</a> *)</td></tr>
+<tr class="memdesc:ae293f7f310d7a28f4c4680fd93a23c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">圆实体和盒型实体之间发生物理碰撞  <br /></td></tr>
+<tr class="separator:ae293f7f310d7a28f4c4680fd93a23c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dac529eb903ea50262f74eaf8640775" id="r_a1dac529eb903ea50262f74eaf8640775"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hit_result.html">HitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dac529eb903ea50262f74eaf8640775">CollisionHitBoxToBox</a> (<a class="el" href="class_collider.html">Collider</a> *, <a class="el" href="class_collider.html">Collider</a> *)</td></tr>
+<tr class="memdesc:a1dac529eb903ea50262f74eaf8640775"><td class="mdescLeft">&#160;</td><td class="mdescRight">盒型和盒型实体之间发生物理碰撞  <br /></td></tr>
+<tr class="separator:a1dac529eb903ea50262f74eaf8640775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac5ca3f28213ea9cf9e19a25990eca9fd" id="r_ac5ca3f28213ea9cf9e19a25990eca9fd"><td class="memItemLeft" align="right" valign="top">CollisionOverlapDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ca3f28213ea9cf9e19a25990eca9fd">OnComponentBeginOverlap</a></td></tr>
+<tr class="memdesc:ac5ca3f28213ea9cf9e19a25990eca9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞体刚接触的委托  <br /></td></tr>
+<tr class="separator:ac5ca3f28213ea9cf9e19a25990eca9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07baf272ea2f1fb3af8a195fe285d81" id="r_ac07baf272ea2f1fb3af8a195fe285d81"><td class="memItemLeft" align="right" valign="top">CollisionOverlapDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07baf272ea2f1fb3af8a195fe285d81">OnComponentEndOverlap</a></td></tr>
+<tr class="memdesc:ac07baf272ea2f1fb3af8a195fe285d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞体刚从接触到不重叠的委托  <br /></td></tr>
+<tr class="separator:ac07baf272ea2f1fb3af8a195fe285d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b80516006984cd82d942e6dd1d8926" id="r_a89b80516006984cd82d942e6dd1d8926"><td class="memItemLeft" align="right" valign="top">CollisionHitOverlapDelegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89b80516006984cd82d942e6dd1d8926">OnComponentHitOverlap</a></td></tr>
+<tr class="memdesc:a89b80516006984cd82d942e6dd1d8926"><td class="mdescLeft">&#160;</td><td class="mdescRight">发生实体碰撞的委托  <br /></td></tr>
+<tr class="separator:a89b80516006984cd82d942e6dd1d8926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静态 Public 属性</h2></td></tr>
+<tr class="memitem:aff801854cee7cf36bbe4b5559ee6a1d7" id="r_aff801854cee7cf36bbe4b5559ee6a1d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_hit_result.html">HitResult</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff801854cee7cf36bbe4b5559ee6a1d7">CollisionHitMap</a> [3])(<a class="el" href="class_collider.html">Collider</a> *, <a class="el" href="class_collider.html">Collider</a> *)</td></tr>
+<tr class="memdesc:aff801854cee7cf36bbe4b5559ee6a1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">映射关系 圆是0 方是1 进行加法  <br /></td></tr>
+<tr class="separator:aff801854cee7cf36bbe4b5559ee6a1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a1df67beb2d1d783e8637a2bb801098e0" id="r_a1df67beb2d1d783e8637a2bb801098e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1df67beb2d1d783e8637a2bb801098e0">CollisionJudge</a> (<a class="el" href="class_collider.html">Collider</a> *another)=0</td></tr>
+<tr class="memdesc:a1df67beb2d1d783e8637a2bb801098e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞判断(纯虚函数).  <br /></td></tr>
+<tr class="separator:a1df67beb2d1d783e8637a2bb801098e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f4df590eac8d7d726b223715b6b583" id="r_aa9f4df590eac8d7d726b223715b6b583"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9f4df590eac8d7d726b223715b6b583">IsMouseOver</a> ()=0</td></tr>
+<tr class="memdesc:aa9f4df590eac8d7d726b223715b6b583"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断是否跟鼠标发生了碰撞.  <br /></td></tr>
+<tr class="separator:aa9f4df590eac8d7d726b223715b6b583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_scene_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_scene_component')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_scene_component.html">SceneComponent</a></td></tr>
+<tr class="memitem:a5ea166e06a5c8ec99ec681ff8a6c17b0 inherit pro_methods_class_scene_component" id="r_a5ea166e06a5c8ec99ec681ff8a6c17b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a5ea166e06a5c8ec99ec681ff8a6c17b0">process_Destruct</a> ()</td></tr>
+<tr class="memdesc:a5ea166e06a5c8ec99ec681ff8a6c17b0 inherit pro_methods_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁组件  <br /></td></tr>
+<tr class="separator:a5ea166e06a5c8ec99ec681ff8a6c17b0 inherit pro_methods_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a3d1c275d9b5f990d044d9a35c3b5f36e" id="r_a3d1c275d9b5f990d044d9a35c3b5f36e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_physics_material.html">PhysicsMaterial</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d1c275d9b5f990d044d9a35c3b5f36e">material</a></td></tr>
+<tr class="memdesc:a3d1c275d9b5f990d044d9a35c3b5f36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">物理材质  <br /></td></tr>
+<tr class="separator:a3d1c275d9b5f990d044d9a35c3b5f36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456f30bcf52d68d5fe7606c7ce9800c4" id="r_a456f30bcf52d68d5fe7606c7ce9800c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6">ColliderShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a456f30bcf52d68d5fe7606c7ce9800c4">shape</a> = <a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6a30954d90085f6eaaf5817917fc5fecb3">ColliderShape::Circle</a></td></tr>
+<tr class="memdesc:a456f30bcf52d68d5fe7606c7ce9800c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞形状  <br /></td></tr>
+<tr class="separator:a456f30bcf52d68d5fe7606c7ce9800c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc3cd1cc1e4a65a50fe8c5a7b39730d" id="r_aebc3cd1cc1e4a65a50fe8c5a7b39730d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebc3cd1cc1e4a65a50fe8c5a7b39730d">rec_pos</a> = {0,0,0,0}</td></tr>
+<tr class="memdesc:aebc3cd1cc1e4a65a50fe8c5a7b39730d"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩形框区域  <br /></td></tr>
+<tr class="separator:aebc3cd1cc1e4a65a50fe8c5a7b39730d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_scene_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_scene_component')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_scene_component.html">SceneComponent</a></td></tr>
+<tr class="memitem:a8d062b082109031d51ccad65da34c473 inherit pro_attribs_class_scene_component" id="r_a8d062b082109031d51ccad65da34c473"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_scene_component.html">SceneComponent</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene_component.html#a8d062b082109031d51ccad65da34c473">parent</a> = nullptr</td></tr>
+<tr class="memdesc:a8d062b082109031d51ccad65da34c473 inherit pro_attribs_class_scene_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">父指针  <br /></td></tr>
+<tr class="separator:a8d062b082109031d51ccad65da34c473 inherit pro_attribs_class_scene_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_component')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_component.html">Component</a></td></tr>
+<tr class="memitem:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component" id="r_a0d14459b1874626134163b11d1dbfcf0"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="class_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a0d14459b1874626134163b11d1dbfcf0">pOwner</a> = nullptr</td></tr>
+<tr class="memdesc:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理控制逻辑 有对象物体的指针才能进行控制  <br /></td></tr>
+<tr class="separator:a0d14459b1874626134163b11d1dbfcf0 inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component" id="r_a950b1a2299221cbe0e3fd0a79b9b487c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a950b1a2299221cbe0e3fd0a79b9b487c">bIsEnabled</a> = true</td></tr>
+<tr class="memdesc:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否激活  <br /></td></tr>
+<tr class="separator:a950b1a2299221cbe0e3fd0a79b9b487c inherit pro_attribs_class_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aa0a2e0d646c9f9649c54676eb9450143" id="r_aa0a2e0d646c9f9649c54676eb9450143"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a2e0d646c9f9649c54676eb9450143">Clear</a> ()</td></tr>
+<tr class="memdesc:aa0a2e0d646c9f9649c54676eb9450143"><td class="mdescLeft">&#160;</td><td class="mdescRight">将碰撞体从世界彻底移除  <br /></td></tr>
+<tr class="separator:aa0a2e0d646c9f9649c54676eb9450143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84bf6145813dae7217e117decd441fb0" id="r_a84bf6145813dae7217e117decd441fb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84bf6145813dae7217e117decd441fb0">Erase</a> ()</td></tr>
+<tr class="memdesc:a84bf6145813dae7217e117decd441fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理碰撞体之间的信息删除逻辑  <br /></td></tr>
+<tr class="separator:a84bf6145813dae7217e117decd441fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0399aab7f3ca8f6e863f2303dd177c16" id="r_a0399aab7f3ca8f6e863f2303dd177c16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0399aab7f3ca8f6e863f2303dd177c16">Insert</a> (<a class="el" href="class_collider.html">Collider</a> *another)</td></tr>
+<tr class="memdesc:a0399aab7f3ca8f6e863f2303dd177c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理碰撞体之间的信息插入逻辑.  <br /></td></tr>
+<tr class="separator:a0399aab7f3ca8f6e863f2303dd177c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a5541765c3444c78d0703f95569a979df" id="r_a5541765c3444c78d0703f95569a979df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_pair.html">Pair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5541765c3444c78d0703f95569a979df">point</a> = {-1,-1}</td></tr>
+<tr class="memdesc:a5541765c3444c78d0703f95569a979df"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞左上角区域坐标  <br /></td></tr>
+<tr class="separator:a5541765c3444c78d0703f95569a979df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7c694cfa73d3767c1525c43a3d2bf1" id="r_afd7c694cfa73d3767c1525c43a3d2bf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_pair.html">Pair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd7c694cfa73d3767c1525c43a3d2bf1">point_rb</a> = { -1,-1 }</td></tr>
+<tr class="memdesc:afd7c694cfa73d3767c1525c43a3d2bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞右下角区域坐标  <br /></td></tr>
+<tr class="separator:afd7c694cfa73d3767c1525c43a3d2bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8569d76c30add66e37d787bb3c84cfd5" id="r_a8569d76c30add66e37d787bb3c84cfd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8569d76c30add66e37d787bb3c84cfd5">type</a> = <a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a></td></tr>
+<tr class="memdesc:a8569d76c30add66e37d787bb3c84cfd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞物体种类  <br /></td></tr>
+<tr class="separator:a8569d76c30add66e37d787bb3c84cfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1e6b0b203d12bde9e245012e977436" id="r_aed1e6b0b203d12bde9e245012e977436"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed1e6b0b203d12bde9e245012e977436">layer</a> = 0</td></tr>
+<tr class="memdesc:aed1e6b0b203d12bde9e245012e977436"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞图层顺序，越大的值越上面  <br /></td></tr>
+<tr class="separator:aed1e6b0b203d12bde9e245012e977436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58936bf75e431e64c8d10defbdff3cf5" id="r_a58936bf75e431e64c8d10defbdff3cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58936bf75e431e64c8d10defbdff3cf5">mode</a> = <a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8af698f67f5666aff10729d8a1cb1c14d2">ColliderMode::Trigger</a></td></tr>
+<tr class="memdesc:a58936bf75e431e64c8d10defbdff3cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">碰撞模式  <br /></td></tr>
+<tr class="separator:a58936bf75e431e64c8d10defbdff3cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd4d3636999b3fee67c298290ebf16a" id="r_adfd4d3636999b3fee67c298290ebf16a"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="class_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfd4d3636999b3fee67c298290ebf16a">collisions</a></td></tr>
+<tr class="memdesc:adfd4d3636999b3fee67c298290ebf16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储发生碰撞的容器 就是区域重叠的碰撞组件地址  <br /></td></tr>
+<tr class="separator:adfd4d3636999b3fee67c298290ebf16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91039ff95dbc411f51bb0579a7c1bfec" id="r_a91039ff95dbc411f51bb0579a7c1bfec"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_object.html">Object</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91039ff95dbc411f51bb0579a7c1bfec">aims</a></td></tr>
+<tr class="memdesc:a91039ff95dbc411f51bb0579a7c1bfec"><td class="mdescLeft">&#160;</td><td class="mdescRight">存储所有种类名获取跟这个碰撞体有碰撞的物体容器  <br /></td></tr>
+<tr class="separator:a91039ff95dbc411f51bb0579a7c1bfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66a2ca6d841ffbffc53fd6771ae08bd" id="r_ab66a2ca6d841ffbffc53fd6771ae08bd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_collider.html">Collider</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab66a2ca6d841ffbffc53fd6771ae08bd">collisions_to_erase</a></td></tr>
+<tr class="memdesc:ab66a2ca6d841ffbffc53fd6771ae08bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束碰撞缓冲区  <br /></td></tr>
+<tr class="separator:ab66a2ca6d841ffbffc53fd6771ae08bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c62867953b48450b074888344256b77" id="r_a5c62867953b48450b074888344256b77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c62867953b48450b074888344256b77">rigidAttached</a> = nullptr</td></tr>
+<tr class="memdesc:a5c62867953b48450b074888344256b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">附着的刚体组件 实现物理模拟  <br /></td></tr>
+<tr class="separator:a5c62867953b48450b074888344256b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ac3456fd331a58b288082abca310c7a99" id="r_ac3456fd331a58b288082abca310c7a99"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3456fd331a58b288082abca310c7a99">Controller</a></td></tr>
+<tr class="separator:ac3456fd331a58b288082abca310c7a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8b03bec6b0a8e0834c8358c93039d2" id="r_abb8b03bec6b0a8e0834c8358c93039d2"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8b03bec6b0a8e0834c8358c93039d2">RigidBody</a></td></tr>
+<tr class="separator:abb8b03bec6b0a8e0834c8358c93039d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e6716326702e0757fbeac0afb0bfb8" id="r_a76e6716326702e0757fbeac0afb0bfb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76e6716326702e0757fbeac0afb0bfb8">World::ProcessColliderZones</a> ()</td></tr>
+<tr class="separator:a76e6716326702e0757fbeac0afb0bfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>碰撞器基类. </p>
+<p>实现碰撞.实现一些碰撞共有基本逻辑的处理和声明周期的管理 </p><dl class="section remark"><dt>备注</dt><dd>新的碰撞器类型都要继承他 </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="aa7186870221f868bbc74c3ae8609fa66" name="aa7186870221f868bbc74c3ae8609fa66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7186870221f868bbc74c3ae8609fa66">&#9670;&#160;</a></span>Collider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collider::Collider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数. </p>
+<p>世界碰撞容器中插入 </p>
+
+</div>
+</div>
+<a id="abf1ce43b287c870fd72918b023217a33" name="abf1ce43b287c870fd72918b023217a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1ce43b287c870fd72918b023217a33">&#9670;&#160;</a></span>~Collider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Collider::~Collider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a07c763aab6dfc83c22fb96db853e1572" name="a07c763aab6dfc83c22fb96db853e1572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c763aab6dfc83c22fb96db853e1572">&#9670;&#160;</a></span>BeginPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::BeginPlay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化逻辑. </p>
+<p>获取刚体组件的指针 </p>
+
+<p>重载 <a class="el" href="class_scene_component.html#a87e1469d9a7a2bbca83eb0577845e16d">SceneComponent</a> .</p>
+
+<p>被 <a class="el" href="class_box_collider.html#aea0ed9a5a278b8454859d3e992db3695">BoxCollider</a> , 以及 <a class="el" href="class_circle_collider.html#a8a0ec8fa0330a857fd385d1082f07e5c">CircleCollider</a> 重载.</p>
+
+</div>
+</div>
+<a id="aa0a2e0d646c9f9649c54676eb9450143" name="aa0a2e0d646c9f9649c54676eb9450143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a2e0d646c9f9649c54676eb9450143">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将碰撞体从世界彻底移除 </p>
+<p>清空这个碰撞体 及所有跟他有关的碰撞体. </p>
+
+</div>
+</div>
+<a id="a3b4ca50e2fdbc527dce21a57f949cc16" name="a3b4ca50e2fdbc527dce21a57f949cc16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4ca50e2fdbc527dce21a57f949cc16">&#9670;&#160;</a></span>CollisionHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_result.html">HitResult</a> Collider::CollisionHit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1dac529eb903ea50262f74eaf8640775" name="a1dac529eb903ea50262f74eaf8640775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dac529eb903ea50262f74eaf8640775">&#9670;&#160;</a></span>CollisionHitBoxToBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_result.html">HitResult</a> Collider::CollisionHitBoxToBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>me</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>盒型和盒型实体之间发生物理碰撞 </p>
+
+</div>
+</div>
+<a id="ae293f7f310d7a28f4c4680fd93a23c8a" name="ae293f7f310d7a28f4c4680fd93a23c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae293f7f310d7a28f4c4680fd93a23c8a">&#9670;&#160;</a></span>CollisionHitCircleToBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_result.html">HitResult</a> Collider::CollisionHitCircleToBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>me</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>圆实体和盒型实体之间发生物理碰撞 </p>
+
+</div>
+</div>
+<a id="a1a8c487103985b2f455edcb4a8bf4465" name="a1a8c487103985b2f455edcb4a8bf4465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a8c487103985b2f455edcb4a8bf4465">&#9670;&#160;</a></span>CollisionHitCircleToCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_result.html">HitResult</a> Collider::CollisionHitCircleToCircle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>me</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>圆实体类型之间发生物理碰撞 </p>
+
+</div>
+</div>
+<a id="a1df67beb2d1d783e8637a2bb801098e0" name="a1df67beb2d1d783e8637a2bb801098e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df67beb2d1d783e8637a2bb801098e0">&#9670;&#160;</a></span>CollisionJudge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Collider::CollisionJudge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞判断(纯虚函数). </p>
+<p>子类重写 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">another</td><td>检测的碰撞体 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>是否发生了碰撞(即重叠) </dd></dl>
+
+<p>在 <a class="el" href="class_box_collider.html#a9799117753be6cc23abbf9dba73aec52">BoxCollider</a> , 以及 <a class="el" href="class_circle_collider.html#a27737a9fb98c9d3455f4e9146d3d715a">CircleCollider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ad34ce8e5580a7002c3ac795c50a7081f" name="ad34ce8e5580a7002c3ac795c50a7081f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34ce8e5580a7002c3ac795c50a7081f">&#9670;&#160;</a></span>Deactivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Deactivate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>停用碰撞体. </p>
+<p>从世界容器中删除 </p>
+
+<p>重载 <a class="el" href="class_component.html#a68acbf339604cf393cfc178135e48a5f">Component</a> .</p>
+
+</div>
+</div>
+<a id="a9061f95f9f2fd9f5f6785afb6a310601" name="a9061f95f9f2fd9f5f6785afb6a310601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9061f95f9f2fd9f5f6785afb6a310601">&#9670;&#160;</a></span>DrawDebugLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Collider::DrawDebugLine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>绘制调试线 _debug_模式执行. </p>
+
+<p>在 <a class="el" href="class_box_collider.html#a99cb08e00fc7d6ece8a880e556bc041c">BoxCollider</a> , 以及 <a class="el" href="class_circle_collider.html#a71ee4fbede52cca3728fff7108da9ea6">CircleCollider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a233759543642dee96394de925e628c04" name="a233759543642dee96394de925e628c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a233759543642dee96394de925e628c04">&#9670;&#160;</a></span>EndPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::EndPlay </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>处理析构处理不了的. </p>
+<p>主要就是一些顺序和生命周期的问题 Debug 2024/11/11 析构函数的时候会先调用子类的析构再调用父类的析构函数，但是删除组件是在父类执行，访问不到子类的成员，也转换不成子类 </p>
+
+<p>重载 <a class="el" href="class_scene_component.html#afc128d73ab439c64f41a6a3619f09dbb">SceneComponent</a> .</p>
+
+</div>
+</div>
+<a id="a84bf6145813dae7217e117decd441fb0" name="a84bf6145813dae7217e117decd441fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84bf6145813dae7217e117decd441fb0">&#9670;&#160;</a></span>Erase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Erase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>处理碰撞体之间的信息删除逻辑 </p>
+<p>自己判断自己里面的碰撞体是否还有碰撞. </p>
+
+</div>
+</div>
+<a id="aefdc7b2725542c3d6320643b317a351b" name="aefdc7b2725542c3d6320643b317a351b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefdc7b2725542c3d6320643b317a351b">&#9670;&#160;</a></span>GetCollisionMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a> Collider::GetCollisionMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取碰撞模式. </p>
+<dl class="section return"><dt>返回</dt><dd>碰撞模式 </dd></dl>
+
+</div>
+</div>
+<a id="a62626b978d73a37d71d438160c6b707c" name="a62626b978d73a37d71d438160c6b707c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62626b978d73a37d71d438160c6b707c">&#9670;&#160;</a></span>GetCollisionsByType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="class_object.html">Object</a> * &gt; &amp; Collider::GetCollisionsByType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>由种类名获取所有跟这个碰撞体有碰撞的物体容器. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>种类名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>数组容器 </dd></dl>
+
+</div>
+</div>
+<a id="ae383186ae62d2543beb56a5ba833f72d" name="ae383186ae62d2543beb56a5ba833f72d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae383186ae62d2543beb56a5ba833f72d">&#9670;&#160;</a></span>GetLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Collider::GetLayer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取碰撞层级. </p>
+<dl class="section return"><dt>返回</dt><dd>层级 </dd></dl>
+
+</div>
+</div>
+<a id="aa4e3482f40b38638548b09717c04013c" name="aa4e3482f40b38638548b09717c04013c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e3482f40b38638548b09717c04013c">&#9670;&#160;</a></span>GetRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rect.html">Rect</a> Collider::GetRect </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e233571a67ae51401fe9dfb3f0490d2" name="a8e233571a67ae51401fe9dfb3f0490d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e233571a67ae51401fe9dfb3f0490d2">&#9670;&#160;</a></span>GetShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6">ColliderShape</a> Collider::GetShape </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取碰撞形状. </p>
+
+</div>
+</div>
+<a id="a774703d056cbefe6bfc00524eab379f6" name="a774703d056cbefe6bfc00524eab379f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774703d056cbefe6bfc00524eab379f6">&#9670;&#160;</a></span>GetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> Collider::GetType </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取碰撞物体种类. </p>
+
+</div>
+</div>
+<a id="a0399aab7f3ca8f6e863f2303dd177c16" name="a0399aab7f3ca8f6e863f2303dd177c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0399aab7f3ca8f6e863f2303dd177c16">&#9670;&#160;</a></span>Insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_collider.html">Collider</a> *</td>          <td class="paramname"><span class="paramname"><em>another</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>处理碰撞体之间的信息插入逻辑. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">another</td><td>需要插入的碰撞器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab99343e13eebca05459a7337b175e18e" name="ab99343e13eebca05459a7337b175e18e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99343e13eebca05459a7337b175e18e">&#9670;&#160;</a></span>IsCollisionsEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Collider::IsCollisionsEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否与任何碰撞体无接触 </p>
+
+</div>
+</div>
+<a id="aa9f4df590eac8d7d726b223715b6b583" name="aa9f4df590eac8d7d726b223715b6b583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f4df590eac8d7d726b223715b6b583">&#9670;&#160;</a></span>IsMouseOver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Collider::IsMouseOver </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>判断是否跟鼠标发生了碰撞. </p>
+<dl class="section return"><dt>返回</dt><dd>鼠标是否在碰撞体内部 </dd></dl>
+
+<p>在 <a class="el" href="class_box_collider.html#ae2671964db8fff407118806491d9a19f">BoxCollider</a> , 以及 <a class="el" href="class_circle_collider.html#ab17bc1680efc1d795c829fc7af233db0">CircleCollider</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a2dea33883afbec95a5a8f0705cb4093c" name="a2dea33883afbec95a5a8f0705cb4093c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dea33883afbec95a5a8f0705cb4093c">&#9670;&#160;</a></span>SetCollisionMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::SetCollisionMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置碰撞模式. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>碰撞模式 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9b32228c6dbfba1e68e0cf1a1b55c9a2" name="a9b32228c6dbfba1e68e0cf1a1b55c9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b32228c6dbfba1e68e0cf1a1b55c9a2">&#9670;&#160;</a></span>SetLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::SetLayer </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>layer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置碰撞层级. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">layer</td><td>设置的层级 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3510b79a0bf83d503c844aa78151f0c1" name="a3510b79a0bf83d503c844aa78151f0c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3510b79a0bf83d503c844aa78151f0c1">&#9670;&#160;</a></span>SetPhysicsMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::SetPhysicsMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_physics_material.html">PhysicsMaterial</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>material</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置物理材质 </p>
+
+</div>
+</div>
+<a id="a7e594469ae034d49a455717b76ef8663" name="a7e594469ae034d49a455717b76ef8663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e594469ae034d49a455717b76ef8663">&#9670;&#160;</a></span>SetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::SetType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a></td>          <td class="paramname"><span class="paramname"><em>type</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置碰撞物体种类. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">设置的碰撞种类</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abf0d30ba9de7565a450c05a149636493" name="abf0d30ba9de7565a450c05a149636493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0d30ba9de7565a450c05a149636493">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Collider::Update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>deltaTime</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>实现更新碰撞坐标, 进行容器的更新. </p>
+
+<p>重载 <a class="el" href="class_scene_component.html#a40e06486adfb55a1fe2bd2e5c819313d">SceneComponent</a> .</p>
+
+<p>被 <a class="el" href="class_box_collider.html#a7eb0a1fd466efee48df153359b5c002a">BoxCollider</a> , 以及 <a class="el" href="class_circle_collider.html#a6e2afd4d1bc70515224b81663d95f286">CircleCollider</a> 重载.</p>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="ac3456fd331a58b288082abca310c7a99" name="ac3456fd331a58b288082abca310c7a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3456fd331a58b288082abca310c7a99">&#9670;&#160;</a></span>Controller</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_controller.html">Controller</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb8b03bec6b0a8e0834c8358c93039d2" name="abb8b03bec6b0a8e0834c8358c93039d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8b03bec6b0a8e0834c8358c93039d2">&#9670;&#160;</a></span>RigidBody</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_rigid_body.html">RigidBody</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76e6716326702e0757fbeac0afb0bfb8" name="a76e6716326702e0757fbeac0afb0bfb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e6716326702e0757fbeac0afb0bfb8">&#9670;&#160;</a></span>World::ProcessColliderZones</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_world.html#a1414ee3d8bda425031844bc05340e0b8">World::ProcessColliderZones</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a91039ff95dbc411f51bb0579a7c1bfec" name="a91039ff95dbc411f51bb0579a7c1bfec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91039ff95dbc411f51bb0579a7c1bfec">&#9670;&#160;</a></span>aims</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_object.html">Object</a>*&gt; Collider::aims</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>存储所有种类名获取跟这个碰撞体有碰撞的物体容器 </p>
+
+</div>
+</div>
+<a id="aff801854cee7cf36bbe4b5559ee6a1d7" name="aff801854cee7cf36bbe4b5559ee6a1d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff801854cee7cf36bbe4b5559ee6a1d7">&#9670;&#160;</a></span>CollisionHitMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_hit_result.html">HitResult</a>(* Collider::CollisionHitMap[3])(<a class="el" href="class_collider.html">Collider</a> *, <a class="el" href="class_collider.html">Collider</a> *)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>映射关系 圆是0 方是1 进行加法 </p>
+
+</div>
+</div>
+<a id="adfd4d3636999b3fee67c298290ebf16a" name="adfd4d3636999b3fee67c298290ebf16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd4d3636999b3fee67c298290ebf16a">&#9670;&#160;</a></span>collisions</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="class_collider.html">Collider</a>*&gt; Collider::collisions</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>存储发生碰撞的容器 就是区域重叠的碰撞组件地址 </p>
+
+</div>
+</div>
+<a id="ab66a2ca6d841ffbffc53fd6771ae08bd" name="ab66a2ca6d841ffbffc53fd6771ae08bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66a2ca6d841ffbffc53fd6771ae08bd">&#9670;&#160;</a></span>collisions_to_erase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_collider.html">Collider</a>*&gt; Collider::collisions_to_erase</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>结束碰撞缓冲区 </p>
+
+</div>
+</div>
+<a id="aed1e6b0b203d12bde9e245012e977436" name="aed1e6b0b203d12bde9e245012e977436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1e6b0b203d12bde9e245012e977436">&#9670;&#160;</a></span>layer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Collider::layer = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞图层顺序，越大的值越上面 </p>
+
+</div>
+</div>
+<a id="a3d1c275d9b5f990d044d9a35c3b5f36e" name="a3d1c275d9b5f990d044d9a35c3b5f36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1c275d9b5f990d044d9a35c3b5f36e">&#9670;&#160;</a></span>material</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_physics_material.html">PhysicsMaterial</a> Collider::material</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>物理材质 </p>
+
+</div>
+</div>
+<a id="a58936bf75e431e64c8d10defbdff3cf5" name="a58936bf75e431e64c8d10defbdff3cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58936bf75e431e64c8d10defbdff3cf5">&#9670;&#160;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8">ColliderMode</a> Collider::mode = <a class="el" href="_collider_8h.html#a68d6b7c5a7cff40ba72cd1fd2860fad8af698f67f5666aff10729d8a1cb1c14d2">ColliderMode::Trigger</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞模式 </p>
+
+</div>
+</div>
+<a id="ac5ca3f28213ea9cf9e19a25990eca9fd" name="ac5ca3f28213ea9cf9e19a25990eca9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ca3f28213ea9cf9e19a25990eca9fd">&#9670;&#160;</a></span>OnComponentBeginOverlap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionOverlapDelegate Collider::OnComponentBeginOverlap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>碰撞体刚接触的委托 </p>
+
+</div>
+</div>
+<a id="ac07baf272ea2f1fb3af8a195fe285d81" name="ac07baf272ea2f1fb3af8a195fe285d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07baf272ea2f1fb3af8a195fe285d81">&#9670;&#160;</a></span>OnComponentEndOverlap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionOverlapDelegate Collider::OnComponentEndOverlap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>碰撞体刚从接触到不重叠的委托 </p>
+
+</div>
+</div>
+<a id="a89b80516006984cd82d942e6dd1d8926" name="a89b80516006984cd82d942e6dd1d8926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b80516006984cd82d942e6dd1d8926">&#9670;&#160;</a></span>OnComponentHitOverlap</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CollisionHitOverlapDelegate Collider::OnComponentHitOverlap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发生实体碰撞的委托 </p>
+
+</div>
+</div>
+<a id="a5541765c3444c78d0703f95569a979df" name="a5541765c3444c78d0703f95569a979df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5541765c3444c78d0703f95569a979df">&#9670;&#160;</a></span>point</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_pair.html">Pair</a> Collider::point = {-1,-1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞左上角区域坐标 </p>
+
+</div>
+</div>
+<a id="afd7c694cfa73d3767c1525c43a3d2bf1" name="afd7c694cfa73d3767c1525c43a3d2bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7c694cfa73d3767c1525c43a3d2bf1">&#9670;&#160;</a></span>point_rb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_pair.html">Pair</a> Collider::point_rb = { -1,-1 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞右下角区域坐标 </p>
+
+</div>
+</div>
+<a id="aebc3cd1cc1e4a65a50fe8c5a7b39730d" name="aebc3cd1cc1e4a65a50fe8c5a7b39730d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc3cd1cc1e4a65a50fe8c5a7b39730d">&#9670;&#160;</a></span>rec_pos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rect.html">Rect</a> Collider::rec_pos = {0,0,0,0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>矩形框区域 </p>
+
+</div>
+</div>
+<a id="a5c62867953b48450b074888344256b77" name="a5c62867953b48450b074888344256b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c62867953b48450b074888344256b77">&#9670;&#160;</a></span>rigidAttached</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_rigid_body.html">RigidBody</a>* Collider::rigidAttached = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>附着的刚体组件 实现物理模拟 </p>
+
+</div>
+</div>
+<a id="a456f30bcf52d68d5fe7606c7ce9800c4" name="a456f30bcf52d68d5fe7606c7ce9800c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456f30bcf52d68d5fe7606c7ce9800c4">&#9670;&#160;</a></span>shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6">ColliderShape</a> Collider::shape = <a class="el" href="_collider_8h.html#a9c0b4b620aac430e2e40da328bcd09f6a30954d90085f6eaaf5817917fc5fecb3">ColliderShape::Circle</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞形状 </p>
+
+</div>
+</div>
+<a id="a8569d76c30add66e37d787bb3c84cfd5" name="a8569d76c30add66e37d787bb3c84cfd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8569d76c30add66e37d787bb3c84cfd5">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0">CollisionType</a> Collider::type = <a class="el" href="_collider_manager_8h.html#a61f505955faacff3b761fcc71f7d5ee0a7a1920d61156abc05a60135aefe8bc67">CollisionType::Default</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>碰撞物体种类 </p>
+<p>只会跟有映射关系的碰撞器发生碰撞 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_collider.html">Collider</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

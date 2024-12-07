@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/Camera.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_camera_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/Camera.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_scene_component_8h.html">SceneComponent.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include&quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_camera.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_camera.html">Camera</a>:<span class="keyword">public</span> <a class="code hl_class" href="class_scene_component.html">SceneComponent</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_camera.html#a9131e80805b446f695a03ca740437d30">   16</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_sprite_renderer.html">SpriteRenderer</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_camera.html#a0f6381b33b90b7e4ab72eeaeec4cc9ff">   17</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_particle.html">Particle</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_camera.html#ac3456fd331a58b288082abca310c7a99">   18</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_camera.html#a5c44bcc0dacdde1fd8d3d0a73b40a187">   19</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_box_collider.html">BoxCollider</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_camera.html#a7b4bcdf992c21ae83363f25df05b1d25">   20</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_world.html">World</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_camera.html#a78a8e1624a1ec5a7b1b9d0cd5c64cdac">   21</a></span>    <span class="keyword">friend</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#a71a59757b72f209551c321bf3d0c35d8">Object::DrawDebugPosition</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_camera.html#a5af26881d53d04fcc82cb740a55fb3bb">   23</a></span>    <a class="code hl_struct" href="struct_transform.html">Transform</a> <a class="code hl_variable" href="class_camera.html#a5af26881d53d04fcc82cb740a55fb3bb">camera_virtual</a>;       </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_camera.html#a67014a6e870394567aa0092ef790b756">   25</a></span>    <a class="code hl_struct" href="struct_rect.html">Rect</a> <a class="code hl_variable" href="class_camera.html#a67014a6e870394567aa0092ef790b756">frame</a>;                     </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_camera.html#a9b1341b98ae2f85a1170d348bde5a313">   27</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_camera.html#a9b1341b98ae2f85a1170d348bde5a313">distanceThreshold</a> = 50.f;     </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_camera.html#a3080835197031d69fed476138cf9f31a">   28</a></span>    <span class="keywordtype">short</span> <a class="code hl_variable" href="class_camera.html#a3080835197031d69fed476138cf9f31a">Smoothness</a> = 50;              </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_camera.html#a7f2377d7f92f8aa1c828488240a583a9">   31</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_camera.html#a7f2377d7f92f8aa1c828488240a583a9">ShakeIndensity</a> = 0.f;         </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_camera.html#a88185ecbd634e2209446d13f3d5f6abe">   32</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_camera.html#a88185ecbd634e2209446d13f3d5f6abe">shakeFlag</a> = <span class="keyword">false</span>;             </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_camera.html#adf4f47c8fd78662c3ffaac8ab3befdca">   33</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_camera.html#adf4f47c8fd78662c3ffaac8ab3befdca">shakeCenter</a> = <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>();      </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_camera.html#a5122fd20d56b8a7145cb74c869e4e2ca">   34</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_variable" href="class_camera.html#a5122fd20d56b8a7145cb74c869e4e2ca">shakeSpeed</a> = <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(0.05f, 0.05f);       </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_camera.html#ac12e0c330be7019525372f10fd316bb6">   35</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_camera.html#ac12e0c330be7019525372f10fd316bb6">shakeDecay</a> = 5;                     </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_camera.html#a707631b30cf7405f30f2afcab8d0b58c">   38</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_camera.html#a707631b30cf7405f30f2afcab8d0b58c">springArmLength</a> = 20.f;           </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_camera.html#afd42ff61ffe51790a439a3c1e67275fa">   39</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_camera.html#afd42ff61ffe51790a439a3c1e67275fa">springArmLength_virtual</a> = 100.f;      </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_camera.html#a1026263e6a0ab291ab7d8164ed90af01">   40</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_camera.html#a1026263e6a0ab291ab7d8164ed90af01">smoothnessForSpringArm</a> = 20.f;        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_camera.html#a08a7ed47e890ed127b5a71f9cbf8bbae">   42</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a>* <a class="code hl_variable" href="class_camera.html#a08a7ed47e890ed127b5a71f9cbf8bbae">controlAttached</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_function" href="class_camera.html#a4fc01cd9b16026d30647c0e8d8ec6203">Lerp</a>(<a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> start, <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> end, <span class="keywordtype">float</span> t);   </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_camera.html#a4fc01cd9b16026d30647c0e8d8ec6203">Lerp</a>(<span class="keywordtype">float</span> start, <span class="keywordtype">float</span> end, <span class="keywordtype">float</span> t);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_camera.html#a9e6b341b70e4fd423fd1b7400969b20f">SmoothStep</a>(<span class="keywordtype">float</span> x);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a32bbe860a83b68c41f5be5adc408d986">Calculate</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">   82</a></span>    <a class="code hl_function" href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera</a>() { <a class="code hl_function" href="class_scene_component.html#aa5b9d55cf1a25b9035dc05d89423a1ac">SetLocalPosition</a>(<a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a>(<a class="code hl_variable" href="_macro_8h.html#a8bf7d106de2c8a028451ba8a5f5dbb4c">WIN_WIDTH</a>/2, <a class="code hl_variable" href="_macro_8h.html#aef9425f6eb84b924bc6e58668221b27e">WIN_HEIGHT</a>/2)); };        <span class="comment">//设置屏幕中心位置</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_camera.html#ad1897942d0ccf91052386388a497349f">   83</a></span>    <a class="code hl_function" href="class_camera.html#ad1897942d0ccf91052386388a497349f">~Camera</a>() {};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a4176d0cee2bd5c89a228e18bf850f763">BeginPlay</a>()<span class="keyword">override</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_camera.html#aae35cd9223615403a9cb6537e98f914e">   92</a></span>    <a class="code hl_struct" href="struct_vector2_d.html">Vector2D</a> <a class="code hl_function" href="class_camera.html#aae35cd9223615403a9cb6537e98f914e">GetCameraPosition</a>()</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_camera.html#a5af26881d53d04fcc82cb740a55fb3bb">camera_virtual</a>.<a class="code hl_variable" href="struct_transform.html#aabf00419833a505cd8fbb4819e536659">position</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+</div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_camera.html#a3fa9f42f330b9dc8c69f3f653adda046">  101</a></span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_camera.html#a3fa9f42f330b9dc8c69f3f653adda046">GetSpringArmLength</a>()</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="class_camera.html#afd42ff61ffe51790a439a3c1e67275fa">springArmLength_virtual</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a9283388c9f4749f5bca4465d99841eb4">SetMainCamera</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a6913cbc3cff60fda26633d87cd14b44a">SetSpringArmLength</a>(<span class="keywordtype">float</span> length);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#add677c54a2426a766c9b7a1918a9f030">SetSmoothness</a>(<span class="keywordtype">short</span> smooth);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a1a30451c8f9449768b5c7e1c33ff33c8">SetDistanceThreshold</a>(<span class="keywordtype">float</span> threshold);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a846041333ddaf94e759376081db0a695">SetRectFrame</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_rect.html">Rect</a>&amp; <a class="code hl_variable" href="class_camera.html#a67014a6e870394567aa0092ef790b756">frame</a>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_camera.html#a614b2b1d9a93d94b856f37055fe3fc84">ShakeCamera</a>(<span class="keywordtype">float</span> indensity, <span class="keywordtype">int</span> decay = 5);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>};</div>
+</div>
+<div class="ttc" id="a_macro_8h_html_a8bf7d106de2c8a028451ba8a5f5dbb4c"><div class="ttname"><a href="_macro_8h.html#a8bf7d106de2c8a028451ba8a5f5dbb4c">WIN_WIDTH</a></div><div class="ttdeci">constexpr int WIN_WIDTH</div><div class="ttdoc">窗口宽</div><div class="ttdef"><b>定义</b> Macro.h:11</div></div>
+<div class="ttc" id="a_macro_8h_html_aef9425f6eb84b924bc6e58668221b27e"><div class="ttname"><a href="_macro_8h.html#aef9425f6eb84b924bc6e58668221b27e">WIN_HEIGHT</a></div><div class="ttdeci">constexpr int WIN_HEIGHT</div><div class="ttdoc">窗口高</div><div class="ttdef"><b>定义</b> Macro.h:12</div></div>
+<div class="ttc" id="a_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div><div class="ttdoc">游戏对象基类</div></div>
+<div class="ttc" id="a_scene_component_8h_html"><div class="ttname"><a href="_scene_component_8h.html">SceneComponent.h</a></div><div class="ttdoc">场景组件类</div></div>
+<div class="ttc" id="aclass_box_collider_html"><div class="ttname"><a href="class_box_collider.html">BoxCollider</a></div><div class="ttdoc">盒型碰撞器.</div><div class="ttdef"><b>定义</b> Collider.h:368</div></div>
+<div class="ttc" id="aclass_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">摄像机组件.</div><div class="ttdef"><b>定义</b> Camera.h:15</div></div>
+<div class="ttc" id="aclass_camera_html_a01f94c3543f56ede7af49dc778f19331"><div class="ttname"><a href="class_camera.html#a01f94c3543f56ede7af49dc778f19331">Camera::Camera</a></div><div class="ttdeci">Camera()</div><div class="ttdoc">构造函数 设置屏幕中心位置.</div><div class="ttdef"><b>定义</b> Camera.h:82</div></div>
+<div class="ttc" id="aclass_camera_html_a08a7ed47e890ed127b5a71f9cbf8bbae"><div class="ttname"><a href="class_camera.html#a08a7ed47e890ed127b5a71f9cbf8bbae">Camera::controlAttached</a></div><div class="ttdeci">class Controller * controlAttached</div><div class="ttdef"><b>定义</b> Camera.h:42</div></div>
+<div class="ttc" id="aclass_camera_html_a1026263e6a0ab291ab7d8164ed90af01"><div class="ttname"><a href="class_camera.html#a1026263e6a0ab291ab7d8164ed90af01">Camera::smoothnessForSpringArm</a></div><div class="ttdeci">float smoothnessForSpringArm</div><div class="ttdoc">弹簧平滑度0~100</div><div class="ttdef"><b>定义</b> Camera.h:40</div></div>
+<div class="ttc" id="aclass_camera_html_a1a30451c8f9449768b5c7e1c33ff33c8"><div class="ttname"><a href="class_camera.html#a1a30451c8f9449768b5c7e1c33ff33c8">Camera::SetDistanceThreshold</a></div><div class="ttdeci">void SetDistanceThreshold(float threshold)</div><div class="ttdoc">设置线性阈值.</div><div class="ttdef"><b>定义</b> Camera.cpp:129</div></div>
+<div class="ttc" id="aclass_camera_html_a3080835197031d69fed476138cf9f31a"><div class="ttname"><a href="class_camera.html#a3080835197031d69fed476138cf9f31a">Camera::Smoothness</a></div><div class="ttdeci">short Smoothness</div><div class="ttdoc">平滑度0~100</div><div class="ttdef"><b>定义</b> Camera.h:28</div></div>
+<div class="ttc" id="aclass_camera_html_a32bbe860a83b68c41f5be5adc408d986"><div class="ttname"><a href="class_camera.html#a32bbe860a83b68c41f5be5adc408d986">Camera::Calculate</a></div><div class="ttdeci">void Calculate()</div><div class="ttdoc">实现计算相机虚拟坐标.</div><div class="ttdef"><b>定义</b> Camera.cpp:40</div></div>
+<div class="ttc" id="aclass_camera_html_a3fa9f42f330b9dc8c69f3f653adda046"><div class="ttname"><a href="class_camera.html#a3fa9f42f330b9dc8c69f3f653adda046">Camera::GetSpringArmLength</a></div><div class="ttdeci">float GetSpringArmLength()</div><div class="ttdoc">获取虚拟弹簧长度.</div><div class="ttdef"><b>定义</b> Camera.h:101</div></div>
+<div class="ttc" id="aclass_camera_html_a4176d0cee2bd5c89a228e18bf850f763"><div class="ttname"><a href="class_camera.html#a4176d0cee2bd5c89a228e18bf850f763">Camera::BeginPlay</a></div><div class="ttdeci">virtual void BeginPlay() override</div><div class="ttdoc">初始化虚拟参数 防止开始产生一定距离偏差进行处理</div><div class="ttdef"><b>定义</b> Camera.cpp:27</div></div>
+<div class="ttc" id="aclass_camera_html_a4fc01cd9b16026d30647c0e8d8ec6203"><div class="ttname"><a href="class_camera.html#a4fc01cd9b16026d30647c0e8d8ec6203">Camera::Lerp</a></div><div class="ttdeci">Vector2D Lerp(Vector2D start, Vector2D end, float t)</div><div class="ttdoc">线性插值.</div><div class="ttdef"><b>定义</b> Camera.cpp:7</div></div>
+<div class="ttc" id="aclass_camera_html_a5122fd20d56b8a7145cb74c869e4e2ca"><div class="ttname"><a href="class_camera.html#a5122fd20d56b8a7145cb74c869e4e2ca">Camera::shakeSpeed</a></div><div class="ttdeci">Vector2D shakeSpeed</div><div class="ttdoc">震动速度</div><div class="ttdef"><b>定义</b> Camera.h:34</div></div>
+<div class="ttc" id="aclass_camera_html_a5af26881d53d04fcc82cb740a55fb3bb"><div class="ttname"><a href="class_camera.html#a5af26881d53d04fcc82cb740a55fb3bb">Camera::camera_virtual</a></div><div class="ttdeci">Transform camera_virtual</div><div class="ttdoc">虚拟相机场景属性</div><div class="ttdef"><b>定义</b> Camera.h:23</div></div>
+<div class="ttc" id="aclass_camera_html_a614b2b1d9a93d94b856f37055fe3fc84"><div class="ttname"><a href="class_camera.html#a614b2b1d9a93d94b856f37055fe3fc84">Camera::ShakeCamera</a></div><div class="ttdeci">void ShakeCamera(float indensity, int decay=5)</div><div class="ttdoc">震动相机</div><div class="ttdef"><b>定义</b> Camera.cpp:139</div></div>
+<div class="ttc" id="aclass_camera_html_a67014a6e870394567aa0092ef790b756"><div class="ttname"><a href="class_camera.html#a67014a6e870394567aa0092ef790b756">Camera::frame</a></div><div class="ttdeci">Rect frame</div><div class="ttdoc">相机可活动框</div><div class="ttdef"><b>定义</b> Camera.h:25</div></div>
+<div class="ttc" id="aclass_camera_html_a6913cbc3cff60fda26633d87cd14b44a"><div class="ttname"><a href="class_camera.html#a6913cbc3cff60fda26633d87cd14b44a">Camera::SetSpringArmLength</a></div><div class="ttdeci">void SetSpringArmLength(float length)</div><div class="ttdoc">设置虚拟弹簧长度.</div><div class="ttdef"><b>定义</b> Camera.cpp:119</div></div>
+<div class="ttc" id="aclass_camera_html_a707631b30cf7405f30f2afcab8d0b58c"><div class="ttname"><a href="class_camera.html#a707631b30cf7405f30f2afcab8d0b58c">Camera::springArmLength</a></div><div class="ttdeci">float springArmLength</div><div class="ttdoc">弹簧长度1~10000</div><div class="ttdef"><b>定义</b> Camera.h:38</div></div>
+<div class="ttc" id="aclass_camera_html_a7f2377d7f92f8aa1c828488240a583a9"><div class="ttname"><a href="class_camera.html#a7f2377d7f92f8aa1c828488240a583a9">Camera::ShakeIndensity</a></div><div class="ttdeci">float ShakeIndensity</div><div class="ttdoc">震动强度 0~100</div><div class="ttdef"><b>定义</b> Camera.h:31</div></div>
+<div class="ttc" id="aclass_camera_html_a846041333ddaf94e759376081db0a695"><div class="ttname"><a href="class_camera.html#a846041333ddaf94e759376081db0a695">Camera::SetRectFrame</a></div><div class="ttdeci">void SetRectFrame(const Rect &amp;frame)</div><div class="ttdoc">设置相机可活动框架.</div><div class="ttdef"><b>定义</b> Camera.cpp:134</div></div>
+<div class="ttc" id="aclass_camera_html_a88185ecbd634e2209446d13f3d5f6abe"><div class="ttname"><a href="class_camera.html#a88185ecbd634e2209446d13f3d5f6abe">Camera::shakeFlag</a></div><div class="ttdeci">bool shakeFlag</div><div class="ttdoc">震动标志位</div><div class="ttdef"><b>定义</b> Camera.h:32</div></div>
+<div class="ttc" id="aclass_camera_html_a9283388c9f4749f5bca4465d99841eb4"><div class="ttname"><a href="class_camera.html#a9283388c9f4749f5bca4465d99841eb4">Camera::SetMainCamera</a></div><div class="ttdeci">void SetMainCamera()</div><div class="ttdoc">设置世界主相机.</div><div class="ttdef"><b>定义</b> Camera.cpp:112</div></div>
+<div class="ttc" id="aclass_camera_html_a9b1341b98ae2f85a1170d348bde5a313"><div class="ttname"><a href="class_camera.html#a9b1341b98ae2f85a1170d348bde5a313">Camera::distanceThreshold</a></div><div class="ttdeci">float distanceThreshold</div><div class="ttdoc">线性阈值1~500</div><div class="ttdef"><b>定义</b> Camera.h:27</div></div>
+<div class="ttc" id="aclass_camera_html_a9e6b341b70e4fd423fd1b7400969b20f"><div class="ttname"><a href="class_camera.html#a9e6b341b70e4fd423fd1b7400969b20f">Camera::SmoothStep</a></div><div class="ttdeci">float SmoothStep(float x)</div><div class="ttdoc">平滑处理.</div><div class="ttdef"><b>定义</b> Camera.cpp:19</div></div>
+<div class="ttc" id="aclass_camera_html_aae35cd9223615403a9cb6537e98f914e"><div class="ttname"><a href="class_camera.html#aae35cd9223615403a9cb6537e98f914e">Camera::GetCameraPosition</a></div><div class="ttdeci">Vector2D GetCameraPosition()</div><div class="ttdoc">获取相机虚拟位置.</div><div class="ttdef"><b>定义</b> Camera.h:92</div></div>
+<div class="ttc" id="aclass_camera_html_ac12e0c330be7019525372f10fd316bb6"><div class="ttname"><a href="class_camera.html#ac12e0c330be7019525372f10fd316bb6">Camera::shakeDecay</a></div><div class="ttdeci">int shakeDecay</div><div class="ttdoc">震动衰减系数1~100</div><div class="ttdef"><b>定义</b> Camera.h:35</div></div>
+<div class="ttc" id="aclass_camera_html_ad1897942d0ccf91052386388a497349f"><div class="ttname"><a href="class_camera.html#ad1897942d0ccf91052386388a497349f">Camera::~Camera</a></div><div class="ttdeci">~Camera()</div><div class="ttdef"><b>定义</b> Camera.h:83</div></div>
+<div class="ttc" id="aclass_camera_html_add677c54a2426a766c9b7a1918a9f030"><div class="ttname"><a href="class_camera.html#add677c54a2426a766c9b7a1918a9f030">Camera::SetSmoothness</a></div><div class="ttdeci">void SetSmoothness(short smooth)</div><div class="ttdoc">设置平滑度.</div><div class="ttdef"><b>定义</b> Camera.cpp:124</div></div>
+<div class="ttc" id="aclass_camera_html_adf4f47c8fd78662c3ffaac8ab3befdca"><div class="ttname"><a href="class_camera.html#adf4f47c8fd78662c3ffaac8ab3befdca">Camera::shakeCenter</a></div><div class="ttdeci">Vector2D shakeCenter</div><div class="ttdoc">震动中心</div><div class="ttdef"><b>定义</b> Camera.h:33</div></div>
+<div class="ttc" id="aclass_camera_html_afd42ff61ffe51790a439a3c1e67275fa"><div class="ttname"><a href="class_camera.html#afd42ff61ffe51790a439a3c1e67275fa">Camera::springArmLength_virtual</a></div><div class="ttdeci">float springArmLength_virtual</div><div class="ttdoc">虚拟弹簧长度</div><div class="ttdef"><b>定义</b> Camera.h:39</div></div>
+<div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdef"><b>定义</b> Controller.h:17</div></div>
+<div class="ttc" id="aclass_object_html_a71a59757b72f209551c321bf3d0c35d8"><div class="ttname"><a href="class_object.html#a71a59757b72f209551c321bf3d0c35d8">Object::DrawDebugPosition</a></div><div class="ttdeci">virtual void DrawDebugPosition() const</div><div class="ttdoc">调试 在画布上显示物体的坐标</div><div class="ttdef"><b>定义</b> Object.cpp:115</div></div>
+<div class="ttc" id="aclass_particle_html"><div class="ttname"><a href="class_particle.html">Particle</a></div><div class="ttdoc">粒子组件</div><div class="ttdef"><b>定义</b> Particle.h:48</div></div>
+<div class="ttc" id="aclass_scene_component_html"><div class="ttname"><a href="class_scene_component.html">SceneComponent</a></div><div class="ttdoc">场景组件基类.</div><div class="ttdef"><b>定义</b> SceneComponent.h:15</div></div>
+<div class="ttc" id="aclass_scene_component_html_aa5b9d55cf1a25b9035dc05d89423a1ac"><div class="ttname"><a href="class_scene_component.html#aa5b9d55cf1a25b9035dc05d89423a1ac">SceneComponent::SetLocalPosition</a></div><div class="ttdeci">void SetLocalPosition(const Vector2D &amp;pos)</div><div class="ttdoc">设置相对坐标</div><div class="ttdef"><b>定义</b> SceneComponent.h:60</div></div>
+<div class="ttc" id="aclass_sprite_renderer_html"><div class="ttname"><a href="class_sprite_renderer.html">SpriteRenderer</a></div><div class="ttdoc">渲染组件(2D).</div><div class="ttdef"><b>定义</b> SpriteRenderer.h:16</div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">游戏世界</div><div class="ttdef"><b>定义</b> World.h:31</div></div>
+<div class="ttc" id="astruct_rect_html"><div class="ttname"><a href="struct_rect.html">Rect</a></div><div class="ttdoc">矩形框</div><div class="ttdef"><b>定义</b> Struct.h:280</div></div>
+<div class="ttc" id="astruct_transform_html"><div class="ttname"><a href="struct_transform.html">Transform</a></div><div class="ttdoc">场景属性类.</div><div class="ttdef"><b>定义</b> Struct.h:257</div></div>
+<div class="ttc" id="astruct_transform_html_aabf00419833a505cd8fbb4819e536659"><div class="ttname"><a href="struct_transform.html#aabf00419833a505cd8fbb4819e536659">Transform::position</a></div><div class="ttdeci">Vector2D position</div><div class="ttdoc">位置坐标</div><div class="ttdef"><b>定义</b> Struct.h:259</div></div>
+<div class="ttc" id="astruct_vector2_d_html"><div class="ttname"><a href="struct_vector2_d.html">Vector2D</a></div><div class="ttdoc">二维向量</div><div class="ttdef"><b>定义</b> Struct.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_camera_8h.html">Camera.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

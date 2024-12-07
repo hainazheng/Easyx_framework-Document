@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: ResourceManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_resource_manager.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="#pri-static-attribs">静态 Private 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="class_resource_manager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">ResourceManager类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>资源管理器 单例懒汉模式  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_resource_manager_8h_source.html">ResourceManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a172e10672e13ed5ea2ec0a700168b572" id="r_a172e10672e13ed5ea2ec0a700168b572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a172e10672e13ed5ea2ec0a700168b572">Initialize</a> ()</td></tr>
+<tr class="memdesc:a172e10672e13ed5ea2ec0a700168b572"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化资源库 提前获取资源  <br /></td></tr>
+<tr class="separator:a172e10672e13ed5ea2ec0a700168b572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569a10c0e679bc7047e0da6f365cc7fc" id="r_a569a10c0e679bc7047e0da6f365cc7fc"><td class="memItemLeft" align="right" valign="top">IMAGE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a569a10c0e679bc7047e0da6f365cc7fc">Fetch</a> (std::string name)</td></tr>
+<tr class="memdesc:a569a10c0e679bc7047e0da6f365cc7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据名字返回图片池中相应图片指针  <br /></td></tr>
+<tr class="separator:a569a10c0e679bc7047e0da6f365cc7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0279654e9074c839b9748d7d3ecc11d4" id="r_a0279654e9074c839b9748d7d3ecc11d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_animation_resource.html">AnimationResource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0279654e9074c839b9748d7d3ecc11d4">AnimationFetch</a> (std::string name)</td></tr>
+<tr class="memdesc:a0279654e9074c839b9748d7d3ecc11d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据名字返回动画池中相应动画资源  <br /></td></tr>
+<tr class="separator:a0279654e9074c839b9748d7d3ecc11d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fb94de62b0287fb2560833b091260a" id="r_a73fb94de62b0287fb2560833b091260a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73fb94de62b0287fb2560833b091260a">IsAudio</a> (std::string name)</td></tr>
+<tr class="memdesc:a73fb94de62b0287fb2560833b091260a"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频是否存在  <br /></td></tr>
+<tr class="separator:a73fb94de62b0287fb2560833b091260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a8b91f4bea4d5a61d4b70ae4681438794" id="r_a8b91f4bea4d5a61d4b70ae4681438794"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_resource_manager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b91f4bea4d5a61d4b70ae4681438794">instance</a> ()</td></tr>
+<tr class="memdesc:a8b91f4bea4d5a61d4b70ae4681438794"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取实例  <br /></td></tr>
+<tr class="separator:a8b91f4bea4d5a61d4b70ae4681438794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a3b32babd2e81909bbd90d7f2d566fadb" id="r_a3b32babd2e81909bbd90d7f2d566fadb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b32babd2e81909bbd90d7f2d566fadb">ResourceManager</a> ()</td></tr>
+<tr class="separator:a3b32babd2e81909bbd90d7f2d566fadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671c186e4630599e7e36d000c53eaf80" id="r_a671c186e4630599e7e36d000c53eaf80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a671c186e4630599e7e36d000c53eaf80">~ResourceManager</a> ()</td></tr>
+<tr class="separator:a671c186e4630599e7e36d000c53eaf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a39b09a55071526bc650a8769f1e48a" id="r_a7a39b09a55071526bc650a8769f1e48a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a39b09a55071526bc650a8769f1e48a">Load</a> (std::string name, std::string path, int wid, int hei)</td></tr>
+<tr class="memdesc:a7a39b09a55071526bc650a8769f1e48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载单张图片  <br /></td></tr>
+<tr class="separator:a7a39b09a55071526bc650a8769f1e48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbd4bac6bf8260888a73df707b3e27b" id="r_afdbd4bac6bf8260888a73df707b3e27b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdbd4bac6bf8260888a73df707b3e27b">Load</a> (std::string name, std::string path, int wid, int hei, int num)</td></tr>
+<tr class="memdesc:afdbd4bac6bf8260888a73df707b3e27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载多张动画图片  <br /></td></tr>
+<tr class="separator:afdbd4bac6bf8260888a73df707b3e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937717c8ec3a7856aa3e4402f3a2b3de" id="r_a937717c8ec3a7856aa3e4402f3a2b3de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a937717c8ec3a7856aa3e4402f3a2b3de">Load</a> (std::string name, std::string path, const std::vector&lt; <a class="el" href="struct_pair.html">Pair</a> &gt; &amp;arr)</td></tr>
+<tr class="memdesc:a937717c8ec3a7856aa3e4402f3a2b3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载多张动画图片  <br /></td></tr>
+<tr class="separator:a937717c8ec3a7856aa3e4402f3a2b3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad69cbc48b9f8d155d70d7784ad1ecf" id="r_a7ad69cbc48b9f8d155d70d7784ad1ecf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ad69cbc48b9f8d155d70d7784ad1ecf">Load</a> (std::string name, std::string path, int wid, int hei, int num, int row, int col)</td></tr>
+<tr class="memdesc:a7ad69cbc48b9f8d155d70d7784ad1ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载Springsheet动画图片  <br /></td></tr>
+<tr class="separator:a7ad69cbc48b9f8d155d70d7784ad1ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474002582ccc1e2d0b32478257d55a7b" id="r_a474002582ccc1e2d0b32478257d55a7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474002582ccc1e2d0b32478257d55a7b">Load</a> (std::string name, std::string path)</td></tr>
+<tr class="memdesc:a474002582ccc1e2d0b32478257d55a7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载音频媒体资源  <br /></td></tr>
+<tr class="separator:a474002582ccc1e2d0b32478257d55a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a9868333f08e5882ab4ccaa67e205fbde" id="r_a9868333f08e5882ab4ccaa67e205fbde"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, IMAGE * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9868333f08e5882ab4ccaa67e205fbde">ImagePool</a></td></tr>
+<tr class="memdesc:a9868333f08e5882ab4ccaa67e205fbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">图片池 [图片名字,图像句柄]  <br /></td></tr>
+<tr class="separator:a9868333f08e5882ab4ccaa67e205fbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3758e7822e035de1623c104ccc40162a" id="r_a3758e7822e035de1623c104ccc40162a"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="struct_animation_resource.html">AnimationResource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3758e7822e035de1623c104ccc40162a">animationPool</a></td></tr>
+<tr class="memdesc:a3758e7822e035de1623c104ccc40162a"><td class="mdescLeft">&#160;</td><td class="mdescRight">动画池 [动画名字，动画资源类]  <br /></td></tr>
+<tr class="separator:a3758e7822e035de1623c104ccc40162a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba2352053cffc0398b2b3d488c5e2cff" id="r_aba2352053cffc0398b2b3d488c5e2cff"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba2352053cffc0398b2b3d488c5e2cff">AudioPool</a></td></tr>
+<tr class="memdesc:aba2352053cffc0398b2b3d488c5e2cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">音频池 [音频名字，路径]  <br /></td></tr>
+<tr class="separator:aba2352053cffc0398b2b3d488c5e2cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静态 Private 属性</h2></td></tr>
+<tr class="memitem:a0d974fd4c2826f26c12c816186182091" id="r_a0d974fd4c2826f26c12c816186182091"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_resource_manager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d974fd4c2826f26c12c816186182091">manager</a> = nullptr</td></tr>
+<tr class="memdesc:a0d974fd4c2826f26c12c816186182091"><td class="mdescLeft">&#160;</td><td class="mdescRight">单例指针  <br /></td></tr>
+<tr class="separator:a0d974fd4c2826f26c12c816186182091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2bca29bd418c8130f493d3bb1ef3896" id="r_ab2bca29bd418c8130f493d3bb1ef3896"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2bca29bd418c8130f493d3bb1ef3896">m_Mutex</a></td></tr>
+<tr class="memdesc:ab2bca29bd418c8130f493d3bb1ef3896"><td class="mdescLeft">&#160;</td><td class="mdescRight">锁  <br /></td></tr>
+<tr class="separator:ab2bca29bd418c8130f493d3bb1ef3896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a7b4bcdf992c21ae83363f25df05b1d25" id="r_a7b4bcdf992c21ae83363f25df05b1d25"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b4bcdf992c21ae83363f25df05b1d25">World</a></td></tr>
+<tr class="separator:a7b4bcdf992c21ae83363f25df05b1d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85edaa7e5c3ae68dabadd5373890591e" id="r_a85edaa7e5c3ae68dabadd5373890591e"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85edaa7e5c3ae68dabadd5373890591e">AudioManager</a></td></tr>
+<tr class="separator:a85edaa7e5c3ae68dabadd5373890591e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>资源管理器 单例懒汉模式 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="class_audio_manager.html" title="全局音频管理 单例懒汉模式">AudioManager</a> </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a3b32babd2e81909bbd90d7f2d566fadb" name="a3b32babd2e81909bbd90d7f2d566fadb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b32babd2e81909bbd90d7f2d566fadb">&#9670;&#160;</a></span>ResourceManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourceManager::ResourceManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a671c186e4630599e7e36d000c53eaf80" name="a671c186e4630599e7e36d000c53eaf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671c186e4630599e7e36d000c53eaf80">&#9670;&#160;</a></span>~ResourceManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourceManager::~ResourceManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a0279654e9074c839b9748d7d3ecc11d4" name="a0279654e9074c839b9748d7d3ecc11d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0279654e9074c839b9748d7d3ecc11d4">&#9670;&#160;</a></span>AnimationFetch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_animation_resource.html">AnimationResource</a> ResourceManager::AnimationFetch </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据名字返回动画池中相应动画资源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>动画名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a569a10c0e679bc7047e0da6f365cc7fc" name="a569a10c0e679bc7047e0da6f365cc7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569a10c0e679bc7047e0da6f365cc7fc">&#9670;&#160;</a></span>Fetch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMAGE * ResourceManager::Fetch </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>根据名字返回图片池中相应图片指针 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>图片名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a172e10672e13ed5ea2ec0a700168b572" name="a172e10672e13ed5ea2ec0a700168b572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172e10672e13ed5ea2ec0a700168b572">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Initialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化资源库 提前获取资源 </p>
+<dl class="section remark"><dt>备注</dt><dd>！！！用户使用图像资源需要在这里加载 </dd></dl>
+
+</div>
+</div>
+<a id="a8b91f4bea4d5a61d4b70ae4681438794" name="a8b91f4bea4d5a61d4b70ae4681438794"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b91f4bea4d5a61d4b70ae4681438794">&#9670;&#160;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_resource_manager.html">ResourceManager</a> * ResourceManager::instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取实例 </p>
+
+</div>
+</div>
+<a id="a73fb94de62b0287fb2560833b091260a" name="a73fb94de62b0287fb2560833b091260a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fb94de62b0287fb2560833b091260a">&#9670;&#160;</a></span>IsAudio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ResourceManager::IsAudio </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>音频是否存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>音频名字 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a474002582ccc1e2d0b32478257d55a7b" name="a474002582ccc1e2d0b32478257d55a7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474002582ccc1e2d0b32478257d55a7b">&#9670;&#160;</a></span>Load() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载音频媒体资源 </p>
+<p>给音频路径一个别名 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>音频名字  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>音频路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a937717c8ec3a7856aa3e4402f3a2b3de" name="a937717c8ec3a7856aa3e4402f3a2b3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937717c8ec3a7856aa3e4402f3a2b3de">&#9670;&#160;</a></span>Load() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="struct_pair.html">Pair</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>arr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载多张动画图片 </p>
+<dl class="section remark"><dt>备注</dt><dd>每一张图片都要指定大小即长宽 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>动画名字  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>动画路径  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arr</td><td>每一张图片大小容器 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a39b09a55071526bc650a8769f1e48a" name="a7a39b09a55071526bc650a8769f1e48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a39b09a55071526bc650a8769f1e48a">&#9670;&#160;</a></span>Load() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hei</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载单张图片 </p>
+<p>加载单张图像资源，放在资源库 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>图像名字  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>图像资源路径  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>图像宽  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hei</td><td>图像高 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afdbd4bac6bf8260888a73df707b3e27b" name="afdbd4bac6bf8260888a73df707b3e27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbd4bac6bf8260888a73df707b3e27b">&#9670;&#160;</a></span>Load() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载多张动画图片 </p>
+<dl class="section remark"><dt>备注</dt><dd>路径到文件 不用加结尾"/" </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>动画名字  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>动画路径  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>图像宽  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hei</td><td>图像高  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7ad69cbc48b9f8d155d70d7784ad1ecf" name="a7ad69cbc48b9f8d155d70d7784ad1ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad69cbc48b9f8d155d70d7784ad1ecf">&#9670;&#160;</a></span>Load() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ResourceManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hei</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>col</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>加载Springsheet动画图片 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>动画名字  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>动画路径  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wid</td><td>图像宽  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hei</td><td>图像高  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>总共数量  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">row</td><td>最大多少行  </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">col</td><td>最大多少列 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">友元及相关符号说明</h2>
+<a id="a85edaa7e5c3ae68dabadd5373890591e" name="a85edaa7e5c3ae68dabadd5373890591e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85edaa7e5c3ae68dabadd5373890591e">&#9670;&#160;</a></span>AudioManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_audio_manager.html">AudioManager</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b4bcdf992c21ae83363f25df05b1d25" name="a7b4bcdf992c21ae83363f25df05b1d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4bcdf992c21ae83363f25df05b1d25">&#9670;&#160;</a></span>World</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_world.html">World</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a3758e7822e035de1623c104ccc40162a" name="a3758e7822e035de1623c104ccc40162a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3758e7822e035de1623c104ccc40162a">&#9670;&#160;</a></span>animationPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="struct_animation_resource.html">AnimationResource</a>&gt; ResourceManager::animationPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>动画池 [动画名字，动画资源类] </p>
+
+</div>
+</div>
+<a id="aba2352053cffc0398b2b3d488c5e2cff" name="aba2352053cffc0398b2b3d488c5e2cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba2352053cffc0398b2b3d488c5e2cff">&#9670;&#160;</a></span>AudioPool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string,std::string&gt; ResourceManager::AudioPool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>音频池 [音频名字，路径] </p>
+
+</div>
+</div>
+<a id="a9868333f08e5882ab4ccaa67e205fbde" name="a9868333f08e5882ab4ccaa67e205fbde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9868333f08e5882ab4ccaa67e205fbde">&#9670;&#160;</a></span>ImagePool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string, IMAGE*&gt; ResourceManager::ImagePool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>图片池 [图片名字,图像句柄] </p>
+
+</div>
+</div>
+<a id="ab2bca29bd418c8130f493d3bb1ef3896" name="ab2bca29bd418c8130f493d3bb1ef3896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2bca29bd418c8130f493d3bb1ef3896">&#9670;&#160;</a></span>m_Mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex ResourceManager::m_Mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>锁 </p>
+
+</div>
+</div>
+<a id="a0d974fd4c2826f26c12c816186182091" name="a0d974fd4c2826f26c12c816186182091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d974fd4c2826f26c12c816186182091">&#9670;&#160;</a></span>manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_resource_manager.html">ResourceManager</a> * ResourceManager::manager = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单例指针 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_resource_manager.html">ResourceManager</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

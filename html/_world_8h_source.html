@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>easyx_framework: F:/vc/project/esayx_framewoek/esayx_framewoek/World.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="log.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">easyx_framework<span id="projectnumber">&#160;V1.0.0</span>
+   </div>
+   <div id="projectbrief">基于easyx的c++游戏框架</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('_world_8h_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">F:/vc/project/esayx_framewoek/esayx_framewoek/World.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_world_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;<a class="code" href="_core_minimal_8h.html">CoreMinimal.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include&quot;<a class="code" href="_object_8h.html">Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_layer_sort.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_layer_sort.html">LayerSort</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_layer_sort.html#ab3c87312cfed22daebc316444fdeb07b">operator()</a>(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code hl_class" href="class_layer_interface.html">LayerInterface</a>* a, <span class="keyword">const</span> <span class="keyword">class</span> <a class="code hl_class" href="class_layer_interface.html">LayerInterface</a>* b)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_collider_sort.html">   23</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_collider_sort.html">ColliderSort</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="struct_collider_sort.html#a9cbc1ddcaca8e0dfeec35bc60b873d14">operator()</a>(<span class="keyword">const</span> <span class="keyword">class</span>  <a class="code hl_class" href="class_collider.html">Collider</a>* a, <span class="keyword">const</span> <span class="keyword">class</span> <a class="code hl_class" href="class_collider.html">Collider</a>* b)<span class="keyword">const</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_world.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_world.html">World</a> final           </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="comment">//友元 给类权限</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_world.html#a204310fcf1fe29984be5aabe757de09f">   33</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_game_statics.html">GameStatics</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_world.html#a0720b5f434e636e22a3ed34f847eec57">   34</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_object.html">Object</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_world.html#a50de43af5bed41f30c071d8cce0e81bc">   35</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_timer.html">Timer</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_world.html#a3e1914489e4bed4f9f23cdeab34a43dc">   36</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_engine.html">Engine</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_world.html#a5f9a86b0c36663db9b67b4890a6e29c5">   37</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_layer_interface.html">LayerInterface</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_world.html#abfebb35406af4a01e71b299b418e6183">   38</a></span>    <span class="keyword">friend</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_object.html#adc113651aab71178e254d7d7f3b1e53b">Object::Destroy</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_world.html#aaff135feb2b57e9d18d4389c90daf1c0">   39</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_image_interface.html">ImageInterface</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_world.html#ad8bd9afbbd7af19d996da80e9d25890d">   40</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_camera.html">Camera</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_world.html#a9131e80805b446f695a03ca740437d30">   41</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_sprite_renderer.html">SpriteRenderer</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_world.html#af47625f50036c466946f960db7320bcf">   42</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_animation.html">Animation</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_world.html#a0f6381b33b90b7e4ab72eeaeec4cc9ff">   43</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_particle.html">Particle</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_world.html#a564b27969f812d1f057f58288257c783">   44</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_level.html">Level</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_world.html#a95f9c6cfd56f684a85ac83dd3f5a4e51">   46</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_collider.html">Collider</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_world.html#aade389e453b29e84309a1e65921d962a">   47</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_circle_collider.html">CircleCollider</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_world.html#a5c44bcc0dacdde1fd8d3d0a73b40a187">   48</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_box_collider.html">BoxCollider</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_world.html#ac3456fd331a58b288082abca310c7a99">   49</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_world.html#adb55a5cf0f8d4b17f324a902a7904d97">   50</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_user_interface.html">UserInterface</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_world.html#a29fa75ce3911bef8c5f4414f6f0242b8">   51</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_widget.html">Widget</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_world.html#ae5c9617cce22f40fe602d9c88acfd2c3">   52</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_button.html">Button</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_world.html#aefd4ae77722d86b892449b2d0830734d">   53</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_bar.html">Bar</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_world.html#ad86a957b977addaa8782246fad27bf9b">   54</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_level_manager.html">LevelManager</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_world.html#a730923163cee8657080776520dba6a57">   55</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_audio_player.html">AudioPlayer</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_world.html#a85edaa7e5c3ae68dabadd5373890591e">   56</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_audio_manager.html">AudioManager</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_world.html#acd1b2a0733103b7bbeb76b467ea85446">   57</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_log.html">Log</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_world.html#a9af43d9b2a8f0cc0a0a9904136a57284">   58</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_configurator.html">Configurator</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_world.html#af721885ba059fcfd985dee42676e6761">   61</a></span>    std::mutex <a class="code hl_variable" href="class_world.html#af721885ba059fcfd985dee42676e6761">updateMutex</a>;     </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_world.html#a9f9fa9fe53dc6edaa392c283a572c660">   65</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_resource_manager.html">ResourceManager</a>* <a class="code hl_variable" href="class_world.html#a9f9fa9fe53dc6edaa392c283a572c660">resourcePool</a> = <span class="keyword">nullptr</span>;      <span class="comment">//在初始化创建</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_world.html#ab8bb18836321fc4f910114308cf53cbf">   69</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_collider_manager.html">ColliderManager</a>* <a class="code hl_variable" href="class_world.html#ab8bb18836321fc4f910114308cf53cbf">collisionManager</a> = <span class="keyword">nullptr</span>;  <span class="comment">//在初始化创建</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_world.html#a5d29c84990f9fa661a6c0dcd3f2dd6c8">   73</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_level_manager.html">LevelManager</a>* <a class="code hl_variable" href="class_world.html#a5d29c84990f9fa661a6c0dcd3f2dd6c8">levelManager</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_world.html#a3f54df220cfbde1b24d935fb1209d3ff">   76</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_audio_manager.html">AudioManager</a>* <a class="code hl_variable" href="class_world.html#a3f54df220cfbde1b24d935fb1209d3ff">audiomanager</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_world.html#a34535a07d93ef620a2298da445d2b464">   79</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_log.html">Log</a>* <a class="code hl_variable" href="class_world.html#a34535a07d93ef620a2298da445d2b464">log</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_world.html#a2558999affbf72e1dba8e1d004edd465">   82</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_configurator.html">Configurator</a>* <a class="code hl_variable" href="class_world.html#a2558999affbf72e1dba8e1d004edd465">m_cfg</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_world.html#a4b44d0e65983873495ac138a4daae616">   86</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_timer.html">Timer</a>* <a class="code hl_variable" href="class_world.html#a4b44d0e65983873495ac138a4daae616">OverallClock</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_world.html#ab666adc534a4cbe6b4fc89c192021c16">   90</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_world.html#ab666adc534a4cbe6b4fc89c192021c16">deltaTime</a> = 0;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">//场景对象，UI,计时器容器</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_world.html#a8c71090f62d75e9290152c495d4b9938">   93</a></span>    std::unordered_set&lt;Object*&gt; <a class="code hl_variable" href="class_world.html#a8c71090f62d75e9290152c495d4b9938">GameObjects</a>;                        </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_world.html#a392cf53afb8f0b23eddf71ab47667eca">   94</a></span>    std::vector&lt;Object*&gt; <a class="code hl_variable" href="class_world.html#a392cf53afb8f0b23eddf71ab47667eca">GameObjects_to_add</a>;                        </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_world.html#a8d9ce82b6f67a70cc89cdf869cbafdc9">   95</a></span>    std::unordered_set&lt;Object*&gt; <a class="code hl_variable" href="class_world.html#a8d9ce82b6f67a70cc89cdf869cbafdc9">GameObjects_to_delete</a>;              </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_world.html#a1b9e57424d88da08e443bf92390ebe9e">   96</a></span>    std::unordered_set&lt;class UserInterface*&gt; <a class="code hl_variable" href="class_world.html#a1b9e57424d88da08e443bf92390ebe9e">GameUIs</a>;               </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_world.html#ad373f3b3a0e15e71f5ae105d7c5ec280">   97</a></span>    std::unordered_set&lt;class UserInterface*&gt; <a class="code hl_variable" href="class_world.html#ad373f3b3a0e15e71f5ae105d7c5ec280">GameUIs_to_delete</a>;     </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_world.html#ac246a185d134fc9ba821ae3f9f4445c8">   98</a></span>    std::unordered_set&lt;class Timer*&gt;<a class="code hl_variable" href="class_world.html#ac246a185d134fc9ba821ae3f9f4445c8">GameTimers</a>;                     </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="comment">//碰撞逻辑在gamecolliders每个碰撞组件遍历进行判断插入哪个区域(一个物体会有可能会有多个区域)，在每个区域内单独进行判定</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//渲染，碰撞计算容器</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_world.html#a0e1c89c2b99f5550a3ef8d19b76817ba">  103</a></span>    std::set&lt;class LayerInterface*, LayerSort&gt;<a class="code hl_variable" href="class_world.html#a0e1c89c2b99f5550a3ef8d19b76817ba">GameRenderers</a>;                </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_world.html#abe79cff030c67bb658a19362e390d9cc">  104</a></span>    std::unordered_set&lt;class Collider*&gt; <a class="code hl_variable" href="class_world.html#abe79cff030c67bb658a19362e390d9cc">GameColliders</a>;                      </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_world.html#a8823afd1d40c456d23854fbe59b49bc2">  105</a></span>    std::unordered_set&lt;class Collider*&gt;<a class="code hl_variable" href="class_world.html#a8823afd1d40c456d23854fbe59b49bc2">GameColliders_to_clear</a>;              </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_world.html#a85eb0d6533be1ab6a5dd6a2964f08697">  106</a></span>    std::set&lt;class Collider*, ColliderSort&gt;<a class="code hl_variable" href="class_world.html#a85eb0d6533be1ab6a5dd6a2964f08697">ColliderZones</a>[<a class="code hl_variable" href="_macro_8h.html#a8a7d6d882e22821d7ccba82fdee3dc74">RangeNumX</a>][<a class="code hl_variable" href="_macro_8h.html#a1e4391bfd7798f4bb59441bf12a53244">RangeNumY</a>];             </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="class_world.html#a5c7f5405084e973bb4698e1cc820275c">  107</a></span>    std::set&lt;class LayerInterface*, LayerSort&gt;<a class="code hl_variable" href="class_world.html#a5c7f5405084e973bb4698e1cc820275c">UiDetectZones</a>[<a class="code hl_variable" href="_macro_8h.html#a8a7d6d882e22821d7ccba82fdee3dc74">RangeNumX</a>][<a class="code hl_variable" href="_macro_8h.html#a1e4391bfd7798f4bb59441bf12a53244">RangeNumY</a>];          </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_world.html#a9475d8f62216ff8025820ddfbbf7679a">  112</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_timer.html">Timer</a>* <a class="code hl_variable" href="class_world.html#a9475d8f62216ff8025820ddfbbf7679a">FPSclock</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="comment">//游戏单例对象</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="class_world.html#a331b8f024580f9cf038a39b6ea2027ad">  115</a></span>    <a class="code hl_class" href="class_level.html">Level</a>* <a class="code hl_variable" href="class_world.html#a331b8f024580f9cf038a39b6ea2027ad">CurrentLevel</a> = <span class="keyword">nullptr</span>;                  </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="class_world.html#af32db642baaef3d224f260517e96dc85">  116</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_controller.html">Controller</a>* <a class="code hl_variable" href="class_world.html#af32db642baaef3d224f260517e96dc85">mainController</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_world.html#afb448c6f8e052a1442ed809ecd04d47b">  117</a></span>    <a class="code hl_class" href="class_game_instance.html">GameInstance</a>* <a class="code hl_variable" href="class_world.html#afb448c6f8e052a1442ed809ecd04d47b">gameInstance</a> = <span class="keyword">nullptr</span>;           </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_world.html#adfd971f9793206e7738291497c6a2565">  120</a></span>    <span class="keyword">class </span><a class="code hl_class" href="class_camera.html">Camera</a>* <a class="code hl_variable" href="class_world.html#adfd971f9793206e7738291497c6a2565">mainCamera</a> = <span class="keyword">nullptr</span>;             </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="comment">//核心逻辑遍历</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#afdb5329b573ec0d74ba38e4641977705">Update</a>(<span class="keywordtype">float</span> <a class="code hl_variable" href="class_world.html#ab666adc534a4cbe6b4fc89c192021c16">deltaTime</a>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a3700309ea334075547924e2161a22136">Update_</a>();             <span class="comment">//高精度计算</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a8ba419015cce88d037e4a5d11fcbb18c">TransForm</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a597514a4e78ce0eea490ba99cfec9a1b">Render</a>();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a343998ddea2d906633aeaabe473b53e1">Input</a>();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a83bc7b9b3a7672221b2f442087758014">Debug</a>();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a1414ee3d8bda425031844bc05340e0b8">ProcessColliderZones</a>();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_world.html#a28b3b858ac0ece18b322f16e29edc327">ClearWorld</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>};</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//外部声明 全局唯一的全局世界类存放整个游戏需要的对象</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">extern</span> <a class="code hl_class" href="class_world.html">World</a> <a class="code hl_variable" href="_world_8h.html#a6dc037f725c99c547c75333bec2ff429">mainWorld</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="ttc" id="a_core_minimal_8h_html"><div class="ttname"><a href="_core_minimal_8h.html">CoreMinimal.h</a></div><div class="ttdoc">核心代码文件</div></div>
+<div class="ttc" id="a_macro_8h_html_a1e4391bfd7798f4bb59441bf12a53244"><div class="ttname"><a href="_macro_8h.html#a1e4391bfd7798f4bb59441bf12a53244">RangeNumY</a></div><div class="ttdeci">constexpr int RangeNumY</div><div class="ttdef"><b>定义</b> Macro.h:16</div></div>
+<div class="ttc" id="a_macro_8h_html_a8a7d6d882e22821d7ccba82fdee3dc74"><div class="ttname"><a href="_macro_8h.html#a8a7d6d882e22821d7ccba82fdee3dc74">RangeNumX</a></div><div class="ttdeci">constexpr int RangeNumX</div><div class="ttdef"><b>定义</b> Macro.h:15</div></div>
+<div class="ttc" id="a_object_8h_html"><div class="ttname"><a href="_object_8h.html">Object.h</a></div><div class="ttdoc">游戏对象基类</div></div>
+<div class="ttc" id="a_world_8h_html_a6dc037f725c99c547c75333bec2ff429"><div class="ttname"><a href="_world_8h.html#a6dc037f725c99c547c75333bec2ff429">mainWorld</a></div><div class="ttdeci">World mainWorld</div><div class="ttdoc">定义一个唯一的世界类</div><div class="ttdef"><b>定义</b> World.cpp:19</div></div>
+<div class="ttc" id="aclass_animation_html"><div class="ttname"><a href="class_animation.html">Animation</a></div><div class="ttdoc">动画委托(无参单播委托)</div><div class="ttdef"><b>定义</b> Animator.h:31</div></div>
+<div class="ttc" id="aclass_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdoc">全局音频管理 单例懒汉模式</div><div class="ttdef"><b>定义</b> AudioManager.h:35</div></div>
+<div class="ttc" id="aclass_audio_player_html"><div class="ttname"><a href="class_audio_player.html">AudioPlayer</a></div><div class="ttdoc">音频组件.</div><div class="ttdef"><b>定义</b> AudioPlayer.h:18</div></div>
+<div class="ttc" id="aclass_bar_html"><div class="ttname"><a href="class_bar.html">Bar</a></div><div class="ttdoc">滑动条部件</div><div class="ttdef"><b>定义</b> widgets.h:465</div></div>
+<div class="ttc" id="aclass_box_collider_html"><div class="ttname"><a href="class_box_collider.html">BoxCollider</a></div><div class="ttdoc">盒型碰撞器.</div><div class="ttdef"><b>定义</b> Collider.h:368</div></div>
+<div class="ttc" id="aclass_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdoc">按钮委托(多播没有参数)</div><div class="ttdef"><b>定义</b> widgets.h:421</div></div>
+<div class="ttc" id="aclass_camera_html"><div class="ttname"><a href="class_camera.html">Camera</a></div><div class="ttdoc">摄像机组件.</div><div class="ttdef"><b>定义</b> Camera.h:15</div></div>
+<div class="ttc" id="aclass_circle_collider_html"><div class="ttname"><a href="class_circle_collider.html">CircleCollider</a></div><div class="ttdoc">圆形碰撞器.</div><div class="ttdef"><b>定义</b> Collider.h:316</div></div>
+<div class="ttc" id="aclass_collider_html"><div class="ttname"><a href="class_collider.html">Collider</a></div><div class="ttdoc">碰撞器基类.</div><div class="ttdef"><b>定义</b> Collider.h:130</div></div>
+<div class="ttc" id="aclass_collider_manager_html"><div class="ttname"><a href="class_collider_manager.html">ColliderManager</a></div><div class="ttdoc">碰撞管理器</div><div class="ttdef"><b>定义</b> ColliderManager.h:38</div></div>
+<div class="ttc" id="aclass_configurator_html"><div class="ttname"><a href="class_configurator.html">Configurator</a></div><div class="ttdoc">配置器 懒汉模式.</div><div class="ttdef"><b>定义</b> Configurator.h:16</div></div>
+<div class="ttc" id="aclass_controller_html"><div class="ttname"><a href="class_controller.html">Controller</a></div><div class="ttdef"><b>定义</b> Controller.h:17</div></div>
+<div class="ttc" id="aclass_engine_html"><div class="ttname"><a href="class_engine.html">Engine</a></div><div class="ttdoc">引擎类 用户不能控制.</div><div class="ttdef"><b>定义</b> game.cpp:35</div></div>
+<div class="ttc" id="aclass_game_instance_html"><div class="ttname"><a href="class_game_instance.html">GameInstance</a></div><div class="ttdoc">全局游戏实例</div><div class="ttdef"><b>定义</b> CoreMinimal.h:46</div></div>
+<div class="ttc" id="aclass_game_statics_html"><div class="ttname"><a href="class_game_statics.html">GameStatics</a></div><div class="ttdoc">全局静态库.</div><div class="ttdef"><b>定义</b> GameStatics.h:17</div></div>
+<div class="ttc" id="aclass_image_interface_html"><div class="ttname"><a href="class_image_interface.html">ImageInterface</a></div><div class="ttdoc">图形接口.</div><div class="ttdef"><b>定义</b> VisualInterface.h:59</div></div>
+<div class="ttc" id="aclass_layer_interface_html"><div class="ttname"><a href="class_layer_interface.html">LayerInterface</a></div><div class="ttdoc">实现图层顺序接口</div><div class="ttdef"><b>定义</b> VisualInterface.h:21</div></div>
+<div class="ttc" id="aclass_level_html"><div class="ttname"><a href="class_level.html">Level</a></div><div class="ttdoc">全局游戏关卡类</div><div class="ttdef"><b>定义</b> CoreMinimal.h:52</div></div>
+<div class="ttc" id="aclass_level_manager_html"><div class="ttname"><a href="class_level_manager.html">LevelManager</a></div><div class="ttdoc">关卡管理类 单例的懒汉模式.</div><div class="ttdef"><b>定义</b> LevelManager.h:22</div></div>
+<div class="ttc" id="aclass_log_html"><div class="ttname"><a href="class_log.html">Log</a></div><div class="ttdoc">日志类 单例懒汉模式</div><div class="ttdef"><b>定义</b> Log.h:15</div></div>
+<div class="ttc" id="aclass_object_html"><div class="ttname"><a href="class_object.html">Object</a></div><div class="ttdoc">游戏对象基类.</div><div class="ttdef"><b>定义</b> Object.h:20</div></div>
+<div class="ttc" id="aclass_object_html_adc113651aab71178e254d7d7f3b1e53b"><div class="ttname"><a href="class_object.html#adc113651aab71178e254d7d7f3b1e53b">Object::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">用深度优先遍历进行遍历，借助栈来实现，实现物体及其所有绑定的物体类销毁</div><div class="ttdef"><b>定义</b> Object.cpp:56</div></div>
+<div class="ttc" id="aclass_particle_html"><div class="ttname"><a href="class_particle.html">Particle</a></div><div class="ttdoc">粒子组件</div><div class="ttdef"><b>定义</b> Particle.h:48</div></div>
+<div class="ttc" id="aclass_resource_manager_html"><div class="ttname"><a href="class_resource_manager.html">ResourceManager</a></div><div class="ttdoc">资源管理器 单例懒汉模式</div><div class="ttdef"><b>定义</b> ResourceManager.h:27</div></div>
+<div class="ttc" id="aclass_sprite_renderer_html"><div class="ttname"><a href="class_sprite_renderer.html">SpriteRenderer</a></div><div class="ttdoc">渲染组件(2D).</div><div class="ttdef"><b>定义</b> SpriteRenderer.h:16</div></div>
+<div class="ttc" id="aclass_timer_html"><div class="ttname"><a href="class_timer.html">Timer</a></div><div class="ttdoc">计时器类</div><div class="ttdef"><b>定义</b> Timer.h:20</div></div>
+<div class="ttc" id="aclass_user_interface_html"><div class="ttname"><a href="class_user_interface.html">UserInterface</a></div><div class="ttdoc">UI类.</div><div class="ttdef"><b>定义</b> UserInterface.h:19</div></div>
+<div class="ttc" id="aclass_widget_html"><div class="ttname"><a href="class_widget.html">Widget</a></div><div class="ttdoc">基础小部件</div><div class="ttdef"><b>定义</b> widgets.h:117</div></div>
+<div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">游戏世界</div><div class="ttdef"><b>定义</b> World.h:31</div></div>
+<div class="ttc" id="aclass_world_html_a0e1c89c2b99f5550a3ef8d19b76817ba"><div class="ttname"><a href="class_world.html#a0e1c89c2b99f5550a3ef8d19b76817ba">World::GameRenderers</a></div><div class="ttdeci">std::set&lt; class LayerInterface *, LayerSort &gt; GameRenderers</div><div class="ttdoc">存储所有支持渲染组件容器</div><div class="ttdef"><b>定义</b> World.h:103</div></div>
+<div class="ttc" id="aclass_world_html_a1414ee3d8bda425031844bc05340e0b8"><div class="ttname"><a href="class_world.html#a1414ee3d8bda425031844bc05340e0b8">World::ProcessColliderZones</a></div><div class="ttdeci">void ProcessColliderZones()</div><div class="ttdoc">更新colliderzone 碰撞计算</div><div class="ttdef"><b>定义</b> World.cpp:145</div></div>
+<div class="ttc" id="aclass_world_html_a1b9e57424d88da08e443bf92390ebe9e"><div class="ttname"><a href="class_world.html#a1b9e57424d88da08e443bf92390ebe9e">World::GameUIs</a></div><div class="ttdeci">std::unordered_set&lt; class UserInterface * &gt; GameUIs</div><div class="ttdoc">存储所有游戏UI</div><div class="ttdef"><b>定义</b> World.h:96</div></div>
+<div class="ttc" id="aclass_world_html_a2558999affbf72e1dba8e1d004edd465"><div class="ttname"><a href="class_world.html#a2558999affbf72e1dba8e1d004edd465">World::m_cfg</a></div><div class="ttdeci">class Configurator * m_cfg</div><div class="ttdoc">全局配置器类</div><div class="ttdef"><b>定义</b> World.h:82</div></div>
+<div class="ttc" id="aclass_world_html_a28b3b858ac0ece18b322f16e29edc327"><div class="ttname"><a href="class_world.html#a28b3b858ac0ece18b322f16e29edc327">World::ClearWorld</a></div><div class="ttdeci">void ClearWorld()</div><div class="ttdoc">清空数据</div><div class="ttdef"><b>定义</b> World.cpp:227</div></div>
+<div class="ttc" id="aclass_world_html_a331b8f024580f9cf038a39b6ea2027ad"><div class="ttname"><a href="class_world.html#a331b8f024580f9cf038a39b6ea2027ad">World::CurrentLevel</a></div><div class="ttdeci">Level * CurrentLevel</div><div class="ttdoc">当前关卡</div><div class="ttdef"><b>定义</b> World.h:115</div></div>
+<div class="ttc" id="aclass_world_html_a343998ddea2d906633aeaabe473b53e1"><div class="ttname"><a href="class_world.html#a343998ddea2d906633aeaabe473b53e1">World::Input</a></div><div class="ttdeci">void Input()</div><div class="ttdoc">交互（轴输入）</div><div class="ttdef"><b>定义</b> World.cpp:113</div></div>
+<div class="ttc" id="aclass_world_html_a34535a07d93ef620a2298da445d2b464"><div class="ttname"><a href="class_world.html#a34535a07d93ef620a2298da445d2b464">World::log</a></div><div class="ttdeci">class Log * log</div><div class="ttdoc">全局日志类</div><div class="ttdef"><b>定义</b> World.h:79</div></div>
+<div class="ttc" id="aclass_world_html_a3700309ea334075547924e2161a22136"><div class="ttname"><a href="class_world.html#a3700309ea334075547924e2161a22136">World::Update_</a></div><div class="ttdeci">void Update_()</div><div class="ttdoc">高精度计算</div><div class="ttdef"><b>定义</b> World.cpp:75</div></div>
+<div class="ttc" id="aclass_world_html_a392cf53afb8f0b23eddf71ab47667eca"><div class="ttname"><a href="class_world.html#a392cf53afb8f0b23eddf71ab47667eca">World::GameObjects_to_add</a></div><div class="ttdeci">std::vector&lt; Object * &gt; GameObjects_to_add</div><div class="ttdoc">添加物体容器缓冲区 不会多次出现同一个对象，因为是用createobject来创建和加入</div><div class="ttdef"><b>定义</b> World.h:94</div></div>
+<div class="ttc" id="aclass_world_html_a3f54df220cfbde1b24d935fb1209d3ff"><div class="ttname"><a href="class_world.html#a3f54df220cfbde1b24d935fb1209d3ff">World::audiomanager</a></div><div class="ttdeci">class AudioManager * audiomanager</div><div class="ttdoc">全局音量管理器</div><div class="ttdef"><b>定义</b> World.h:76</div></div>
+<div class="ttc" id="aclass_world_html_a4b44d0e65983873495ac138a4daae616"><div class="ttname"><a href="class_world.html#a4b44d0e65983873495ac138a4daae616">World::OverallClock</a></div><div class="ttdeci">class Timer * OverallClock</div><div class="ttdoc">全局计时器</div><div class="ttdef"><b>定义</b> World.h:86</div></div>
+<div class="ttc" id="aclass_world_html_a597514a4e78ce0eea490ba99cfec9a1b"><div class="ttname"><a href="class_world.html#a597514a4e78ce0eea490ba99cfec9a1b">World::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">渲染</div><div class="ttdef"><b>定义</b> World.cpp:85</div></div>
+<div class="ttc" id="aclass_world_html_a5c7f5405084e973bb4698e1cc820275c"><div class="ttname"><a href="class_world.html#a5c7f5405084e973bb4698e1cc820275c">World::UiDetectZones</a></div><div class="ttdeci">std::set&lt; class LayerInterface *, LayerSort &gt; UiDetectZones[RangeNumX][RangeNumY]</div><div class="ttdoc">存储每个区域存储的ui部件进行交互</div><div class="ttdef"><b>定义</b> World.h:107</div></div>
+<div class="ttc" id="aclass_world_html_a5d29c84990f9fa661a6c0dcd3f2dd6c8"><div class="ttname"><a href="class_world.html#a5d29c84990f9fa661a6c0dcd3f2dd6c8">World::levelManager</a></div><div class="ttdeci">class LevelManager * levelManager</div><div class="ttdoc">地图管理器</div><div class="ttdef"><b>定义</b> World.h:73</div></div>
+<div class="ttc" id="aclass_world_html_a83bc7b9b3a7672221b2f442087758014"><div class="ttname"><a href="class_world.html#a83bc7b9b3a7672221b2f442087758014">World::Debug</a></div><div class="ttdeci">void Debug()</div><div class="ttdoc">Debug模式</div><div class="ttdef"><b>定义</b> World.cpp:119</div></div>
+<div class="ttc" id="aclass_world_html_a85eb0d6533be1ab6a5dd6a2964f08697"><div class="ttname"><a href="class_world.html#a85eb0d6533be1ab6a5dd6a2964f08697">World::ColliderZones</a></div><div class="ttdeci">std::set&lt; class Collider *, ColliderSort &gt; ColliderZones[RangeNumX][RangeNumY]</div><div class="ttdoc">存储每个区域存储的碰撞体 划分为100*100的网格，多于100的整数倍不能被除尽的部分单独做网格</div><div class="ttdef"><b>定义</b> World.h:106</div></div>
+<div class="ttc" id="aclass_world_html_a8823afd1d40c456d23854fbe59b49bc2"><div class="ttname"><a href="class_world.html#a8823afd1d40c456d23854fbe59b49bc2">World::GameColliders_to_clear</a></div><div class="ttdeci">std::unordered_set&lt; class Collider * &gt; GameColliders_to_clear</div><div class="ttdoc">存删除碰撞组件缓冲区</div><div class="ttdef"><b>定义</b> World.h:105</div></div>
+<div class="ttc" id="aclass_world_html_a8ba419015cce88d037e4a5d11fcbb18c"><div class="ttname"><a href="class_world.html#a8ba419015cce88d037e4a5d11fcbb18c">World::TransForm</a></div><div class="ttdeci">void TransForm()</div><div class="ttdoc">转换关卡</div><div class="ttdef"><b>定义</b> World.cpp:222</div></div>
+<div class="ttc" id="aclass_world_html_a8c71090f62d75e9290152c495d4b9938"><div class="ttname"><a href="class_world.html#a8c71090f62d75e9290152c495d4b9938">World::GameObjects</a></div><div class="ttdeci">std::unordered_set&lt; Object * &gt; GameObjects</div><div class="ttdoc">存储所有游戏物体</div><div class="ttdef"><b>定义</b> World.h:93</div></div>
+<div class="ttc" id="aclass_world_html_a8d9ce82b6f67a70cc89cdf869cbafdc9"><div class="ttname"><a href="class_world.html#a8d9ce82b6f67a70cc89cdf869cbafdc9">World::GameObjects_to_delete</a></div><div class="ttdeci">std::unordered_set&lt; Object * &gt; GameObjects_to_delete</div><div class="ttdoc">设置对象的删除管理容器缓冲区，是为了防止发生删除之后迭代到空或者漏掉了对象</div><div class="ttdef"><b>定义</b> World.h:95</div></div>
+<div class="ttc" id="aclass_world_html_a9475d8f62216ff8025820ddfbbf7679a"><div class="ttname"><a href="class_world.html#a9475d8f62216ff8025820ddfbbf7679a">World::FPSclock</a></div><div class="ttdeci">class Timer * FPSclock</div><div class="ttdoc">帧数的计时器</div><div class="ttdef"><b>定义</b> World.h:112</div></div>
+<div class="ttc" id="aclass_world_html_a9f9fa9fe53dc6edaa392c283a572c660"><div class="ttname"><a href="class_world.html#a9f9fa9fe53dc6edaa392c283a572c660">World::resourcePool</a></div><div class="ttdeci">class ResourceManager * resourcePool</div><div class="ttdoc">资源池</div><div class="ttdef"><b>定义</b> World.h:65</div></div>
+<div class="ttc" id="aclass_world_html_ab666adc534a4cbe6b4fc89c192021c16"><div class="ttname"><a href="class_world.html#ab666adc534a4cbe6b4fc89c192021c16">World::deltaTime</a></div><div class="ttdeci">float deltaTime</div><div class="ttdoc">帧间隔时间 两帧之间的时间</div><div class="ttdef"><b>定义</b> World.h:90</div></div>
+<div class="ttc" id="aclass_world_html_ab8bb18836321fc4f910114308cf53cbf"><div class="ttname"><a href="class_world.html#ab8bb18836321fc4f910114308cf53cbf">World::collisionManager</a></div><div class="ttdeci">class ColliderManager * collisionManager</div><div class="ttdoc">碰撞映射关系管理器</div><div class="ttdef"><b>定义</b> World.h:69</div></div>
+<div class="ttc" id="aclass_world_html_abe79cff030c67bb658a19362e390d9cc"><div class="ttname"><a href="class_world.html#abe79cff030c67bb658a19362e390d9cc">World::GameColliders</a></div><div class="ttdeci">std::unordered_set&lt; class Collider * &gt; GameColliders</div><div class="ttdoc">底层哈希表不排序不能重复 存储所有碰撞组件容器</div><div class="ttdef"><b>定义</b> World.h:104</div></div>
+<div class="ttc" id="aclass_world_html_ac246a185d134fc9ba821ae3f9f4445c8"><div class="ttname"><a href="class_world.html#ac246a185d134fc9ba821ae3f9f4445c8">World::GameTimers</a></div><div class="ttdeci">std::unordered_set&lt; class Timer * &gt; GameTimers</div><div class="ttdoc">计时器容器</div><div class="ttdef"><b>定义</b> World.h:98</div></div>
+<div class="ttc" id="aclass_world_html_ad373f3b3a0e15e71f5ae105d7c5ec280"><div class="ttname"><a href="class_world.html#ad373f3b3a0e15e71f5ae105d7c5ec280">World::GameUIs_to_delete</a></div><div class="ttdeci">std::unordered_set&lt; class UserInterface * &gt; GameUIs_to_delete</div><div class="ttdoc">删除游戏UI缓冲区</div><div class="ttdef"><b>定义</b> World.h:97</div></div>
+<div class="ttc" id="aclass_world_html_adfd971f9793206e7738291497c6a2565"><div class="ttname"><a href="class_world.html#adfd971f9793206e7738291497c6a2565">World::mainCamera</a></div><div class="ttdeci">class Camera * mainCamera</div><div class="ttdoc">游戏场景的相机 也就是屏幕</div><div class="ttdef"><b>定义</b> World.h:120</div></div>
+<div class="ttc" id="aclass_world_html_af32db642baaef3d224f260517e96dc85"><div class="ttname"><a href="class_world.html#af32db642baaef3d224f260517e96dc85">World::mainController</a></div><div class="ttdeci">class Controller * mainController</div><div class="ttdef"><b>定义</b> World.h:116</div></div>
+<div class="ttc" id="aclass_world_html_af721885ba059fcfd985dee42676e6761"><div class="ttname"><a href="class_world.html#af721885ba059fcfd985dee42676e6761">World::updateMutex</a></div><div class="ttdeci">std::mutex updateMutex</div><div class="ttdoc">互斥锁 防止某一个时刻耗时过多，导致下一次执行冲突 会一直等待防止顺序的未知</div><div class="ttdef"><b>定义</b> World.h:61</div></div>
+<div class="ttc" id="aclass_world_html_afb448c6f8e052a1442ed809ecd04d47b"><div class="ttname"><a href="class_world.html#afb448c6f8e052a1442ed809ecd04d47b">World::gameInstance</a></div><div class="ttdeci">GameInstance * gameInstance</div><div class="ttdoc">游戏实例 想要存进去的单例 可以写进去</div><div class="ttdef"><b>定义</b> World.h:117</div></div>
+<div class="ttc" id="aclass_world_html_afdb5329b573ec0d74ba38e4641977705"><div class="ttname"><a href="class_world.html#afdb5329b573ec0d74ba38e4641977705">World::Update</a></div><div class="ttdeci">void Update(float deltaTime)</div><div class="ttdoc">逻辑处理</div><div class="ttdef"><b>定义</b> World.cpp:24</div></div>
+<div class="ttc" id="astruct_collider_sort_html"><div class="ttname"><a href="struct_collider_sort.html">ColliderSort</a></div><div class="ttdoc">实现碰撞图层排序仿函数 容器自定义顺序</div><div class="ttdef"><b>定义</b> World.h:24</div></div>
+<div class="ttc" id="astruct_collider_sort_html_a9cbc1ddcaca8e0dfeec35bc60b873d14"><div class="ttname"><a href="struct_collider_sort.html#a9cbc1ddcaca8e0dfeec35bc60b873d14">ColliderSort::operator()</a></div><div class="ttdeci">bool operator()(const class Collider *a, const class Collider *b) const</div><div class="ttdef"><b>定义</b> World.cpp:254</div></div>
+<div class="ttc" id="astruct_layer_sort_html"><div class="ttname"><a href="struct_layer_sort.html">LayerSort</a></div><div class="ttdoc">实现渲染图层排序仿函数 容器自定义顺序</div><div class="ttdef"><b>定义</b> World.h:16</div></div>
+<div class="ttc" id="astruct_layer_sort_html_ab3c87312cfed22daebc316444fdeb07b"><div class="ttname"><a href="struct_layer_sort.html#ab3c87312cfed22daebc316444fdeb07b">LayerSort::operator()</a></div><div class="ttdeci">bool operator()(const class LayerInterface *a, const class LayerInterface *b) const</div><div class="ttdef"><b>定义</b> World.cpp:245</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_world_8h.html">World.h</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
